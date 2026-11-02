@@ -409,6 +409,7 @@ const _FILTERED_BEACHES = _RAW_BEACHES.filter(b => !b.id || !b.id.startsWith('be
 const _ALL_RAW_SPOTS = [
   ...(typeof TAMILNADU_SPOTS !== 'undefined' ? TAMILNADU_SPOTS : (typeof window !== 'undefined' && window.TAMILNADU_SPOTS ? window.TAMILNADU_SPOTS : [])),
   ...(typeof KERALA_SPOTS !== 'undefined' ? KERALA_SPOTS : (typeof window !== 'undefined' && window.KERALA_SPOTS ? window.KERALA_SPOTS : [])),
+  ...(typeof MAHARASHTRA_SPOTS !== 'undefined' ? MAHARASHTRA_SPOTS : (typeof window !== 'undefined' && window.MAHARASHTRA_SPOTS ? window.MAHARASHTRA_SPOTS : [])),
   ..._FILTERED_BEACHES,
   ...(typeof ALL_INDIA_SPOTS !== 'undefined' ? ALL_INDIA_SPOTS : (typeof window !== 'undefined' && window.ALL_INDIA_SPOTS ? window.ALL_INDIA_SPOTS : []))
 ];
