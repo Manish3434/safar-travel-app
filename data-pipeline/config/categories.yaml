@@ -1,0 +1,90 @@
+# 15 Standard Travel Spot Categories for Safar
+categories:
+  - code: beach
+    name_en: Beaches & Coastal
+    name_hi: समुद्र तट
+    osm_tags:
+      - "natural=beach"
+      - "tourism=beach_resort"
+  - code: fort
+    name_en: Forts & Palaces
+    name_hi: किले एवं महल
+    osm_tags:
+      - "historic=fort"
+      - "historic=castle"
+      - "historic=palace"
+  - code: waterfall
+    name_en: Waterfalls
+    name_hi: झरने एवं जलप्रपात
+    osm_tags:
+      - "waterway=waterfall"
+  - code: temple
+    name_en: Temples & Pilgrimage
+    name_hi: मंदिर एवं तीर्थ स्थल
+    osm_tags:
+      - "amenity=place_of_worship;religion=hindu"
+      - "historic=monastery"
+  - code: monument
+    name_en: Monuments & Memorials
+    name_hi: स्मारक
+    osm_tags:
+      - "historic=monument"
+      - "historic=memorial"
+  - code: church
+    name_en: Churches & Cathedrals
+    name_hi: चर्च एवं गिरजाघर
+    osm_tags:
+      - "amenity=place_of_worship;religion=christian"
+  - code: mosque
+    name_en: Mosques & Tombs
+    name_hi: मस्जिदें एवं मकबरे
+    osm_tags:
+      - "amenity=place_of_worship;religion=muslim"
+      - "historic=tomb"
+  - code: national_park
+    name_en: National Parks
+    name_hi: राष्ट्रीय उद्यान
+    osm_tags:
+      - "boundary=national_park"
+      - "leisure=nature_reserve"
+  - code: wildlife_sanctuary
+    name_en: Wildlife Sanctuaries & Zoos
+    name_hi: वन्यजीव अभयारण्य
+    osm_tags:
+      - "tourism=zoo"
+      - "leisure=wildlife_reserve"
+  - code: viewpoint
+    name_en: Scenic Viewpoints
+    name_hi: सुंदर दृश्य बिंदु
+    osm_tags:
+      - "tourism=viewpoint"
+  - code: hill_station
+    name_en: Hill Stations & Valleys
+    name_hi: हिल स्टेशन एवं घाटियाँ
+    osm_tags:
+      - "place=isolated_dwelling;tourism=yes"
+      - "natural=peak"
+  - code: lake
+    name_en: Lakes & Dams
+    name_hi: झीलें एवं बांध
+    osm_tags:
+      - "natural=water;water=lake"
+      - "waterway=dam"
+  - code: cave
+    name_en: Caves & Rock Formations
+    name_hi: गुफाएं एवं शैल संरचनाएं
+    osm_tags:
+      - "natural=cave_entrance"
+      - "historic=archaeological_site"
+  - code: museum
+    name_en: Museums & Galleries
+    name_hi: संग्रहालय एवं कला दीर्घाएँ
+    osm_tags:
+      - "tourism=museum"
+      - "tourism=gallery"
+  - code: heritage
+    name_en: Heritage Villages & Sites
+    name_hi: विरासत स्थल
+    osm_tags:
+      - "historic=heritage"
+      - "heritage=yes"

@@ -1,0 +1,651 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.50505,
+          23.02765
+        ]
+      },
+      "properties": {
+        "name": "Jhean",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 35.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.50529,
+          22.98587
+        ]
+      },
+      "properties": {
+        "name": "Kunrre",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.50985,
+          22.93844
+        ]
+      },
+      "properties": {
+        "name": "Rohilakon",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.50658,
+          22.92843
+        ]
+      },
+      "properties": {
+        "name": "Amlasol",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.50589,
+          23.04299
+        ]
+      },
+      "properties": {
+        "name": "Abhirampur",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.5095,
+          23.07427
+        ]
+      },
+      "properties": {
+        "name": "Ramchandrapur",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.50951,
+          22.91805
+        ]
+      },
+      "properties": {
+        "name": "Patpur",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.50978,
+          22.89103
+        ]
+      },
+      "properties": {
+        "name": "Nischintapur",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.50541,
+          22.87033
+        ]
+      },
+      "properties": {
+        "name": "Jadabbati",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.50648,
+          22.85875
+        ]
+      },
+      "properties": {
+        "name": "Hatkoyarganj",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.50756,
+          22.85293
+        ]
+      },
+      "properties": {
+        "name": "Sandhipur",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.50686,
+          22.84362
+        ]
+      },
+      "properties": {
+        "name": "Katrabali",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.50995,
+          22.83933
+        ]
+      },
+      "properties": {
+        "name": "Sidpur",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.50771,
+          22.83474
+        ]
+      },
+      "properties": {
+        "name": "Dhanyasara",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.50642,
+          22.82627
+        ]
+      },
+      "properties": {
+        "name": "Kalikapur",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.50684,
+          22.81802
+        ]
+      },
+      "properties": {
+        "name": "Kunarpur",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.50759,
+          22.78815
+        ]
+      },
+      "properties": {
+        "name": "Parahari",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.50569,
+          22.7786
+        ]
+      },
+      "properties": {
+        "name": "Jadabnagar",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.50628,
+          22.77371
+        ]
+      },
+      "properties": {
+        "name": "Gonsiaband",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.50525,
+          22.762
+        ]
+      },
+      "properties": {
+        "name": "Nilganja",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.5056,
+          22.71381
+        ]
+      },
+      "properties": {
+        "name": "Bhilaibani",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.5078,
+          22.6979
+        ]
+      },
+      "properties": {
+        "name": "Pardeshipara",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.5235,
+          22.65603
+        ]
+      },
+      "properties": {
+        "name": "Pinglas",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.51967,
+          22.6622
+        ]
+      },
+      "properties": {
+        "name": "Khalakpur",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.54632,
+          22.64638
+        ]
+      },
+      "properties": {
+        "name": "Bandipur",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.53527,
+          22.64516
+        ]
+      },
+      "properties": {
+        "name": "Brahmankala",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.56261,
+          22.64616
+        ]
+      },
+      "properties": {
+        "name": "Dhanyagachhi",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.50513,
+          22.68609
+        ]
+      },
+      "properties": {
+        "name": "Hansua",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 35.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.50536,
+          22.68157
+        ]
+      },
+      "properties": {
+        "name": "Karuria",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.50677,
+          22.67274
+        ]
+      },
+      "properties": {
+        "name": "Burya Pat",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 35.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.51278,
+          22.6643
+        ]
+      },
+      "properties": {
+        "name": "Satdubi",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.51275,
+          22.65579
+        ]
+      },
+      "properties": {
+        "name": "Nata Gerya",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.5079,
+          22.64993
+        ]
+      },
+      "properties": {
+        "name": "Keshur Gerya",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.50618,
+          22.6447
+        ]
+      },
+      "properties": {
+        "name": "Damodar Bati",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 35.0,
+        "has_photo": true
+      }
+    }
+  ]
+}

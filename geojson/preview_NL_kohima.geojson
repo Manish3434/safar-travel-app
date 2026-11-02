@@ -1,0 +1,651 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.266666666,
+          26.1
+        ]
+      },
+      "properties": {
+        "name": "Wokha district",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.258055555,
+          26.097222222
+        ]
+      },
+      "properties": {
+        "name": "Wokha",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.516666666,
+          26.016666666
+        ]
+      },
+      "properties": {
+        "name": "Zunheboto district",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.5264,
+          26.0146
+        ]
+      },
+      "properties": {
+        "name": "Zunheboto",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.5,
+          26.0
+        ]
+      },
+      "properties": {
+        "name": "Aghunato",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.455,
+          26.2697
+        ]
+      },
+      "properties": {
+        "name": "Alichen",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.466666666,
+          26.4
+        ]
+      },
+      "properties": {
+        "name": "Chungtia",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.250833333,
+          26.173055555
+        ]
+      },
+      "properties": {
+        "name": "Englan",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.259936111,
+          26.096177777
+        ]
+      },
+      "properties": {
+        "name": "Greater Wokha",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 35.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.4123,
+          26.26355
+        ]
+      },
+      "properties": {
+        "name": "Longkhum",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.475,
+          26.21
+        ]
+      },
+      "properties": {
+        "name": "Lumami",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.43333333,
+          26.5
+        ]
+      },
+      "properties": {
+        "name": "Mangkolemba",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.476508333,
+          26.220533333
+        ]
+      },
+      "properties": {
+        "name": "Nagaland University",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.5238,
+          26.0093
+        ]
+      },
+      "properties": {
+        "name": "DC Hill Zunheboto",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.5238,
+          26.0093
+        ]
+      },
+      "properties": {
+        "name": "Akuluto",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.5167,
+          25.9167
+        ]
+      },
+      "properties": {
+        "name": "Satakha",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.5167,
+          25.9667
+        ]
+      },
+      "properties": {
+        "name": "Immanuel School Zunheboto",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.52,
+          25.97
+        ]
+      },
+      "properties": {
+        "name": "Pughoboto",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.25,
+          26.5
+        ]
+      },
+      "properties": {
+        "name": "Teok",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.5987,
+          25.8238
+        ]
+      },
+      "properties": {
+        "name": "Chinkhu",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.2835,
+          26.0979
+        ]
+      },
+      "properties": {
+        "name": "Tiyingchomo",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.33668056,
+          26.104375
+        ]
+      },
+      "properties": {
+        "name": "Tsungiki",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.21488,
+          25.92469
+        ]
+      },
+      "properties": {
+        "name": "Tseminyu",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.529222222,
+          26.017888888
+        ]
+      },
+      "properties": {
+        "name": "Sumi Baptist Church",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.26,
+          26.09
+        ]
+      },
+      "properties": {
+        "name": "Wokha Vidhan Sabha constituency",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.28,
+          25.92
+        ]
+      },
+      "properties": {
+        "name": "Pughoboto Vidhan Sabha constituency",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.22,
+          26.26
+        ]
+      },
+      "properties": {
+        "name": "Koridang Vidhan Sabha constituency",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.48,
+          26.07
+        ]
+      },
+      "properties": {
+        "name": "Atoizu Vidhan Sabha constituency",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.44,
+          25.93
+        ]
+      },
+      "properties": {
+        "name": "Satakha Vidhan Sabha constituency",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.26,
+          26.04
+        ]
+      },
+      "properties": {
+        "name": "Tyui Vidhan Sabha constituency",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.61,
+          25.95
+        ]
+      },
+      "properties": {
+        "name": "Aghunato Vidhan Sabha constituency",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.52,
+          26.01
+        ]
+      },
+      "properties": {
+        "name": "Zunheboto Vidhan Sabha constituency",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.22,
+          26.22
+        ]
+      },
+      "properties": {
+        "name": "Sanis Vidhan Sabha constituency",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          94.64,
+          25.9
+        ]
+      },
+      "properties": {
+        "name": "Seyochong-Sitimi Vidhan Sabha constituency",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    }
+  ]
+}

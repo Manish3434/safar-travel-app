@@ -1,0 +1,670 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.05171,
+          22.088185
+        ]
+      },
+      "properties": {
+        "name": "Halenda",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.2,
+          22.03
+        ]
+      },
+      "properties": {
+        "name": "Jasdan State",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.2,
+          22.03
+        ]
+      },
+      "properties": {
+        "name": "Jasdan",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.127777777,
+          22.237222222
+        ]
+      },
+      "properties": {
+        "name": "Ankadiya",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.242724533,
+          22.228317652
+        ]
+      },
+      "properties": {
+        "name": "Ajmer",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.1414313,
+          22.0089689
+        ]
+      },
+      "properties": {
+        "name": "Atkot",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.85,
+          22.05
+        ]
+      },
+      "properties": {
+        "name": "Kotda-Sangani",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 35.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.367222222,
+          22.066388888
+        ]
+      },
+      "properties": {
+        "name": "Ghela Somnath",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.9090853,
+          22.1269088
+        ]
+      },
+      "properties": {
+        "name": "Chitravav",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.207361111,
+          22.259611111
+        ]
+      },
+      "properties": {
+        "name": "Chobari, Chotila",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.06666667,
+          22.05
+        ]
+      },
+      "properties": {
+        "name": "Baldhoi",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.91666667,
+          22.08333333
+        ]
+      },
+      "properties": {
+        "name": "Bhadva",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.8465,
+          21.9153
+        ]
+      },
+      "properties": {
+        "name": "Moviya Village",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.269161111,
+          22.140319444
+        ]
+      },
+      "properties": {
+        "name": "Lilapur",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.37967,
+          22.21027
+        ]
+      },
+      "properties": {
+        "name": "Vinchhiya",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.1923805,
+          22.258652
+        ]
+      },
+      "properties": {
+        "name": "Bhadarwa",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 35.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.900855555,
+          22.240302777
+        ]
+      },
+      "properties": {
+        "name": "RK University",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.22,
+          21.92
+        ]
+      },
+      "properties": {
+        "name": "Untvad",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.95,
+          22.08333333
+        ]
+      },
+      "properties": {
+        "name": "Q11909255",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.2667,
+          22.0
+        ]
+      },
+      "properties": {
+        "name": "Q11909284",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.41666667,
+          21.96666667
+        ]
+      },
+      "properties": {
+        "name": "Q11926980",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.2,
+          21.95
+        ]
+      },
+      "properties": {
+        "name": "Kotra Pitha",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 35.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.2,
+          22.04
+        ]
+      },
+      "properties": {
+        "name": "Jasdan Vidhan Sabha constituency",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.89,
+          22.26
+        ]
+      },
+      "properties": {
+        "name": "Rajkot Purva Vidhan Sabha constituency",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.9775161,
+          22.1359548
+        ]
+      },
+      "properties": {
+        "name": "Sardhar",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.916666666,
+          22.166666666
+        ]
+      },
+      "properties": {
+        "name": "Q26780702",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.287222222,
+          22.266666666
+        ]
+      },
+      "properties": {
+        "name": "Sukha Bh\u0101dar River",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.1675,
+          22.224444444
+        ]
+      },
+      "properties": {
+        "name": "Ananteshwara temple",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 35.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.1012,
+          22.1845
+        ]
+      },
+      "properties": {
+        "name": "State Bank of India, Bhadla branch",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.0468,
+          22.0093
+        ]
+      },
+      "properties": {
+        "name": "State Bank of India, Dadva(mota) branch",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.1463,
+          22.0098
+        ]
+      },
+      "properties": {
+        "name": "State Bank of India, Atkot branch",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.8658,
+          22.0454
+        ]
+      },
+      "properties": {
+        "name": "State Bank of India, Kotda Sangani branch",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 35.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.8441,
+          21.9155
+        ]
+      },
+      "properties": {
+        "name": "State Bank of India, Moviya branch",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          71.3795,
+          22.2092
+        ]
+      },
+      "properties": {
+        "name": "State Bank of India, Vinchhiya branch",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.9279,
+          21.9664
+        ]
+      },
+      "properties": {
+        "name": "State Bank of India, Ramod branch",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,670 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.816030555,
+          15.463738888
+        ]
+      },
+      "properties": {
+        "name": "Calapor",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8111,
+          15.3981
+        ]
+      },
+      "properties": {
+        "name": "Vasco da Gama",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.9625,
+          15.28972222
+        ]
+      },
+      "properties": {
+        "name": "Fatorda Stadium",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8,
+          15.402
+        ]
+      },
+      "properties": {
+        "name": "Mormugao",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.793,
+          15.397
+        ]
+      },
+      "properties": {
+        "name": "National Centre for Polar and Ocean Research",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.80202222,
+          15.45623333
+        ]
+      },
+      "properties": {
+        "name": "National Institute of Oceanography",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.97495833,
+          15.29587778
+        ]
+      },
+      "properties": {
+        "name": "Arlem Breweries Ground",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.96978,
+          15.286691
+        ]
+      },
+      "properties": {
+        "name": "Borda",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.773647,
+          15.492288
+        ]
+      },
+      "properties": {
+        "name": "Fort Aguada",
+        "category": "heritage",
+        "verification": "verified",
+        "sensitive": false,
+        "sources_count": 3,
+        "prominence": 85.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8,
+          15.45
+        ]
+      },
+      "properties": {
+        "name": "Caranzalem",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.03,
+          15.28
+        ]
+      },
+      "properties": {
+        "name": "Curtorim",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.80333333,
+          15.45055556
+        ]
+      },
+      "properties": {
+        "name": "Dona Paula",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.9625,
+          15.2911
+        ]
+      },
+      "properties": {
+        "name": "Fatorda",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.9903,
+          15.2882
+        ]
+      },
+      "properties": {
+        "name": "Gogol",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.812971,
+          15.386878
+        ]
+      },
+      "properties": {
+        "name": "Mormugao taluk",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.81111111,
+          15.46166667
+        ]
+      },
+      "properties": {
+        "name": "Nagarhalli Hills",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.966666666,
+          15.3
+        ]
+      },
+      "properties": {
+        "name": "Raia",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.811872262,
+          15.396249901
+        ]
+      },
+      "properties": {
+        "name": "Railway Stadium, Vasco da Gama",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.789159,
+          15.462826
+        ]
+      },
+      "properties": {
+        "name": "Raj Bhavan",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.977,
+          15.288
+        ]
+      },
+      "properties": {
+        "name": "Parvatibai Chowgule College of Arts and Science",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7672184,
+          15.4972787
+        ]
+      },
+      "properties": {
+        "name": "The Taj Exotica Hotel & Resort",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.815114,
+          15.400575
+        ]
+      },
+      "properties": {
+        "name": "Tilak Maidan Stadium",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.773055555,
+          15.492777777
+        ]
+      },
+      "properties": {
+        "name": "Old Aguada Lighthouse",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.80207,
+          15.45978
+        ]
+      },
+      "properties": {
+        "name": "National Institute of Water Sports",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8085068,
+          15.405248
+        ]
+      },
+      "properties": {
+        "name": "Operation Creek",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.939328,
+          15.291947
+        ]
+      },
+      "properties": {
+        "name": "Suravali railway station",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.78153,
+          15.35466
+        ]
+      },
+      "properties": {
+        "name": "Saint Georges Islands",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.8,
+          15.4
+        ]
+      },
+      "properties": {
+        "name": "Mormugao Head",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 35.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.78333,
+          15.41667
+        ]
+      },
+      "properties": {
+        "name": "Marmagao Point",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 35.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7775,
+          15.352222222
+        ]
+      },
+      "properties": {
+        "name": "Grande Island",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 35.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.7875,
+          15.463611111
+        ]
+      },
+      "properties": {
+        "name": "Q26791421",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.78333,
+          15.4
+        ]
+      },
+      "properties": {
+        "name": "Cambariem Island",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.793611111,
+          15.481388888
+        ]
+      },
+      "properties": {
+        "name": "Q26792286",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.90812,
+          15.29255
+        ]
+      },
+      "properties": {
+        "name": "Betalbatim Beach",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.9116,
+          15.5008
+        ]
+      },
+      "properties": {
+        "name": "Basilica of Bom Jesus",
+        "category": "church",
+        "verification": "verified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    }
+  ]
+}

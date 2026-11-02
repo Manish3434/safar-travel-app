@@ -1,0 +1,11 @@
+{
+  "name": "Safar — Travel Companion",
+  "short_name": "Safar",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0F172A",
+  "theme_color": "#FF7A00",
+  "description": "India's all-in-one travel companion",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false
+}

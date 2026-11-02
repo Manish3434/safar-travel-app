@@ -1,0 +1,670 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.2439066,
+          23.5057462
+        ]
+      },
+      "properties": {
+        "name": "Neihdawn",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.245049,
+          23.429142
+        ]
+      },
+      "properties": {
+        "name": "Mualzen",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.195321,
+          23.503114
+        ]
+      },
+      "properties": {
+        "name": "Indian Oil Fuel Filling Station Khawzawl-North Vanlaiphai Road (Mizoram Police Petrol Pump)",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 20.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.0981,
+          23.268
+        ]
+      },
+      "properties": {
+        "name": "Biate",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.929143914,
+          22.965228274
+        ]
+      },
+      "properties": {
+        "name": "Hnahthial",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.76,
+          22.91
+        ]
+      },
+      "properties": {
+        "name": "Lunglei district",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.85,
+          23.31
+        ]
+      },
+      "properties": {
+        "name": "Serchhip district",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.12,
+          23.37
+        ]
+      },
+      "properties": {
+        "name": "Khawhai",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.745102396,
+          22.886569239
+        ]
+      },
+      "properties": {
+        "name": "Lunglei",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.63,
+          22.83
+        ]
+      },
+      "properties": {
+        "name": "Lengpui",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.83,
+          23.3
+        ]
+      },
+      "properties": {
+        "name": "Serchhip",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.75,
+          23.32
+        ]
+      },
+      "properties": {
+        "name": "Thenzawl",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.058188888,
+          23.133497222
+        ]
+      },
+      "properties": {
+        "name": "North Vanlaiphai",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.833333333,
+          23.166666666
+        ]
+      },
+      "properties": {
+        "name": "Lushai hills",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.843592,
+          23.37917
+        ]
+      },
+      "properties": {
+        "name": "Chhiahtlang",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.758,
+          22.907
+        ]
+      },
+      "properties": {
+        "name": "Christian Hospital Serkawn",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.23999786,
+          23.20609474
+        ]
+      },
+      "properties": {
+        "name": "Dungtl\u00e1ng",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.856701,
+          23.308996
+        ]
+      },
+      "properties": {
+        "name": "Government Higher Secondary School, Serchhip",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8538,
+          23.339266666
+        ]
+      },
+      "properties": {
+        "name": "Government Serchhip College",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.767502777,
+          22.946766666
+        ]
+      },
+      "properties": {
+        "name": "Higher and Technical Institute of Mizoram",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.757686334,
+          23.449889939
+        ]
+      },
+      "properties": {
+        "name": "Hmuifang",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.909939,
+          23.236712
+        ]
+      },
+      "properties": {
+        "name": "Kei\u1e6dum",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.23333333,
+          23.16666667
+        ]
+      },
+      "properties": {
+        "name": "Khawbung",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.21885,
+          23.16188
+        ]
+      },
+      "properties": {
+        "name": "Mizo Hlakungpui Mual",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.854572,
+          23.332872
+        ]
+      },
+      "properties": {
+        "name": "New Serchhip",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.9349,
+          22.9349
+        ]
+      },
+      "properties": {
+        "name": "Pukpui",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.25187683,
+          23.16096306
+        ]
+      },
+      "properties": {
+        "name": "Samthang",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.2087271,
+          23.4484951
+        ]
+      },
+      "properties": {
+        "name": "Chawngtlai",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.76,
+          22.9078
+        ]
+      },
+      "properties": {
+        "name": "Serkawn",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.745588888,
+          22.894508333
+        ]
+      },
+      "properties": {
+        "name": "Lunglei College",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.928619444,
+          22.980255555
+        ]
+      },
+      "properties": {
+        "name": "Hnahthial College",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.748711111,
+          22.894383333
+        ]
+      },
+      "properties": {
+        "name": "J.Buana College",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.591011,
+          22.856863
+        ]
+      },
+      "properties": {
+        "name": "National Highway 302",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 60.0,
+        "has_photo": true
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          92.8,
+          23.36
+        ]
+      },
+      "properties": {
+        "name": "Tourism in Mizoram",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          93.1986805,
+          23.0962691
+        ]
+      },
+      "properties": {
+        "name": "Khuangthing",
+        "category": "heritage",
+        "verification": "unverified",
+        "sensitive": false,
+        "sources_count": 1,
+        "prominence": 45.0,
+        "has_photo": false
+      }
+    }
+  ]
+}

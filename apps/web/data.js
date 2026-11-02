@@ -1,0 +1,978 @@
+// Safar Travel Application Data Catalog
+// 36 States & UTs of India, canonical districts, and curated attractions
+
+const STATES_DATA = [
+  {
+    code: 'TN',
+    name: 'Tamil Nadu',
+    nameTa: 'தமிழ்நாடு',
+    nameHi: 'तमिलनाडु',
+    districtCount: 38,
+    highlight: 'Meenakshi Amman Temple',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/1280px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'Land of Dravidian temples, Nilgiri hill stations, classical music, and golden coastal shores.'
+  },
+  {
+    code: 'KL',
+    name: 'Kerala',
+    nameTa: 'கேரளா',
+    nameHi: 'केरल',
+    districtCount: 14,
+    highlight: 'Backwaters & Kovalam',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Alappuzha_Boat_Beauty_W.jpg/1280px-Alappuzha_Boat_Beauty_W.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: "God's Own Country — palm-fringed backwaters, Ayurveda retreats, and lush spice plantations."
+  },
+  {
+    code: 'KA',
+    name: 'Karnataka',
+    nameTa: 'கர்நாடகா',
+    nameHi: 'कर्नाटक',
+    districtCount: 31,
+    highlight: 'Mysore Palace & Hampi',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Mysore_Palace_Morning.jpg/1280px-Mysore_Palace_Morning.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'Heritage capitals of Vijayanagara, Western Ghats waterfalls, coffee estates of Coorg.'
+  },
+  {
+    code: 'HP',
+    name: 'Himachal Pradesh',
+    nameTa: 'இமாச்சலப் பிரதேசம்',
+    nameHi: 'हिमाचल प्रदेश',
+    districtCount: 12,
+    highlight: 'Snow-capped Himalayas',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Landscape_of_Shimla_%2C_Himachal_Pradesh.jpg/1280px-Landscape_of_Shimla_%2C_Himachal_Pradesh.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'Alpine pine valleys, colonial hill towns of Shimla & Manali, and serene Buddhist monasteries.'
+  },
+  {
+    code: 'AP',
+    name: 'Andhra Pradesh',
+    nameTa: 'ஆந்திரப் பிரதேசம்',
+    nameHi: 'आंध्र प्रदेश',
+    districtCount: 28,
+    highlight: 'Tirupati & Araku Valley',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Tirumala_090615.jpg/1280px-Tirumala_090615.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'Sacred Tirumala hills, Eastern Ghats valleys, pristine beaches, and Buddhist heritage at Amaravati.'
+  },
+  {
+    code: 'MH',
+    name: 'Maharashtra',
+    nameTa: 'மகாராஷ்டிரா',
+    nameHi: 'महाराष्ट्र',
+    districtCount: 36,
+    highlight: 'Ajanta & Western Ghats',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Mumbai_03-2016_30_Gateway_of_India.jpg/1280px-Mumbai_03-2016_30_Gateway_of_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'Ancient rock-cut caves of Ajanta & Ellora, Sahyadri forts, and vibrant metropolis Mumbai.'
+  },
+  {
+    code: 'GA',
+    name: 'Goa',
+    nameTa: 'கோவா',
+    nameHi: 'गोवा',
+    districtCount: 3,
+    highlight: 'Beaches & Heritage',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Front_Elevation_of_Basilica_of_Bom_Jesus.jpg/1280px-Front_Elevation_of_Basilica_of_Bom_Jesus.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'Golden palm beaches, Portuguese colonial architecture, Dudhsagar falls, and spice farms.'
+  },
+  {
+    code: 'RJ',
+    name: 'Rajasthan',
+    nameTa: 'ராஜஸ்தான்',
+    nameHi: 'राजस्थान',
+    districtCount: 41,
+    highlight: 'Royal Forts & Palaces',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg/1280px-East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'Thar desert dunes, hilltop Rajput fortresses, vibrant royal palaces of Jaipur and Udaipur.'
+  },
+  {
+    code: 'TG',
+    name: 'Telangana',
+    nameTa: 'தெலுங்கானா',
+    nameHi: 'तेलंगाना',
+    districtCount: 33,
+    highlight: 'Charminar & Golconda',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Charminar_Hyderabad_1.jpg/1280px-Charminar_Hyderabad_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'Historic Nizami architecture, Ramappa Temple UNESCO site, and Kakatiya stone arches.'
+  },
+  {
+    code: 'UK',
+    name: 'Uttarakhand',
+    nameTa: 'உத்தராகண்ட்',
+    nameHi: 'उत्तराखंड',
+    districtCount: 13,
+    highlight: 'Char Dham & Rishikesh',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Trayambakeshwar_Temple_VK.jpg/1280px-Trayambakeshwar_Temple_VK.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'Land of Gods (Devbhoomi) — Ganges river headwaters, Corbett Tiger Reserve, and Himalayan trails.'
+  },
+  {
+    code: 'WB',
+    name: 'West Bengal',
+    nameTa: 'மேற்கு வங்காளம்',
+    nameHi: 'पश्चिम बंगाल',
+    districtCount: 23,
+    highlight: 'Darjeeling & Sundarbans',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Victoria_Memorial_situated_in_Kolkata.jpg/1280px-Victoria_Memorial_situated_in_Kolkata.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'Himalayan tea gardens overlooking Kanchenjunga, colonial Kolkata, and Sundarbans delta.'
+  },
+  {
+    code: 'GJ',
+    name: 'Gujarat',
+    nameTa: 'குஜராத்',
+    nameHi: 'गुजरात',
+    districtCount: 34,
+    highlight: 'Rann of Kutch & Gir Lions',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Statue_of_Unity.jpg/1280px-Statue_of_Unity.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'White salt desert of Kutch, Asiatic lions of Gir, and ancient stepwells of Patan.'
+  },
+  {
+    code: 'MP',
+    name: 'Madhya Pradesh',
+    nameTa: 'மத்தியப் பிரதேசம்',
+    nameHi: 'मध्य प्रदेश',
+    districtCount: 55,
+    highlight: 'Khajuraho & Tiger Reserves',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/1_Khajuraho.jpg/1280px-1_Khajuraho.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'Heart of Incredible India — Sanchi stupa, Kanha tiger forests, and Khajuraho temples.'
+  },
+  {
+    code: 'UP',
+    name: 'Uttar Pradesh',
+    nameTa: 'உத்தரப் பிரதேசம்',
+    nameHi: 'उत्तर प्रदेश',
+    districtCount: 75,
+    highlight: 'Varanasi Ghats & Taj Mahal',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'Spiritual cradle of Hinduism and Buddhism on the sacred banks of the holy Ganges.'
+  },
+  {
+    code: 'AN',
+    name: 'Andaman & Nicobar Islands',
+    nameTa: 'அந்தமான் நிக்கோபார்',
+    nameHi: 'अंडमान और निकोबार',
+    districtCount: 3,
+    highlight: 'Radhanagar Beach & Coral Reefs',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Radha_Nagar_beach%2C_Havelock_Island%2C_Andamn%2C_India-_Sun_set_view.jpg/1280px-Radha_Nagar_beach%2C_Havelock_Island%2C_Andamn%2C_India-_Sun_set_view.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'ut',
+    description: 'Turquoise ocean waters, pristine white sandy shorelines, and scuba diving coral reefs.'
+  },
+  {
+    code: 'JK',
+    name: 'Jammu & Kashmir',
+    nameTa: 'ஜம்மு & காஷ்மீர்',
+    nameHi: 'जम्मू और कश्मीर',
+    districtCount: 20,
+    highlight: 'Dal Lake & Gulmarg',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Dal_Lake_Hazratbal_Srinagar.jpg/1280px-Dal_Lake_Hazratbal_Srinagar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'ut',
+    description: 'Paradise on Earth — traditional Shikara houseboats on Dal Lake and snow slopes of Gulmarg.'
+  },
+  {
+    code: 'LA',
+    name: 'Ladakh',
+    nameTa: 'லடாக்',
+    nameHi: 'लद्दाख',
+    districtCount: 2,
+    highlight: 'Pangong Tso & Khardung La',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/ISS054-E-7809_-_View_of_Earth_%28cropped%29.jpg/1280px-ISS054-E-7809_-_View_of_Earth_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'ut',
+    description: 'High-altitude desert mountains, dramatic cobalt blue glacial lakes, and ancient Tibetan gompas.'
+  },
+  {
+    code: 'DL',
+    name: 'Delhi',
+    nameTa: 'தில்லி',
+    nameHi: 'दिल्ली',
+    districtCount: 13,
+    highlight: 'Red Fort & India Gate',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/India_Gate_front.jpg/1280px-India_Gate_front.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'ut',
+    description: 'Historic Mughal capital fused with modern vibrant corridors, gardens, and culinary lanes.'
+  },
+  {
+    code: 'OD',
+    name: 'Odisha',
+    nameTa: 'ஒடிசா',
+    nameHi: 'ओडिशा',
+    districtCount: 30,
+    highlight: 'Konark Sun Temple & Puri',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Konarka_Temple.jpg/1280px-Konarka_Temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'Ancient Kalinga architecture, sacred Jagannath Puri temple, and Chilika migratory bird lagoon.'
+  },
+  {
+    code: 'AS',
+    name: 'Assam',
+    nameTa: 'அசாம்',
+    nameHi: 'असम',
+    districtCount: 35,
+    highlight: 'Kaziranga One-Horned Rhinos',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Beauty_of_Kaziranga_National_Park.jpg/1280px-Beauty_of_Kaziranga_National_Park.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'Brahmaputra river valleys, world-renowned tea gardens, and Kaziranga rhinoceros habitat.'
+  },
+  {
+    code: 'PB',
+    name: 'Punjab',
+    nameTa: 'பஞ்சாப்',
+    nameHi: 'पंजाब',
+    districtCount: 23,
+    highlight: 'Golden Temple Amritsar',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/The_Golden_Temple_of_Amrithsar_7.jpg/1280px-The_Golden_Temple_of_Amrithsar_7.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'Sacred Golden Temple at Amritsar, vibrant agrarian heritage, and rich culinary traditions.'
+  },
+  {
+    code: 'HR',
+    name: 'Haryana',
+    nameTa: 'ஹரியானா',
+    nameHi: 'हरियाणा',
+    districtCount: 22,
+    highlight: 'Kurukshetra & Sultanpur Bird Sanctuary',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Holy_pic_kkr.jpg/1280px-Holy_pic_kkr.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'Historic battlegrounds of Mahabharata, modern millennium city Gurugram, and bird sanctuaries.'
+  },
+  {
+    code: 'BR',
+    name: 'Bihar',
+    nameTa: 'பீகார்',
+    nameHi: 'बिहार',
+    districtCount: 38,
+    highlight: 'Bodh Gaya & Nalanda University',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Mahabodhitemple.jpg/1280px-Mahabodhitemple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'Enlightenment site of Lord Buddha at Mahabodhi Temple and ruins of ancient Nalanda University.'
+  },
+  {
+    code: 'JH',
+    name: 'Jharkhand',
+    nameTa: 'ஜார்க்கண்ட்',
+    nameHi: 'झारखंड',
+    districtCount: 24,
+    highlight: 'Betla National Park & Waterfalls',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Hundru_Falls%2C_Jharkhand%2C_India_4.jpg/1280px-Hundru_Falls%2C_Jharkhand%2C_India_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'Land of forests, cascading Hundru and Dassam falls, and Chota Nagpur tribal culture.'
+  },
+  {
+    code: 'CG',
+    name: 'Chhattisgarh',
+    nameTa: 'சத்தீஸ்கர்',
+    nameHi: 'छत्तीसगढ़',
+    districtCount: 33,
+    highlight: 'Chitrakote Niagara Falls',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Chitrakot_waterfalls.JPG/1280px-Chitrakot_waterfalls.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'Broad horseshoe Chitrakote waterfalls, Bastar tribal crafts, and dense sal forests.'
+  },
+  {
+    code: 'SK',
+    name: 'Sikkim',
+    nameTa: 'சிக்கிம்',
+    nameHi: 'सिक्किम',
+    districtCount: 6,
+    highlight: 'Kangchenjunga & Tsomgo Lake',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Rumtek_Monastery_alias_Dharma_Chakra_Centre_near_Gangtok%2C_East_Sikkim_09.jpg/1280px-Rumtek_Monastery_alias_Dharma_Chakra_Centre_near_Gangtok%2C_East_Sikkim_09.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'Himalayan wonderland with alpine lakes, Rumtek monastery, and Mt. Kangchenjunga vistas.'
+  },
+  {
+    code: 'ML',
+    name: 'Meghalaya',
+    nameTa: 'மேகாலயா',
+    nameHi: 'मेघालय',
+    districtCount: 12,
+    highlight: 'Living Root Bridges & Cherrapunji',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Living_root_bridges%2C_Nongriat_village%2C_Meghalaya2.jpg/1280px-Living_root_bridges%2C_Nongriat_village%2C_Meghalaya2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'Abode of clouds — bio-engineered living root bridges, crystalline Umngot river, and waterfalls.'
+  },
+  {
+    code: 'AR',
+    name: 'Arunachal Pradesh',
+    nameTa: 'அருணாச்சலப் பிரதேசம்',
+    nameHi: 'अरुणाचल प्रदेश',
+    districtCount: 26,
+    highlight: 'Tawang Monastery & Sela Pass',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/92/TawangMonastery.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled',
+    type: 'state',
+    description: 'Land of dawn-lit mountains, snowbound Sela pass at 13,700ft, and majestic Tawang gompa.'
+  },
+  {
+    code: 'MN',
+    name: 'Manipur',
+    nameTa: 'மணிப்பூர்',
+    nameHi: 'मणिपुर',
+    districtCount: 16,
+    highlight: 'Loktak Floating Phumdis Lake',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/The_Loktak_Lake.jpg/1280px-The_Loktak_Lake.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'World\'s only floating national park on Loktak Lake, home to the endangered Sangai deer.'
+  },
+  {
+    code: 'MZ',
+    name: 'Mizoram',
+    nameTa: 'மிசோரம்',
+    nameHi: 'मिज़ोरम',
+    districtCount: 11,
+    highlight: 'Blue Mountain & Reiek Tlang',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Vantawng_Falls_in_1990s.jpg/1280px-Vantawng_Falls_in_1990s.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'Emerald green rolling hills, bamboo forests, vibrant chapchar kut cultural heritage.'
+  },
+  {
+    code: 'NL',
+    name: 'Nagaland',
+    nameTa: 'நாகாலாந்து',
+    nameHi: 'नागालैंड',
+    districtCount: 16,
+    highlight: 'Hornbill Festival & Dzukou Valley',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_%28edit%29.jpg/1280px-Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_%28edit%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'Vibrant tribal traditions, Hornbill cultural festival, and dramatic Dzukou valley lily trails.'
+  },
+  {
+    code: 'TR',
+    name: 'Tripura',
+    nameTa: 'திரிபுரா',
+    nameHi: 'त्रिपुरा',
+    districtCount: 8,
+    highlight: 'Ujjayanta & Neermahal Water Palace',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Neer_Mahal%2C_the_water_palace_of_Tripura_02.jpg/1280px-Neer_Mahal%2C_the_water_palace_of_Tripura_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'state',
+    description: 'Neermahal floating palace amidst Rudrasagar lake and historic royal palaces in Agartala.'
+  },
+  {
+    code: 'CH',
+    name: 'Chandigarh',
+    nameTa: 'சண்டிகர்',
+    nameHi: 'चंडीगढ़',
+    districtCount: 1,
+    highlight: 'Rock Garden & Sukhna Lake',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Chandigarh_Rock_Garden_4.jpg/1280px-Chandigarh_Rock_Garden_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'ut',
+    description: 'India\'s first planned city designed by Le Corbusier, famous for Nek Chand Rock Garden.'
+  },
+  {
+    code: 'DN',
+    name: 'Dadra & Nagar Haveli and Daman & Diu',
+    nameTa: 'தாத்ரா மற்றும் நகர் ஹவேலி',
+    nameHi: 'दादरा और नगर हवेली',
+    districtCount: 3,
+    highlight: 'Diu Fort & Nagoa Beach',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/17/Diu%2CGujarat%2CIndia_%2837%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled',
+    type: 'ut',
+    description: 'Portuguese fortresses overlooking the Arabian sea and tranquil palm-fringed coastlines.'
+  },
+  {
+    code: 'LD',
+    name: 'Lakshadweep',
+    nameTa: 'லட்சத்தீவு',
+    nameHi: 'लक्षद्वीप',
+    districtCount: 1,
+    highlight: 'Agatti & Bangaram Atolls',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/72/A_beach_side_resort_at_Kadmat_Island%2C_Lakshadweep.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled',
+    type: 'ut',
+    description: 'Untouched archipelago of 36 coral islands with crystal clear lagoons and reef snorkeling.'
+  },
+  {
+    code: 'PY',
+    name: 'Puducherry',
+    nameTa: 'புதுச்சேரி',
+    nameHi: 'पुडुचेरी',
+    districtCount: 4,
+    highlight: 'French Quarter & Auroville',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Pondicherry-Rock_beach_aerial_view.jpg/1280px-Pondicherry-Rock_beach_aerial_view.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    type: 'ut',
+    description: 'Colonial French heritage promenades, experimental township Auroville, and tranquil beaches.'
+  }
+];
+
+
+const DISTRICTS_DATA = (typeof ALL_CANONICAL_DISTRICTS !== 'undefined') ? ALL_CANONICAL_DISTRICTS : (typeof window !== 'undefined' && window.ALL_CANONICAL_DISTRICTS ? window.ALL_CANONICAL_DISTRICTS : {});
+
+const _RAW_BEACHES = (typeof ALL_INDIA_BEACHES !== 'undefined' ? ALL_INDIA_BEACHES : (typeof window !== 'undefined' && window.ALL_INDIA_BEACHES ? window.ALL_INDIA_BEACHES : []));
+const _FILTERED_BEACHES = _RAW_BEACHES.filter(b => !b.id || !b.id.startsWith('beach-kl-'));
+
+const _ALL_RAW_SPOTS = [
+  ...(typeof TAMILNADU_SPOTS !== 'undefined' ? TAMILNADU_SPOTS : (typeof window !== 'undefined' && window.TAMILNADU_SPOTS ? window.TAMILNADU_SPOTS : [])),
+  ...(typeof KERALA_SPOTS !== 'undefined' ? KERALA_SPOTS : (typeof window !== 'undefined' && window.KERALA_SPOTS ? window.KERALA_SPOTS : [])),
+  ..._FILTERED_BEACHES,
+  ...(typeof ALL_INDIA_SPOTS !== 'undefined' ? ALL_INDIA_SPOTS : (typeof window !== 'undefined' && window.ALL_INDIA_SPOTS ? window.ALL_INDIA_SPOTS : []))
+];
+
+const _seenSpotIds = new Set();
+const ATTRACTIONS_DATA = [];
+for (const s of _ALL_RAW_SPOTS) {
+  if (s && s.id && !_seenSpotIds.has(s.id)) {
+    _seenSpotIds.add(s.id);
+    ATTRACTIONS_DATA.push(s);
+  }
+}
+
+// Legacy prototype spots (only added if not already covered)
+const _LEGACY_SPOTS = [
+  // ── Beaches ─────────────────────────────────────────────────────────────
+  {
+    id: 'spot-001',
+    name: 'Marina Beach',
+    nameTa: 'மெரினா கடற்கரை',
+    category: 'beach',
+    categoryLabel: 'Beach',
+    categoryIcon: '🏖️',
+    stateCode: 'TN',
+    stateName: 'Tamil Nadu',
+    districtId: 'tn-chennai',
+    districtName: 'Chennai',
+    rating: 4.7,
+    distance: '3.2 km',
+    imageUrl: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
+    description: "The world's second longest natural urban beach along the Bay of Bengal with historic statues, light house, and sunset promenade.",
+    location: { lat: 13.0499, lng: 80.2824 },
+    timings: '24 Hours Open',
+    fee: 'Free Entry',
+    bestSeason: 'Nov - Feb',
+    sensitive: false
+  },
+  {
+    id: 'spot-002',
+    name: 'Radhanagar Beach',
+    nameTa: 'ராதாநகர் கடற்கரை',
+    category: 'beach',
+    categoryLabel: 'Beach',
+    categoryIcon: '🏖️',
+    stateCode: 'AN',
+    stateName: 'Andaman & Nicobar',
+    districtId: 'an-south-andaman',
+    districtName: 'South Andaman',
+    rating: 4.9,
+    distance: '8.4 km',
+    imageUrl: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
+    description: "Crowned Asia's best beach by Time Magazine — calm turquoise waters, silky white sand, and lush tropical rainforest backdrop.",
+    location: { lat: 11.9841, lng: 92.9511 },
+    timings: '6:00 AM - 6:00 PM',
+    fee: 'Free Entry',
+    bestSeason: 'Oct - May',
+    sensitive: false
+  },
+
+  {
+    id: 'spot-004',
+    name: 'Rushikonda Beach',
+    nameHi: 'ऋषिकोंडा समुद्र तट',
+    category: 'beach',
+    categoryLabel: 'Beach',
+    categoryIcon: '🏖️',
+    stateCode: 'AP',
+    stateName: 'Andhra Pradesh',
+    districtId: 'ap-visakhapatnam',
+    districtName: 'Visakhapatnam',
+    rating: 4.5,
+    distance: '10.5 km',
+    imageUrl: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80',
+    description: 'Blue Flag certified golden beach nestled amidst Eastern Ghats hills, popular for windsurfing, water skiing and swimming.',
+    location: { lat: 17.7816, lng: 83.3850 },
+    timings: '6:00 AM - 7:00 PM',
+    fee: 'Free Entry',
+    bestSeason: 'Oct - Mar',
+    sensitive: false
+  },
+
+  // ── Forests ─────────────────────────────────────────────────────────────
+  {
+    id: 'spot-005',
+    name: 'Kudremukh National Park',
+    nameTa: 'குத்ரேமுக் தேசிய பூங்கா',
+    category: 'forest',
+    categoryLabel: 'Forest',
+    categoryIcon: '🌿',
+    stateCode: 'KA',
+    stateName: 'Karnataka',
+    districtId: 'ka-chikkamagaluru',
+    districtName: 'Chikkamagaluru',
+    rating: 4.6,
+    distance: '16.0 km',
+    imageUrl: 'https://images.unsplash.com/photo-1511497584788-87676104235f?auto=format&fit=crop&w=800&q=80',
+    description: "Lush tropical shola-grassland ecosystem in the Western Ghats, celebrated for trekking trails, mountain streams, and orchids.",
+    location: { lat: 13.1872, lng: 75.2396 },
+    timings: '6:00 AM - 5:00 PM',
+    fee: '₹200 Trekking Permit',
+    bestSeason: 'Oct - Feb',
+    sensitive: true
+  },
+
+
+  // ── Bird Sanctuaries ───────────────────────────────────────────────────
+  {
+    id: 'spot-007',
+    name: 'Vedanthangal Bird Sanctuary',
+    nameTa: 'வேடந்தாங்கல் பறவைகள் சரணாலயம்',
+    category: 'bird-sanctuary',
+    categoryLabel: 'Bird Sanctuary',
+    categoryIcon: '🦜',
+    stateCode: 'TN',
+    stateName: 'Tamil Nadu',
+    districtId: 'tn-chengalpattu',
+    districtName: 'Chengalpattu',
+    rating: 4.5,
+    distance: '18.2 km',
+    imageUrl: 'https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&w=800&q=80',
+    description: 'One of the oldest bird sanctuaries in India (1798), hosting over 40,000 migratory waterbirds including painted storks, herons, and pelicans.',
+    location: { lat: 12.5447, lng: 79.8550 },
+    timings: '6:00 AM - 6:00 PM',
+    fee: '₹25 Adult',
+    bestSeason: 'Nov - Feb',
+    sensitive: false
+  },
+  {
+    id: 'spot-008',
+    name: 'Ranganathittu Bird Sanctuary',
+    nameTa: 'ரங்கனதிட்டு பறவைகள் சரணாலயம்',
+    category: 'bird-sanctuary',
+    categoryLabel: 'Bird Sanctuary',
+    categoryIcon: '🦜',
+    stateCode: 'KA',
+    stateName: 'Karnataka',
+    districtId: 'ka-mandya',
+    districtName: 'Mandya',
+    rating: 4.7,
+    distance: '15.0 km',
+    imageUrl: 'https://images.unsplash.com/photo-1444464666168-49d633b86797?auto=format&fit=crop&w=800&q=80',
+    description: 'Picturesque islet sanctuary on river Kaveri with guided boating safaris offering close views of nesting storks, spoonbills, and marsh crocodiles.',
+    location: { lat: 12.4239, lng: 76.6547 },
+    timings: '8:30 AM - 5:30 PM',
+    fee: '₹70 Entry + ₹100 Boating',
+    bestSeason: 'Jun - Nov',
+    sensitive: false
+  },
+
+  // ── Wildlife & Sanctuaries ─────────────────────────────────────────────
+  {
+    id: 'spot-009',
+    name: 'Mudumalai Tiger Reserve',
+    nameTa: 'முதுமலை புலிகள் காப்பகம்',
+    category: 'wildlife',
+    categoryLabel: 'Wildlife',
+    categoryIcon: '🦁',
+    stateCode: 'TN',
+    stateName: 'Tamil Nadu',
+    districtId: 'tn-nilgiris',
+    districtName: 'Nilgiris',
+    rating: 4.6,
+    distance: '21.0 km',
+    imageUrl: 'https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?auto=format&fit=crop&w=800&q=80',
+    description: 'Part of Nilgiri Biosphere Reserve sheltering Bengal tigers, Indian leopards, wild elephants, and spotted deer with forest department safaris.',
+    location: { lat: 11.5623, lng: 76.5342 },
+    timings: '6:30 AM - 6:00 PM',
+    fee: '₹340 Safari',
+    bestSeason: 'Oct - May',
+    sensitive: true
+  },
+  {
+    id: 'spot-010',
+    name: 'Bandipur National Park',
+    category: 'wildlife',
+    categoryLabel: 'Wildlife',
+    categoryIcon: '🦁',
+    stateCode: 'KA',
+    stateName: 'Karnataka',
+    districtId: 'ka-chamarajanagara',
+    districtName: 'Chamarajanagara',
+    rating: 4.6,
+    distance: '20.0 km',
+    imageUrl: 'https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?auto=format&fit=crop&w=800&q=80',
+    description: 'Premier Tiger Reserve with one of the largest habitats of wild elephants in South Asia and guided open-top bus safaris.',
+    location: { lat: 11.6664, lng: 76.6291 },
+    timings: '6:00 AM - 9:00 AM, 3:00 PM - 6:00 PM',
+    fee: '₹350 Bus Safari',
+    bestSeason: 'Oct - Mar',
+    sensitive: true
+  },
+
+  // ── Heritage ───────────────────────────────────────────────────────────
+  {
+    id: 'spot-011',
+    name: 'Hampi Virupaksha Temple & Monuments',
+    nameTa: 'ஹம்பி நினைவுச்சின்னங்கள்',
+    category: 'heritage',
+    categoryLabel: 'Heritage',
+    categoryIcon: '🏛️',
+    stateCode: 'KA',
+    stateName: 'Karnataka',
+    districtId: 'ka-vijayanagara',
+    districtName: 'Vijayanagara (Hampi)',
+    rating: 4.9,
+    distance: '18.5 km',
+    imageUrl: 'https://images.unsplash.com/photo-1600100397608-f010f4438317?auto=format&fit=crop&w=800&q=80',
+    description: 'UNESCO World Heritage Site — spectacular ruins of the 14th-century Vijayanagara Empire, Stone Chariot, and Tungabhadra riverbanks.',
+    location: { lat: 15.3350, lng: 76.4620 },
+    timings: '6:00 AM - 6:00 PM',
+    fee: '₹40 (ASI Monuments)',
+    bestSeason: 'Oct - Feb',
+    sensitive: false
+  },
+
+  {
+    id: 'spot-013',
+    name: 'Ajanta Caves & Frescoes',
+    nameTa: 'அஜந்தா குகைகள்',
+    category: 'heritage',
+    categoryLabel: 'Heritage',
+    categoryIcon: '🏛️',
+    stateCode: 'MH',
+    stateName: 'Maharashtra',
+    districtId: 'mh-aurangabad',
+    districtName: 'Chhatrapati Sambhaji Nagar',
+    rating: 4.8,
+    distance: '22.0 km',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Ajanta_%2863%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled',
+    description: '30 rock-cut Buddhist cave monuments excavated from 2nd century BCE to 480 CE, famous worldwide for timeless wall murals and monolithic statues.',
+    location: { lat: 20.5519, lng: 75.7033 },
+    timings: '9:00 AM - 5:00 PM (Closed Mondays)',
+    fee: '₹40 Indian / ₹600 Foreign',
+    bestSeason: 'Nov - Mar',
+    sensitive: false
+  },
+  {
+    id: 'spot-014',
+    name: 'Shore Temple & Pancha Rathas',
+    nameTa: 'மாமல்லபுரம் கடற்கரைக் கோயில்',
+    category: 'heritage',
+    categoryLabel: 'Heritage',
+    categoryIcon: '🏛️',
+    stateCode: 'TN',
+    stateName: 'Tamil Nadu',
+    districtId: 'tn-chengalpattu',
+    districtName: 'Chengalpattu',
+    rating: 4.7,
+    distance: '11.0 km',
+    imageUrl: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80',
+    description: '7th-century UNESCO structural granite complex overlooking Bay of Bengal breakers, carved during the reign of Narasimhavarman II.',
+    location: { lat: 12.6163, lng: 80.1983 },
+    timings: '6:00 AM - 6:00 PM',
+    fee: '₹40 Entry',
+    bestSeason: 'Oct - Mar',
+    sensitive: false
+  },
+
+  // ── Museums ─────────────────────────────────────────────────────────────
+  {
+    id: 'spot-015',
+    name: 'Government Museum & Art Gallery',
+    nameTa: 'எழும்பூர் அரசு அருங்காட்சியகம்',
+    category: 'museum',
+    categoryLabel: 'Museum',
+    categoryIcon: '🖼️',
+    stateCode: 'TN',
+    stateName: 'Tamil Nadu',
+    districtId: 'tn-chennai',
+    districtName: 'Chennai',
+    rating: 4.5,
+    distance: '4.5 km',
+    imageUrl: 'https://images.unsplash.com/photo-1566127444979-b3d2b654e3d7?auto=format&fit=crop&w=800&q=80',
+    description: 'Established in 1851 at Egmore, India\'s second oldest museum housing world-famous Chola bronzes, Amaravati Buddhist sculptures, and Raja Ravi Varma paintings.',
+    location: { lat: 13.0694, lng: 80.2575 },
+    timings: '9:30 AM - 5:00 PM (Closed Fridays)',
+    fee: '₹20 Entry',
+    bestSeason: 'Year Round',
+    sensitive: false
+  },
+  {
+    id: 'spot-016',
+    name: 'Salar Jung Museum',
+    category: 'museum',
+    categoryLabel: 'Museum',
+    categoryIcon: '🖼️',
+    stateCode: 'TG',
+    stateName: 'Telangana',
+    districtId: 'tg-hyderabad',
+    districtName: 'Hyderabad',
+    rating: 4.6,
+    distance: '6.0 km',
+    imageUrl: 'https://images.unsplash.com/photo-1566127444979-b3d2b654e3d7?auto=format&fit=crop&w=800&q=80',
+    description: 'One of the three National Museums of India housing over 40,000 historic antiquities, the Veiled Rebecca statue, and legendary musical clock.',
+    location: { lat: 17.3713, lng: 78.4804 },
+    timings: '10:00 AM - 5:00 PM (Closed Fridays)',
+    fee: '₹50 Entry',
+    bestSeason: 'Year Round',
+    sensitive: false
+  },
+
+  // ── Hill Stations & Waterfalls ──────────────────────────────────────────
+  {
+    id: 'spot-017',
+    name: 'Ooty (Udhagamandalam)',
+    nameTa: 'உதகமண்டலம் (ஊட்டி)',
+    category: 'hill-station',
+    categoryLabel: 'Hill Station',
+    categoryIcon: '🏔️',
+    stateCode: 'TN',
+    stateName: 'Tamil Nadu',
+    districtId: 'tn-nilgiris',
+    districtName: 'Nilgiris',
+    rating: 4.8,
+    distance: '14.9 km',
+    imageUrl: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80',
+    description: 'Queen of Hill Stations nestled at 2,240m in Nilgiri hills with sweeping tea plantations, Doddabetta Peak, and UNESCO Toy Train.',
+    location: { lat: 11.4102, lng: 76.6950 },
+    timings: 'Open Daily',
+    fee: 'Botanical Garden ₹40',
+    bestSeason: 'Mar - Jun, Oct - Dec',
+    sensitive: false
+  },
+  {
+    id: 'spot-018',
+    name: 'Hogenakkal Falls',
+    nameTa: 'ஒகேனக்கல் அருவி',
+    category: 'waterfall',
+    categoryLabel: 'Waterfall',
+    categoryIcon: '💧',
+    stateCode: 'TN',
+    stateName: 'Tamil Nadu',
+    districtId: 'tn-dharmapuri',
+    districtName: 'Dharmapuri',
+    rating: 4.5,
+    distance: '18.0 km',
+    imageUrl: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
+    description: 'Often hailed as the Niagara of India, dramatic cascading waterfalls where river Kaveri cuts through carbonatite rocks, famous for round coracle boat rides.',
+    location: { lat: 12.1056, lng: 77.7897 },
+    timings: '8:00 AM - 5:30 PM',
+    fee: 'Coracle Ride ₹450-₹750',
+    bestSeason: 'Aug - Jan',
+    sensitive: false
+  },
+  {
+    id: 'spot-019',
+    name: 'Jog Falls (Gersoppa)',
+    category: 'waterfall',
+    categoryLabel: 'Waterfall',
+    categoryIcon: '💧',
+    stateCode: 'KA',
+    stateName: 'Karnataka',
+    districtId: 'ka-shimoga',
+    districtName: 'Shivamogga (Shimoga)',
+    rating: 4.7,
+    distance: '25.0 km',
+    imageUrl: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
+    description: 'Second-highest plunge waterfall in India dropping 253 meters in four majestic cascades: Raja, Rani, Roarer, and Rocket.',
+    location: { lat: 14.2256, lng: 74.7991 },
+    timings: '6:00 AM - 6:00 PM',
+    fee: '₹20 Entry',
+    bestSeason: 'Jul - Nov',
+    sensitive: false
+  },
+  {
+    id: 'spot-020',
+    name: 'Taj Mahal & Yamuna Riverfront',
+    category: 'heritage',
+    categoryLabel: 'Heritage',
+    categoryIcon: '🏛️',
+    stateCode: 'UP',
+    stateName: 'Uttar Pradesh',
+    districtId: 'up-agra',
+    districtName: 'Agra',
+    rating: 4.9,
+    distance: '32.0 km',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/1280px-Taj_Mahal_%28Edited%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    description: 'Immense ivory-white marble mausoleum on the south bank of the Yamuna river, a UNESCO World Heritage Site and wonder of the world.',
+    location: { lat: 27.1751, lng: 78.0421 },
+    timings: 'Sunrise to Sunset (Closed Fridays)',
+    fee: '₹50 Indian / ₹1100 Foreign',
+    bestSeason: 'Oct - Mar',
+    sensitive: false
+  },
+  {
+    id: 'spot-021',
+    name: 'Dudhsagar Cascading Falls',
+    category: 'waterfall',
+    categoryLabel: 'Waterfall',
+    categoryIcon: '💧',
+    stateCode: 'GA',
+    stateName: 'Goa',
+    districtId: 'ga-south-goa',
+    districtName: 'South Goa',
+    rating: 4.8,
+    distance: '28.0 km',
+    imageUrl: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80',
+    description: 'Tiered waterfall on the Mandovi river tumbling 310 meters through dense Western Ghats jungle, resembling a sea of milk.',
+    location: { lat: 15.3144, lng: 74.3143 },
+    timings: '9:00 AM - 5:30 PM (Jeep Safari)',
+    fee: '₹500 Jeep Safari',
+    bestSeason: 'Oct - May',
+    sensitive: true
+  },
+  {
+    id: 'spot-022',
+    name: 'Kaziranga National Park',
+    category: 'wildlife',
+    categoryLabel: 'Wildlife',
+    categoryIcon: '🦁',
+    stateCode: 'AS',
+    stateName: 'Assam',
+    districtId: 'as-golaghat',
+    districtName: 'Golaghat',
+    rating: 4.8,
+    distance: '35.0 km',
+    imageUrl: 'https://images.unsplash.com/photo-1622396481304-4ad73839b98e?auto=format&fit=crop&w=800&q=80',
+    description: 'UNESCO World Heritage Sanctuary hosting two-thirds of the world\'s great one-horned rhinoceroses in tall elephant grass meadows.',
+    location: { lat: 26.5775, lng: 93.1711 },
+    timings: '5:30 AM - 10:00 AM, 1:30 PM - 3:00 PM',
+    fee: '₹100 Entry + Safari',
+    bestSeason: 'Nov - Apr',
+    sensitive: true
+  },
+  {
+    id: 'spot-023',
+    name: 'Jim Corbett National Park',
+    category: 'forest',
+    categoryLabel: 'Forest',
+    categoryIcon: '🌿',
+    stateCode: 'UK',
+    stateName: 'Uttarakhand',
+    districtId: 'uk-nainital',
+    districtName: 'Nainital',
+    rating: 4.7,
+    distance: '40.0 km',
+    imageUrl: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
+    description: 'India\'s oldest national park established in 1936, protecting rich Sal and riverine belts inhabited by Bengal tigers and wild elephants.',
+    location: { lat: 29.5300, lng: 78.7747 },
+    timings: '6:00 AM - 9:30 AM, 2:30 PM - 6:00 PM',
+    fee: '₹200 Entry + Jeep Safari',
+    bestSeason: 'Nov - Jun',
+    sensitive: true
+  },
+  {
+    id: 'spot-024',
+    name: 'Keoladeo Ghana Bird Sanctuary',
+    category: 'bird-sanctuary',
+    categoryLabel: 'Bird Sanctuary',
+    categoryIcon: '🦜',
+    stateCode: 'RJ',
+    stateName: 'Rajasthan',
+    districtId: 'rj-bharatpur',
+    districtName: 'Bharatpur',
+    rating: 4.7,
+    distance: '24.0 km',
+    imageUrl: 'https://images.unsplash.com/photo-1444464666168-49d633b86797?auto=format&fit=crop&w=800&q=80',
+    description: 'Renowned wetland avifauna aviary hosting thousands of wintering migratory birds like Siberian cranes, pelicans, and storks.',
+    location: { lat: 27.1593, lng: 77.5232 },
+    timings: '6:00 AM - 6:00 PM',
+    fee: '₹50 Indian / ₹400 Foreign',
+    bestSeason: 'Oct - Feb',
+    sensitive: false
+  },
+  {
+    id: 'spot-025',
+    name: 'Manali & Solang Valley',
+    category: 'hill-station',
+    categoryLabel: 'Hill Station',
+    categoryIcon: '🏔️',
+    stateCode: 'HP',
+    stateName: 'Himachal Pradesh',
+    districtId: 'hp-kullu',
+    districtName: 'Kullu (Manali)',
+    rating: 4.8,
+    distance: '22.0 km',
+    imageUrl: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Solang_Valley_%2CManali%2C_Himachal_Pardes%2C_India.JPG/1280px-Solang_Valley_%2CManali%2C_Himachal_Pardes%2C_India.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail',
+    description: 'High-altitude Himalayan valley nestled along the Beas river, famous for snow slopes, paragliding, Hadimba temple, and pine forest trails.',
+    location: { lat: 32.2432, lng: 77.1892 },
+    timings: 'Open Daily',
+    fee: 'Free Entry',
+    bestSeason: 'Oct - Jun',
+    sensitive: false
+  },
+  {
+    id: 'spot-026',
+    name: 'Calangute Queen Beach',
+    category: 'beach',
+    categoryLabel: 'Beach',
+    categoryIcon: '🏖️',
+    stateCode: 'GA',
+    stateName: 'Goa',
+    districtId: 'ga-north-goa',
+    districtName: 'North Goa',
+    rating: 4.6,
+    distance: '16.0 km',
+    imageUrl: 'https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80',
+    description: 'The "Queen of Beaches" in North Goa, renowned for golden sand, water sports, beach shacks, and vibrant coastal sunset views.',
+    location: { lat: 15.5439, lng: 73.7553 },
+    timings: '24 Hours Open',
+    fee: 'Free Entry',
+    bestSeason: 'Nov - Feb',
+    sensitive: false
+  },
+  {
+    id: 'spot-027',
+    name: 'Victoria Memorial & Gallery',
+    category: 'museum',
+    categoryLabel: 'Museum',
+    categoryIcon: '🖼️',
+    stateCode: 'WB',
+    stateName: 'West Bengal',
+    districtId: 'wb-kolkata',
+    districtName: 'Kolkata',
+    rating: 4.7,
+    distance: '8.0 km',
+    imageUrl: 'https://images.unsplash.com/photo-1558431382-27e303142255?auto=format&fit=crop&w=800&q=80',
+    description: 'Magnificent white Makrana marble monument dedicated to Queen Victoria, surrounded by lush gardens and displaying historical Indian art.',
+    location: { lat: 22.5448, lng: 88.3426 },
+    timings: '10:00 AM - 5:00 PM (Closed Mondays)',
+    fee: '₹30 Indian / ₹500 Foreign',
+    bestSeason: 'Oct - Mar',
+    sensitive: false
+  }
+];
+
+for (const s of _LEGACY_SPOTS) {
+  if (s && s.id && !_seenSpotIds.has(s.id)) {
+    _seenSpotIds.add(s.id);
+    ATTRACTIONS_DATA.push(s);
+  }
+}
+
+const CATEGORIES = [
+  { id: 'all', label: 'All', nameTa: 'அனைத்தும்', nameHi: 'सभी', nameMl: 'എല്ലാം', nameTe: 'అన్నీ', nameKn: 'ಎಲ್ಲಾ', nameMr: 'सर्व', nameBn: 'সব', nameGu: 'બધા', icon: '✨', imageUrl: '' },
+  { id: 'beach', label: 'Beaches', nameTa: 'கடற்கரைகள்', nameHi: 'समुद्र तट', nameMl: 'ബീച്ചുകൾ', nameTe: 'బీచ్‌లు', nameKn: 'ಕಡಲತೀರಗಳು', nameMr: 'समुद्रकिनारे', nameBn: 'সৈকত', nameGu: 'બીચ', icon: '🏖️', imageUrl: 'images/categories/beach.jpg' },
+  { id: 'forest', label: 'Forests', nameTa: 'காடுகள்', nameHi: 'जंगल', nameMl: 'വനങ്ങള്‍', nameTe: 'అడవులు', nameKn: 'ಅರಣ್ಯಗಳು', nameMr: 'जंगले', nameBn: 'বনভূমি', nameGu: 'જંગલો', icon: '🌲', imageUrl: 'images/categories/forest.jpg' },
+  { id: 'bird-sanctuary', label: 'Bird Sanctuaries', nameTa: 'பறவைகள் சரணாலயம்', nameHi: 'पक्षी अभयारण्य', nameMl: 'പക്ഷി സങ്കേതങ്ങൾ', nameTe: 'పక్షుల అభయారణ్యాలు', nameKn: 'ಪಕ್ಷಿಧಾಮಗಳು', nameMr: 'पक्षी अभयारण्ये', nameBn: 'পাখি অভয়ারণ্য', nameGu: 'પક્ષી અભયારણ્ય', icon: '🦅', imageUrl: 'images/categories/bird_sanctuary.jpg' },
+  { id: 'wildlife', label: 'Wildlife', nameTa: 'வனவிலங்கு', nameHi: 'वन्यजीव', nameMl: 'വന്യജീവികൾ', nameTe: 'వన్యప్రాణులు', nameKn: 'ವನ್ಯಜೀವಿ', nameMr: 'वन्यजीव', nameBn: 'বন্যপ্রাণী', nameGu: 'વન્યજીવન', icon: '🦁', imageUrl: 'images/categories/wildlife.jpg' },
+  { id: 'heritage', label: 'Heritage', nameTa: 'பாரம்பரியம்', nameHi: 'विरासत', nameMl: 'പൈതൃകം', nameTe: 'వారసత్వం', nameKn: 'ಪರಂಪರೆ', nameMr: 'वारसा', nameBn: 'ঐতিহ্য', nameGu: 'વારસો', icon: '🏛️', imageUrl: 'images/categories/heritage.jpg' },
+  { id: 'museum', label: 'Museums', nameTa: 'அருங்காட்சியகம்', nameHi: 'संग्रहालय', nameMl: 'മ്യൂസിയങ്ങൾ', nameTe: 'మ్యూజియంలు', nameKn: 'ವಸ್ತುಸಂಗ್ರಹಾಲಯಗಳು', nameMr: 'संग्रहालये', nameBn: 'জাদুঘর', nameGu: 'સંગ્રહાલયો', icon: '🖼️', imageUrl: 'images/categories/museum.jpg' },
+  { id: 'waterfall', label: 'Waterfalls', nameTa: 'நீர்வீழ்ச்சிகள்', nameHi: 'झरने', nameMl: 'വെള്ളച്ചാട്ടങ്ങൾ', nameTe: 'జలపాతాలు', nameKn: 'ಜಲಪಾತಗಳು', nameMr: 'धबधबे', nameBn: 'জলপ্রপাত', nameGu: 'ધોધ', icon: '🌊', imageUrl: 'images/categories/waterfall.jpg' },
+  { id: 'hill-station', label: 'Hill Stations', nameTa: 'மலை வாசஸ்தலங்கள்', nameHi: 'हिल स्टेशन', nameMl: 'ഹിൽ സ്റ്റേഷനുകൾ', nameTe: 'హిల్ స్టేషన్లు', nameKn: 'ಹಿಲ್ ಸ್ಟೇಷನ್‌ಗಳು', nameMr: 'हिल स्टेशन्स', nameBn: 'হিল স্টেশন', nameGu: 'હિલ સ્ટેશન', icon: '🏔️', imageUrl: 'images/categories/hill_station.jpg' },
+  { id: 'lake', label: 'Lakes & Dams', nameTa: 'ஏரிகள்', nameHi: 'झीलें', nameMl: 'തടാകങ്ങളും അണക്കെട്ടുകളും', nameTe: 'సరస్సులు & ఆనకట్టలు', nameKn: 'ಸರೋವರಗಳು ಮತ್ತು ಅಣೆಕಟ್ಟುಗಳು', nameMr: 'तलाव आणि धरणे', nameBn: 'হ্রদ ও বাঁধ', nameGu: 'તળાવો અને ડેમ', icon: '⛵', imageUrl: 'images/categories/lake.jpg' }
+];
+
+// Aliases for compatibility
+const FEATURED_SPOTS = ATTRACTIONS_DATA;
+
+// Expose on global window object
+if (typeof window !== 'undefined') {
+  window.STATES_DATA = STATES_DATA;
+  window.DISTRICTS_DATA = DISTRICTS_DATA;
+  window.ATTRACTIONS_DATA = ATTRACTIONS_DATA;
+  window.FEATURED_SPOTS = FEATURED_SPOTS;
+  window.CATEGORIES = CATEGORIES;
+}
+
+if (typeof module !== 'undefined') {
+  module.exports = {
+    STATES_DATA,
+    DISTRICTS_DATA,
+    ATTRACTIONS_DATA,
+    FEATURED_SPOTS,
+    CATEGORIES
+  };
+}

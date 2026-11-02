@@ -1,0 +1,785 @@
+type,state_code,state_name,district_code,district_name,source,source_file,fetched_at
+state,AP,Andhra Pradesh,IN-AP-01,Alluri Sitharama Raju,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-02,Anakapalli,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-03,Ananthapuramu,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-04,Annamayya,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-05,Bapatla,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-06,Chittoor,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-07,Dr. B.R. Ambedkar Konaseema,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-08,East Godavari,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-09,Eluru,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-10,Guntur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-11,Kakinada,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-12,Krishna,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-13,Kurnool,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-14,Markapuram,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-15,Nandyal,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-16,NTR,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-17,Palnadu,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-18,Parvathipuram Manyam,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-19,Polavaram,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-20,Prakasam,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-21,Sri Potti Sriramulu Nellore,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-22,Sri Sathya Sai,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-23,Srikakulam,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-24,Tirupati,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-25,Visakhapatnam,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-26,Vizianagaram,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-27,West Godavari,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AP,Andhra Pradesh,IN-AP-28,YSR Kadapa,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-01,Anjaw,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-02,Bichom,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-03,Changlang,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-04,Dibang Valley,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-05,East Kameng,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-06,East Siang,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-07,Kamle,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-08,Keyi Panyor,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-09,Kra Daadi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-10,Kurung Kumey,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-11,Lepa Rada,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-12,Lohit,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-13,Longding,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-14,Lower Dibang Valley,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-15,Lower Siang,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-16,Lower Subansiri,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-17,Namsai,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-18,Pakke Kessang,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-19,Papum Pare,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-20,Shi Yomi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-21,Siang,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-22,Tawang,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-23,Tirap,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-24,Upper Siang,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-25,Upper Subansiri,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-26,West Kameng,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AR,Arunachal Pradesh,IN-AR-27,West Siang,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-01,Bajali,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-02,Baksa,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-03,Barpeta,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-04,Biswanath,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-05,Bongaigaon,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-06,Cachar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-07,Charaideo,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-08,Chirang,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-09,Darrang,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-10,Dhemaji,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-11,Dhubri,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-12,Dibrugarh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-13,Dima Hasao,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-14,Goalpara,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-15,Golaghat,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-16,Hailakandi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-17,Hojai,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-18,Jorhat,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-19,Kamrup,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-20,Kamrup Metropolitan,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-21,Karbi Anglong,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-22,Kokrajhar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-23,Lakhimpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-24,Majuli,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-25,Morigaon,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-26,Nagaon,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-27,Nalbari,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-28,Sivasagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-29,Sonitpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-30,South Salmara-Mankachar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-31,Sribhumi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-32,Tamulpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-33,Tinsukia,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-34,Udalguri,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,AS,Assam,IN-AS-35,West Karbi Anglong,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-01,Araria,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-02,Arwal,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-03,Aurangabad,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-04,Banka,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-05,Begusarai,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-06,Bhagalpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-07,Bhojpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-08,Buxar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-09,Darbhanga,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-10,East Champaran,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-11,Gaya,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-12,Gopalganj,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-13,Jamui,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-14,Jehanabad,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-15,Kaimur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-16,Katihar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-17,Khagaria,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-18,Kishanganj,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-19,Lakhisarai,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-20,Madhepura,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-21,Madhubani,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-22,Munger,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-23,Muzaffarpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-24,Nalanda,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-25,Nawada,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-26,Patna,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-27,Purnia,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-28,Rohtas,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-29,Saharsa,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-30,Samastipur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-31,Saran,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-32,Sheikhpura,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-33,Sheohar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-34,Sitamarhi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-35,Siwan,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-36,Supaul,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-37,Vaishali,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,BR,Bihar,IN-BR-38,West Champaran,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-01,Balod,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-02,Baloda Bazar-Bhatapara,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-03,Balrampur-Ramanujganj,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-04,Bastar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-05,Bemetara,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-06,Bijapur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-07,Bilaspur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-08,Dantewada,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-09,Dhamtari,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-10,Durg,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-11,Gariyaband,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-12,Gaurela-Pendra-Marwahi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-13,Janjgir-Champa,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-14,Jashpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-15,Kabeerdham,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-16,Kanker,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-17,Khairagarh-Chhuikhadan-Gandai,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-18,Kondagaon,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-19,Korba,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-20,Korea,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-21,Mahasamund,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-22,Manendragarh-Chirmiri-Bharatpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-23,Mohla-Manpur-Ambagarh Chowki,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-24,Mungeli,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-25,Narayanpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-26,Raigarh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-27,Raipur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-28,Rajnandgaon,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-29,Sarangarh-Bilaigarh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-30,Sakti,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-31,Sukma,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-32,Surajpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,CG,Chhattisgarh,IN-CG-33,Surguja,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GA,Goa,IN-GA-01,North Goa,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GA,Goa,IN-GA-02,South Goa,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GA,Goa,IN-GA-03,Kushavati,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-01,Ahmedabad,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-02,Amreli,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-03,Anand,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-04,Aravalli,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-05,Banaskantha,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-06,Bharuch,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-07,Bhavnagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-08,Botad,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-09,Chhota Udepur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-10,Dahod,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-11,Dang,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-12,Devbhumi Dwarka,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-13,Gandhinagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-14,Gir Somnath,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-15,Jamnagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-16,Junagadh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-17,Kachchh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-18,Kheda,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-19,Mahisagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-20,Mehsana,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-21,Morbi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-22,Narmada,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-23,Navsari,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-24,Panchmahal,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-25,Patan,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-26,Porbandar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-27,Rajkot,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-28,Sabarkantha,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-29,Surat,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-30,Surendranagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-31,Tapi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-32,Vadodara,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-33,Valsad,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,GJ,Gujarat,IN-GJ-34,Vav-Tharad,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HR,Haryana,IN-HR-01,Ambala,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HR,Haryana,IN-HR-02,Bhiwani,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HR,Haryana,IN-HR-03,Charkhi Dadri,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HR,Haryana,IN-HR-04,Faridabad,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HR,Haryana,IN-HR-05,Fatehabad,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HR,Haryana,IN-HR-06,Gurugram,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HR,Haryana,IN-HR-07,Hansi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HR,Haryana,IN-HR-08,Hisar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HR,Haryana,IN-HR-09,Jhajjar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HR,Haryana,IN-HR-10,Jind,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HR,Haryana,IN-HR-11,Kaithal,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HR,Haryana,IN-HR-12,Karnal,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HR,Haryana,IN-HR-13,Kurukshetra,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HR,Haryana,IN-HR-14,Mahendragarh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HR,Haryana,IN-HR-15,Nuh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HR,Haryana,IN-HR-16,Palwal,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HR,Haryana,IN-HR-17,Panchkula,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HR,Haryana,IN-HR-18,Panipat,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HR,Haryana,IN-HR-19,Rewari,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HR,Haryana,IN-HR-20,Rohtak,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HR,Haryana,IN-HR-21,Sirsa,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HR,Haryana,IN-HR-22,Sonipat,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HR,Haryana,IN-HR-23,Yamunanagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HP,Himachal Pradesh,IN-HP-01,Bilaspur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HP,Himachal Pradesh,IN-HP-02,Chamba,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HP,Himachal Pradesh,IN-HP-03,Hamirpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HP,Himachal Pradesh,IN-HP-04,Kangra,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HP,Himachal Pradesh,IN-HP-05,Kinnaur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HP,Himachal Pradesh,IN-HP-06,Kullu,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HP,Himachal Pradesh,IN-HP-07,Lahaul and Spiti,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HP,Himachal Pradesh,IN-HP-08,Mandi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HP,Himachal Pradesh,IN-HP-09,Shimla,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HP,Himachal Pradesh,IN-HP-10,Sirmaur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HP,Himachal Pradesh,IN-HP-11,Solan,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,HP,Himachal Pradesh,IN-HP-12,Una,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,JH,Jharkhand,IN-JH-01,Bokaro,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,JH,Jharkhand,IN-JH-02,Chatra,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,JH,Jharkhand,IN-JH-03,Deoghar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,JH,Jharkhand,IN-JH-04,Dhanbad,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,JH,Jharkhand,IN-JH-05,Dumka,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,JH,Jharkhand,IN-JH-06,East Singhbhum,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,JH,Jharkhand,IN-JH-07,Garhwa,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,JH,Jharkhand,IN-JH-08,Giridih,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,JH,Jharkhand,IN-JH-09,Godda,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,JH,Jharkhand,IN-JH-10,Gumla,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,JH,Jharkhand,IN-JH-11,Hazaribagh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,JH,Jharkhand,IN-JH-12,Jamtara,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,JH,Jharkhand,IN-JH-13,Khunti,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,JH,Jharkhand,IN-JH-14,Koderma,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,JH,Jharkhand,IN-JH-15,Latehar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,JH,Jharkhand,IN-JH-16,Lohardaga,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,JH,Jharkhand,IN-JH-17,Pakur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,JH,Jharkhand,IN-JH-18,Palamu,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,JH,Jharkhand,IN-JH-19,Ramgarh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,JH,Jharkhand,IN-JH-20,Ranchi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,JH,Jharkhand,IN-JH-21,Sahibganj,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,JH,Jharkhand,IN-JH-22,Seraikela-Kharsawan,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,JH,Jharkhand,IN-JH-23,Simdega,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,JH,Jharkhand,IN-JH-24,West Singhbhum,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-01,Bagalkote,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-02,Ballari,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-03,Belagavi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-04,Bengaluru Rural,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-05,Bengaluru South,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-06,Bengaluru Urban,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-07,Bidar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-08,Chamarajanagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-09,Chikkaballapura,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-10,Chikkamagaluru,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-11,Chitradurga,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-12,Dakshina Kannada,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-13,Davanagere,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-14,Dharwad,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-15,Gadag,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-16,Hassan,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-17,Haveri,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-18,Kalaburagi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-19,Kodagu,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-20,Kolar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-21,Koppal,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-22,Mandya,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-23,Mysuru,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-24,Raichur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-25,Shivamogga,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-26,Tumakuru,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-27,Udupi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-28,Uttara Kannada,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-29,Vijayapura,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-30,Vijayanagara,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KA,Karnataka,IN-KA-31,Yadgir,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KL,Kerala,IN-KL-01,Alappuzha,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KL,Kerala,IN-KL-02,Ernakulam,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KL,Kerala,IN-KL-03,Idukki,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KL,Kerala,IN-KL-04,Kannur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KL,Kerala,IN-KL-05,Kasaragod,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KL,Kerala,IN-KL-06,Kollam,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KL,Kerala,IN-KL-07,Kottayam,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KL,Kerala,IN-KL-08,Kozhikode,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KL,Kerala,IN-KL-09,Malappuram,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KL,Kerala,IN-KL-10,Palakkad,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KL,Kerala,IN-KL-11,Pathanamthitta,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KL,Kerala,IN-KL-12,Thiruvananthapuram,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KL,Kerala,IN-KL-13,Thrissur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,KL,Kerala,IN-KL-14,Wayanad,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-01,Agar-Malwa,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-02,Alirajpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-03,Anuppur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-04,Ashoknagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-05,Balaghat,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-06,Barwani,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-07,Betul,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-08,Bhind,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-09,Bhopal,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-10,Burhanpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-11,Chhatarpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-12,Chhindwara,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-13,Damoh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-14,Datia,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-15,Dewas,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-16,Dhar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-17,Dindori,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-18,Guna,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-19,Gwalior,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-20,Harda,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-21,Indore,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-22,Jabalpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-23,Jhabua,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-24,Katni,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-25,Khandwa,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-26,Khargone,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-27,Maihar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-28,Mandla,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-29,Mandsaur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-30,Mauganj,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-31,Morena,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-32,Narmadapuram,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-33,Narsinghpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-34,Neemuch,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-35,Niwari,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-36,Pandhurna,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-37,Panna,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-38,Raisen,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-39,Rajgarh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-40,Ratlam,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-41,Rewa,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-42,Sagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-43,Satna,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-44,Sehore,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-45,Seoni,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-46,Shahdol,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-47,Shajapur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-48,Sheopur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-49,Shivpuri,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-50,Sidhi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-51,Singrauli,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-52,Tikamgarh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-53,Ujjain,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-54,Umaria,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MP,Madhya Pradesh,IN-MP-55,Vidisha,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-01,Ahilyanagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-02,Akola,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-03,Amravati,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-04,Beed,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-05,Bhandara,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-06,Buldhana,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-07,Chandrapur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-08,Chhatrapati Sambhajinagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-09,Dharashiv,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-10,Dhule,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-11,Gadchiroli,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-12,Gondia,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-13,Hingoli,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-14,Jalgaon,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-15,Jalna,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-16,Kolhapur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-17,Latur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-18,Mumbai,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-19,Mumbai Suburban,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-20,Nagpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-21,Nanded,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-22,Nandurbar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-23,Nashik,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-24,Palghar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-25,Parbhani,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-26,Pune,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-27,Raigad,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-28,Ratnagiri,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-29,Sangli,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-30,Satara,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-31,Sindhudurg,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-32,Solapur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-33,Thane,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-34,Wardha,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-35,Washim,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MH,Maharashtra,IN-MH-36,Yavatmal,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MN,Manipur,IN-MN-01,Bishnupur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MN,Manipur,IN-MN-02,Chandel,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MN,Manipur,IN-MN-03,Churachandpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MN,Manipur,IN-MN-04,Imphal East,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MN,Manipur,IN-MN-05,Imphal West,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MN,Manipur,IN-MN-06,Jiribam,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MN,Manipur,IN-MN-07,Kakching,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MN,Manipur,IN-MN-08,Kamjong,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MN,Manipur,IN-MN-09,Kangpokpi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MN,Manipur,IN-MN-10,Noney,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MN,Manipur,IN-MN-11,Pherzawl,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MN,Manipur,IN-MN-12,Senapati,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MN,Manipur,IN-MN-13,Tamenglong,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MN,Manipur,IN-MN-14,Tengnoupal,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MN,Manipur,IN-MN-15,Thoubal,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MN,Manipur,IN-MN-16,Ukhrul,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,ML,Meghalaya,IN-ML-01,East Garo Hills,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,ML,Meghalaya,IN-ML-02,East Jaintia Hills,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,ML,Meghalaya,IN-ML-03,East Khasi Hills,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,ML,Meghalaya,IN-ML-04,Eastern West Khasi Hills,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,ML,Meghalaya,IN-ML-05,North Garo Hills,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,ML,Meghalaya,IN-ML-06,Ri Bhoi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,ML,Meghalaya,IN-ML-07,South Garo Hills,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,ML,Meghalaya,IN-ML-08,South West Garo Hills,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,ML,Meghalaya,IN-ML-09,South West Khasi Hills,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,ML,Meghalaya,IN-ML-10,West Garo Hills,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,ML,Meghalaya,IN-ML-11,West Jaintia Hills,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,ML,Meghalaya,IN-ML-12,West Khasi Hills,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MZ,Mizoram,IN-MZ-01,Aizawl,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MZ,Mizoram,IN-MZ-02,Champhai,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MZ,Mizoram,IN-MZ-03,Hnahthial,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MZ,Mizoram,IN-MZ-04,Khawzawl,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MZ,Mizoram,IN-MZ-05,Kolasib,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MZ,Mizoram,IN-MZ-06,Lawngtlai,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MZ,Mizoram,IN-MZ-07,Lunglei,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MZ,Mizoram,IN-MZ-08,Mamit,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MZ,Mizoram,IN-MZ-09,Saitual,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MZ,Mizoram,IN-MZ-10,Serchhip,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,MZ,Mizoram,IN-MZ-11,Siaha,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,NL,Nagaland,IN-NL-01,Chumoukedima,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,NL,Nagaland,IN-NL-02,Dimapur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,NL,Nagaland,IN-NL-03,Kiphire,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,NL,Nagaland,IN-NL-04,Kohima,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,NL,Nagaland,IN-NL-05,Longleng,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,NL,Nagaland,IN-NL-06,Meluri,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,NL,Nagaland,IN-NL-07,Mokokchung,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,NL,Nagaland,IN-NL-08,Mon,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,NL,Nagaland,IN-NL-09,Niuland,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,NL,Nagaland,IN-NL-10,Noklak,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,NL,Nagaland,IN-NL-11,Peren,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,NL,Nagaland,IN-NL-12,Phek,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,NL,Nagaland,IN-NL-13,Shamator,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,NL,Nagaland,IN-NL-14,Tseminyu,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,NL,Nagaland,IN-NL-15,Tuensang,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,NL,Nagaland,IN-NL-16,Wokha,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,NL,Nagaland,IN-NL-17,Zunheboto,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-01,Angul,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-02,Boudh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-03,Balangir,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-04,Bargarh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-05,Balasore,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-06,Bhadrak,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-07,Cuttack,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-08,Deogarh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-09,Dhenkanal,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-10,Ganjam,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-11,Gajapati,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-12,Jharsuguda,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-13,Jajpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-14,Jagatsinghpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-15,Khordha,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-16,Keonjhar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-17,Kalahandi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-18,Kandhamal,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-19,Koraput,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-20,Kendrapara,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-21,Malkangiri,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-22,Mayurbhanj,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-23,Nabarangpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-24,Nuapada,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-25,Nayagarh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-26,Puri,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-27,Rayagada,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-28,Sambalpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-29,Subarnapur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,OD,Odisha,IN-OD-30,Sundargarh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,PB,Punjab,IN-PB-01,Amritsar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,PB,Punjab,IN-PB-02,Barnala,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,PB,Punjab,IN-PB-03,Bathinda,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,PB,Punjab,IN-PB-04,Faridkot,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,PB,Punjab,IN-PB-05,Fatehgarh Sahib,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,PB,Punjab,IN-PB-06,Fazilka,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,PB,Punjab,IN-PB-07,Ferozepur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,PB,Punjab,IN-PB-08,Gurdaspur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,PB,Punjab,IN-PB-09,Hoshiarpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,PB,Punjab,IN-PB-10,Jalandhar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,PB,Punjab,IN-PB-11,Kapurthala,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,PB,Punjab,IN-PB-12,Ludhiana,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,PB,Punjab,IN-PB-13,Malerkotla,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,PB,Punjab,IN-PB-14,Mansa,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,PB,Punjab,IN-PB-15,Moga,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,PB,Punjab,IN-PB-16,Pathankot,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,PB,Punjab,IN-PB-17,Patiala,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,PB,Punjab,IN-PB-18,Rupnagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,PB,Punjab,IN-PB-19,Sahibzada Ajit Singh Nagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,PB,Punjab,IN-PB-20,Sangrur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,PB,Punjab,IN-PB-21,Shaheed Bhagat Singh Nagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,PB,Punjab,IN-PB-22,Sri Muktsar Sahib,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,PB,Punjab,IN-PB-23,Tarn Taran,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-01,Ajmer,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-02,Alwar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-03,Balotra,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-04,Banswara,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-05,Baran,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-06,Barmer,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-07,Beawar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-08,Bharatpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-09,Bhilwara,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-10,Bikaner,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-11,Bundi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-12,Chittorgarh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-13,Churu,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-14,Dausa,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-15,Deeg,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-16,Dholpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-17,Didwana-Kuchaman,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-18,Dungarpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-19,Hanumangarh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-20,Jaipur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-21,Jaisalmer,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-22,Jalore,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-23,Jhalawar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-24,Jhunjhunu,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-25,Jodhpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-26,Karauli,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-27,Khairthal-Tijara,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-28,Kota,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-29,Kotputli-Behror,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-30,Nagaur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-31,Pali,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-32,Phalodi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-33,Pratapgarh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-34,Rajsamand,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-35,Salumbar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-36,Sawai Madhopur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-37,Sikar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-38,Sirohi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-39,Sri Ganganagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-40,Tonk,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,RJ,Rajasthan,IN-RJ-41,Udaipur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,SK,Sikkim,IN-SK-01,Gangtok,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,SK,Sikkim,IN-SK-02,Gyalshing,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,SK,Sikkim,IN-SK-03,Mangan,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,SK,Sikkim,IN-SK-04,Namchi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,SK,Sikkim,IN-SK-05,Pakyong,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,SK,Sikkim,IN-SK-06,Soreng,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-01,Ariyalur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-02,Chengalpattu,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-03,Chennai,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-04,Coimbatore,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-05,Cuddalore,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-06,Dharmapuri,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-07,Dindigul,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-08,Erode,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-09,Kallakurichi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-10,Kancheepuram,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-11,Kanniyakumari,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-12,Karur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-13,Krishnagiri,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-14,Madurai,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-15,Mayiladuthurai,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-16,Nagapattinam,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-17,Namakkal,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-18,Perambalur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-19,Pudukkottai,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-20,Ramanathapuram,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-21,Ranipet,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-22,Salem,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-23,Sivaganga,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-24,Tenkasi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-25,Thanjavur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-26,Theni,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-27,The Nilgiris,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-28,Thoothukudi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-29,Tiruchirappalli,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-30,Tirunelveli,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-31,Tirupathur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-32,Tiruppur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-33,Tiruvallur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-34,Tiruvannamalai,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-35,Tiruvarur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-36,Vellore,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-37,Viluppuram,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TN,Tamil Nadu,IN-TN-38,Virudhunagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-01,Adilabad,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-02,Bhadradri Kothagudem,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-03,Hanumakonda,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-04,Hyderabad,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-05,Jagtial,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-06,Jangaon,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-07,Jayashankar Bhupalpally,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-08,Jogulamba Gadwal,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-09,Kamareddy,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-10,Karimnagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-11,Khammam,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-12,Kumuram Bheem Asifabad,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-13,Mahabubabad,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-14,Mahabubnagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-15,Mancherial,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-16,Medak,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-17,Medchal-Malkajgiri,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-18,Mulugu,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-19,Nagarkurnool,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-20,Nalgonda,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-21,Narayanpet,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-22,Nirmal,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-23,Nizamabad,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-24,Peddapalli,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-25,Rajanna Sircilla,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-26,Rangareddy,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-27,Sangareddy,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-28,Siddipet,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-29,Suryapet,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-30,Vikarabad,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-31,Wanaparthy,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-32,Warangal,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TG,Telangana,IN-TG-33,Yadadri Bhuvanagiri,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TR,Tripura,IN-TR-01,Dhalai,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TR,Tripura,IN-TR-02,Gomati,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TR,Tripura,IN-TR-03,Khowai,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TR,Tripura,IN-TR-04,North Tripura,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TR,Tripura,IN-TR-05,Sepahijala,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TR,Tripura,IN-TR-06,South Tripura,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TR,Tripura,IN-TR-07,Unakoti,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,TR,Tripura,IN-TR-08,West Tripura,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-01,Agra,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-02,Aligarh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-03,Ambedkar Nagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-04,Amethi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-05,Amroha,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-06,Auraiya,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-07,Ayodhya,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-08,Azamgarh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-09,Baghpat,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-10,Bahraich,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-11,Ballia,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-12,Balrampur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-13,Banda,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-14,Barabanki,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-15,Bareilly,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-16,Basti,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-17,Bhadohi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-18,Bijnor,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-19,Budaun,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-20,Bulandshahr,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-21,Chandauli,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-22,Chitrakoot,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-23,Deoria,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-24,Etah,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-25,Etawah,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-26,Farrukhabad,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-27,Fatehpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-28,Firozabad,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-29,Gautam Buddha Nagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-30,Ghaziabad,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-31,Ghazipur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-32,Gonda,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-33,Gorakhpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-34,Hamirpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-35,Hapur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-36,Hardoi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-37,Hathras,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-38,Jalaun,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-39,Jaunpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-40,Jhansi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-41,Kannauj,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-42,Kanpur Dehat,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-43,Kanpur Nagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-44,Kasganj,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-45,Kaushambi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-46,Kheri,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-47,Kushinagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-48,Lalitpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-49,Lucknow,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-50,Maharajganj,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-51,Mahoba,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-52,Mainpuri,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-53,Mathura,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-54,Mau,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-55,Meerut,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-56,Mirzapur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-57,Moradabad,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-58,Muzaffarnagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-59,Pilibhit,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-60,Pratapgarh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-61,Prayagraj,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-62,Rae Bareli,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-63,Rampur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-64,Saharanpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-65,Sambhal,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-66,Sant Kabir Nagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-67,Shahjahanpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-68,Shamli,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-69,Shrawasti,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-70,Siddharthnagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-71,Sitapur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-72,Sonbhadra,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-73,Sultanpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-74,Unnao,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UP,Uttar Pradesh,IN-UP-75,Varanasi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UK,Uttarakhand,IN-UK-01,Almora,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UK,Uttarakhand,IN-UK-02,Bageshwar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UK,Uttarakhand,IN-UK-03,Chamoli,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UK,Uttarakhand,IN-UK-04,Champawat,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UK,Uttarakhand,IN-UK-05,Dehradun,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UK,Uttarakhand,IN-UK-06,Haridwar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UK,Uttarakhand,IN-UK-07,Nainital,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UK,Uttarakhand,IN-UK-08,Pauri Garhwal,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UK,Uttarakhand,IN-UK-09,Pithoragarh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UK,Uttarakhand,IN-UK-10,Rudraprayag,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UK,Uttarakhand,IN-UK-11,Tehri Garhwal,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UK,Uttarakhand,IN-UK-12,Udham Singh Nagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,UK,Uttarakhand,IN-UK-13,Uttarkashi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,WB,West Bengal,IN-WB-01,Alipurduar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,WB,West Bengal,IN-WB-02,Bankura,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,WB,West Bengal,IN-WB-03,Birbhum,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,WB,West Bengal,IN-WB-04,Cooch Behar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,WB,West Bengal,IN-WB-05,Dakshin Dinajpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,WB,West Bengal,IN-WB-06,Darjeeling,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,WB,West Bengal,IN-WB-07,Hooghly,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,WB,West Bengal,IN-WB-08,Howrah,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,WB,West Bengal,IN-WB-09,Jalpaiguri,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,WB,West Bengal,IN-WB-10,Jhargram,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,WB,West Bengal,IN-WB-11,Kalimpong,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,WB,West Bengal,IN-WB-12,Kolkata,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,WB,West Bengal,IN-WB-13,Malda,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,WB,West Bengal,IN-WB-14,Murshidabad,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,WB,West Bengal,IN-WB-15,Nadia,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,WB,West Bengal,IN-WB-16,North 24 Parganas,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,WB,West Bengal,IN-WB-17,Paschim Bardhaman,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,WB,West Bengal,IN-WB-18,Paschim Medinipur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,WB,West Bengal,IN-WB-19,Purba Bardhaman,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,WB,West Bengal,IN-WB-20,Purba Medinipur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,WB,West Bengal,IN-WB-21,Purulia,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,WB,West Bengal,IN-WB-22,South 24 Parganas,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+state,WB,West Bengal,IN-WB-23,Uttar Dinajpur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,AN,Andaman and Nicobar Islands,IN-AN-01,Nicobars,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,AN,Andaman and Nicobar Islands,IN-AN-02,North and Middle Andaman,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,AN,Andaman and Nicobar Islands,IN-AN-03,South Andamans,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,CH,Chandigarh,IN-CH-01,Chandigarh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,DN,Dadra and Nagar Haveli and Daman and Diu,IN-DN-01,Dadra and Nagar Haveli,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,DN,Dadra and Nagar Haveli and Daman and Diu,IN-DN-02,Daman,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,DN,Dadra and Nagar Haveli and Daman and Diu,IN-DN-03,Diu,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,DL,Delhi,IN-DL-01,Central,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,DL,Delhi,IN-DL-02,Central North,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,DL,Delhi,IN-DL-03,East,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,DL,Delhi,IN-DL-04,New Delhi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,DL,Delhi,IN-DL-05,North,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,DL,Delhi,IN-DL-06,North East,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,DL,Delhi,IN-DL-07,North West,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,DL,Delhi,IN-DL-08,Old Delhi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,DL,Delhi,IN-DL-09,Outer North,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,DL,Delhi,IN-DL-10,South,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,DL,Delhi,IN-DL-11,South East,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,DL,Delhi,IN-DL-12,South West,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,DL,Delhi,IN-DL-13,West,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,JK,Jammu and Kashmir,IN-JK-01,Anantnag,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,JK,Jammu and Kashmir,IN-JK-02,Bandipora,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,JK,Jammu and Kashmir,IN-JK-03,Baramulla,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,JK,Jammu and Kashmir,IN-JK-04,Budgam,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,JK,Jammu and Kashmir,IN-JK-05,Doda,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,JK,Jammu and Kashmir,IN-JK-06,Ganderbal,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,JK,Jammu and Kashmir,IN-JK-07,Jammu,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,JK,Jammu and Kashmir,IN-JK-08,Kathua,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,JK,Jammu and Kashmir,IN-JK-09,Kishtwar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,JK,Jammu and Kashmir,IN-JK-10,Kulgam,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,JK,Jammu and Kashmir,IN-JK-11,Kupwara,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,JK,Jammu and Kashmir,IN-JK-12,Poonch,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,JK,Jammu and Kashmir,IN-JK-13,Pulwama,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,JK,Jammu and Kashmir,IN-JK-14,Rajouri,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,JK,Jammu and Kashmir,IN-JK-15,Ramban,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,JK,Jammu and Kashmir,IN-JK-16,Reasi,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,JK,Jammu and Kashmir,IN-JK-17,Samba,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,JK,Jammu and Kashmir,IN-JK-18,Shopian,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,JK,Jammu and Kashmir,IN-JK-19,Srinagar,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,JK,Jammu and Kashmir,IN-JK-20,Udhampur,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,LA,Ladakh,IN-LA-01,Kargil,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,LA,Ladakh,IN-LA-02,Leh,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,LD,Lakshadweep,IN-LD-01,Lakshadweep,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,PY,Puducherry,IN-PY-01,Karaikal,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z
+union territory,PY,Puducherry,IN-PY-02,Puducherry,LGD/igod.gov.in,data/reference/regions_reference.csv,2026-10-30T09:22:00Z

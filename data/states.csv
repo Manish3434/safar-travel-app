@@ -1,0 +1,37 @@
+id,country_id,type,name,code,census_2011_code,capital_name,capital_lat,capital_lon,languages,slug
+1,1,state,Andhra Pradesh,AP,28,Amaravati,16.5417,80.5158,"[""Telugu"", ""Urdu""]",andhra-pradesh
+2,1,state,Arunachal Pradesh,AR,12,Itanagar,27.0844,93.6053,"[""English""]",arunachal-pradesh
+3,1,state,Assam,AS,18,Dispur,26.1433,91.7898,"[""Assamese"", ""Bengali"", ""Bodo""]",assam
+4,1,state,Bihar,BR,10,Patna,25.5941,85.1376,"[""Hindi"", ""Urdu"", ""Bhojpuri"", ""Maithili""]",bihar
+5,1,state,Chhattisgarh,CG,22,Raipur,21.2514,81.6296,"[""Chhattisgarhi"", ""Hindi""]",chhattisgarh
+6,1,state,Goa,GA,30,Panaji,15.4909,73.8278,"[""Konkani"", ""Marathi"", ""English""]",goa
+7,1,state,Gujarat,GJ,24,Gandhinagar,23.2156,72.6369,"[""Gujarati"", ""Hindi""]",gujarat
+8,1,state,Haryana,HR,06,Chandigarh,30.7333,76.7794,"[""Hindi"", ""Punjabi""]",haryana
+9,1,state,Himachal Pradesh,HP,02,Shimla,31.1048,77.1734,"[""Hindi""]",himachal-pradesh
+10,1,state,Jharkhand,JH,20,Ranchi,23.3441,85.3096,"[""Hindi"", ""Santali""]",jharkhand
+11,1,state,Karnataka,KA,29,Bengaluru,12.9716,77.5946,"[""Kannada""]",karnataka
+12,1,state,Kerala,KL,32,Thiruvananthapuram,8.5241,76.9366,"[""Malayalam"", ""English""]",kerala
+13,1,state,Madhya Pradesh,MP,23,Bhopal,23.2599,77.4126,"[""Hindi""]",madhya-pradesh
+14,1,state,Maharashtra,MH,27,Mumbai,18.922,72.8347,"[""Marathi""]",maharashtra
+15,1,state,Manipur,MN,14,Imphal,24.817,93.9368,"[""Meitei"", ""English""]",manipur
+16,1,state,Meghalaya,ML,17,Shillong,25.5788,91.8933,"[""Khasi"", ""Garo"", ""English""]",meghalaya
+17,1,state,Mizoram,MZ,15,Aizawl,23.7271,92.7176,"[""Mizo"", ""English""]",mizoram
+18,1,state,Nagaland,NL,13,Kohima,25.6751,94.1086,"[""English""]",nagaland
+19,1,state,Odisha,OD,21,Bhubaneswar,20.2961,85.8245,"[""Odia""]",odisha
+20,1,state,Punjab,PB,03,Chandigarh,30.7333,76.7794,"[""Punjabi""]",punjab
+21,1,state,Rajasthan,RJ,08,Jaipur,26.9124,75.7873,"[""Hindi"", ""Rajasthani""]",rajasthan
+22,1,state,Sikkim,SK,11,Gangtok,27.3389,88.6065,"[""Nepali"", ""Sikkimese"", ""English""]",sikkim
+23,1,state,Tamil Nadu,TN,33,Chennai,13.0827,80.2707,"[""Tamil"", ""English""]",tamil-nadu
+24,1,state,Telangana,TG,36,Hyderabad,17.385,78.4867,"[""Telugu"", ""Urdu""]",telangana
+25,1,state,Tripura,TR,16,Agartala,23.8315,91.2868,"[""Bengali"", ""Kokborok"", ""English""]",tripura
+26,1,state,Uttar Pradesh,UP,09,Lucknow,26.8467,80.9462,"[""Hindi"", ""Urdu""]",uttar-pradesh
+27,1,state,Uttarakhand,UK,05,Dehradun,30.3165,78.0322,"[""Hindi"", ""Sanskrit""]",uttarakhand
+28,1,state,West Bengal,WB,19,Kolkata,22.5726,88.3639,"[""Bengali"", ""English""]",west-bengal
+29,1,union territory,Andaman and Nicobar Islands,AN,35,Port Blair,11.6234,92.7265,"[""Hindi"", ""English""]",andaman-and-nicobar-islands
+30,1,union territory,Chandigarh,CH,04,Chandigarh,30.7333,76.7794,"[""English"", ""Hindi"", ""Punjabi""]",chandigarh
+31,1,union territory,Dadra and Nagar Haveli and Daman and Diu,DN,26,Daman,20.4283,72.8397,"[""Gujarati"", ""Hindi""]",dadra-and-nagar-haveli-and-daman-and-diu
+32,1,union territory,Delhi,DL,07,New Delhi,28.6139,77.209,"[""Hindi"", ""English"", ""Urdu"", ""Punjabi""]",delhi
+33,1,union territory,Jammu and Kashmir,JK,01,Srinagar / Jammu,34.0837,74.7973,"[""Kashmiri"", ""Dogri"", ""Urdu""]",jammu-and-kashmir
+34,1,union territory,Ladakh,LA,37,Leh,34.1526,77.5771,"[""Ladakhi"", ""Tibetan"", ""English""]",ladakh
+35,1,union territory,Lakshadweep,LD,31,Kavaratti,10.5667,72.6417,"[""Malayalam"", ""English""]",lakshadweep
+36,1,union territory,Puducherry,PY,34,Puducherry,11.9416,79.8083,"[""Tamil"", ""French"", ""English""]",puducherry

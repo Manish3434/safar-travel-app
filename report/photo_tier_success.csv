@@ -1,0 +1,8 @@
+tier,tier_description,attempts,successes,success_rate_pct
+T1,Wikidata P18,20,13,65.0
+T2,Wikipedia Infobox / Page Summary,7,6,85.7
+T3,Commons Category Best Match,1,0,0.0
+T4,Commons Multilingual Search,1,0,0.0
+T5,Commons GeoProximity (500m),1,0,0.0
+T6,OSM image tag,1,0,0.0
+total,Combined Pipeline,20,19,95.0

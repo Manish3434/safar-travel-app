@@ -1,0 +1,10 @@
+state_code,state_name,districts_count,districts_with_spots,total_spots,spots_with_photos,photo_coverage_pct,avg_prominence
+GA,Goa,2,2,20,19,95.0,83.04
+TN,Tamil Nadu,38,7,7,7,100.0,94.24
+KA,Karnataka,31,5,5,5,100.0,92.74
+KL,Kerala,14,4,4,4,100.0,92.63
+MH,Maharashtra,36,4,5,5,100.0,94.96
+HP,Himachal Pradesh,12,3,3,3,100.0,93.37
+RJ,Rajasthan,50,2,2,2,100.0,96.30
+UK,Uttarakhand,13,2,2,2,100.0,96.20
+

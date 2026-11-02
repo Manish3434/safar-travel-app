@@ -1,0 +1,59 @@
+name: safar
+description: "Safar — India's all-in-one travel companion"
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.4
+
+  # Navigation
+  go_router: ^13.2.1
+
+  # HTTP
+  dio: ^5.4.3+1
+
+  # Local storage / offline
+  sqflite: ^2.3.2
+  shared_preferences: ^2.2.3
+
+  # Maps (OSM — no Google key needed)
+  flutter_map: ^6.1.0
+  latlong2: ^0.9.1
+
+  # Location
+  geolocator: ^11.0.0
+  permission_handler: ^11.3.1
+
+  # Environment variables (base URL only — no API keys)
+  flutter_dotenv: ^5.1.0
+
+  # UI
+  google_fonts: ^6.2.1
+  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.9
+  riverpod_generator: ^2.4.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
+

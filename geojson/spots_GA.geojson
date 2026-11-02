@@ -1,0 +1,247 @@
+{
+  "type": "FeatureCollection",
+  "state_code": "GA",
+  "state_name": "Goa",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [73.7736, 15.4925] },
+      "properties": {
+        "id": 1,
+        "name": "Fort Aguada & Lighthouse",
+        "district": "North Goa",
+        "category": "fort",
+        "prominence_score": 88.5,
+        "image_url": "photos/Goa/North_Goa/fort_aguada_lighthouse.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [73.7389, 15.6058] },
+      "properties": {
+        "id": 2,
+        "name": "Chapora Fort",
+        "district": "North Goa",
+        "category": "fort",
+        "prominence_score": 82.4,
+        "image_url": "photos/Goa/North_Goa/chapora_fort.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [73.9117, 15.5008] },
+      "properties": {
+        "id": 3,
+        "name": "Basilica of Bom Jesus",
+        "district": "North Goa",
+        "category": "church",
+        "prominence_score": 96.2,
+        "image_url": "photos/Goa/North_Goa/basilica_of_bom_jesus.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [73.7553, 15.5439] },
+      "properties": {
+        "id": 4,
+        "name": "Calangute Beach",
+        "district": "North Goa",
+        "category": "beach",
+        "prominence_score": 89.1,
+        "image_url": "photos/Goa/North_Goa/calangute_beach.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [73.7411, 15.5733] },
+      "properties": {
+        "id": 5,
+        "name": "Anjuna Beach & Flea Market",
+        "district": "North Goa",
+        "category": "beach",
+        "prominence_score": 84.7,
+        "image_url": "photos/Goa/North_Goa/anjuna_beach_flea_market.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [73.8089, 15.4975] },
+      "properties": {
+        "id": 6,
+        "name": "Reis Magos Fort",
+        "district": "North Goa",
+        "category": "fort",
+        "prominence_score": 77.8,
+        "image_url": "photos/Goa/North_Goa/reis_magos_fort.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [73.7339, 15.6028] },
+      "properties": {
+        "id": 7,
+        "name": "Vagator Beach & Cliffs",
+        "district": "North Goa",
+        "category": "viewpoint",
+        "prominence_score": 81.6,
+        "image_url": "photos/Goa/North_Goa/vagator_beach_cliffs.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [73.8278, 15.4989] },
+      "properties": {
+        "id": 8,
+        "name": "Goa State Museum",
+        "district": "North Goa",
+        "category": "museum",
+        "prominence_score": 74.2,
+        "image_url": "photos/Goa/North_Goa/goa_state_museum.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [73.9125, 15.5036] },
+      "properties": {
+        "id": 9,
+        "name": "Se Cathedral",
+        "district": "North Goa",
+        "category": "monument",
+        "prominence_score": 91.8,
+        "image_url": "photos/Goa/North_Goa/se_cathedral.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [73.7667, 15.4989] },
+      "properties": {
+        "id": 10,
+        "name": "Sinquerim Beach & Bastion",
+        "district": "North Goa",
+        "category": "beach",
+        "prominence_score": 79.4,
+        "image_url": "photos/Goa/North_Goa/sinquerim_beach_bastion.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [74.3144, 15.3144] },
+      "properties": {
+        "id": 11,
+        "name": "Dudhsagar Waterfalls",
+        "district": "South Goa",
+        "category": "waterfall",
+        "prominence_score": 94.8,
+        "image_url": "photos/Goa/South_Goa/dudhsagar_waterfalls.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [73.9214, 15.0886] },
+      "properties": {
+        "id": 12,
+        "name": "Cabo de Rama Fort",
+        "district": "South Goa",
+        "category": "fort",
+        "prominence_score": 83.9,
+        "image_url": "photos/Goa/South_Goa/cabo_de_rama_fort.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [74.0232, 15.0100] },
+      "properties": {
+        "id": 13,
+        "name": "Palolem Beach",
+        "district": "South Goa",
+        "category": "beach",
+        "prominence_score": 88.7,
+        "image_url": "photos/Goa/South_Goa/palolem_beach.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [73.9167, 15.2789] },
+      "properties": {
+        "id": 14,
+        "name": "Colva Beach",
+        "district": "South Goa",
+        "category": "beach",
+        "prominence_score": 82.1,
+        "image_url": "photos/Goa/South_Goa/colva_beach.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [74.1953, 14.9961] },
+      "properties": {
+        "id": 15,
+        "name": "Cotigao Wildlife Sanctuary",
+        "district": "South Goa",
+        "category": "national_park",
+        "prominence_score": 78.9,
+        "image_url": "photos/Goa/South_Goa/cotigao_wildlife_sanctuary.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [74.2561, 15.4392] },
+      "properties": {
+        "id": 16,
+        "name": "Tambdi Surla Mahadev Temple",
+        "district": "South Goa",
+        "category": "temple",
+        "prominence_score": 86.4,
+        "image_url": "photos/Goa/South_Goa/tambdi_surla_mahadev_temple.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [73.9878, 15.0456] },
+      "properties": {
+        "id": 17,
+        "name": "Agonda Beach",
+        "district": "South Goa",
+        "category": "beach",
+        "prominence_score": 81.5,
+        "image_url": "photos/Goa/South_Goa/agonda_beach.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [73.8344, 15.3858] },
+      "properties": {
+        "id": 18,
+        "name": "Naval Aviation Museum",
+        "district": "South Goa",
+        "category": "museum",
+        "prominence_score": 79.0,
+        "image_url": "photos/Goa/South_Goa/naval_aviation_museum.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [73.9222, 15.2536] },
+      "properties": {
+        "id": 19,
+        "name": "Benaulim Beach",
+        "district": "South Goa",
+        "category": "beach",
+        "prominence_score": 77.3,
+        "image_url": "photos/Goa/South_Goa/benaulim_beach.jpg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [73.8000, 15.4167] },
+      "properties": {
+        "id": 20,
+        "name": "Mormugao Fort",
+        "district": "South Goa",
+        "category": "fort",
+        "prominence_score": 70.1,
+        "image_url": null
+      }
+    }
+  ]
+}

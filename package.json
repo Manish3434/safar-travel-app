@@ -1,0 +1,18 @@
+{
+  "name": "safar",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Safar — India travel app monorepo",
+  "scripts": {
+    "backend:dev": "pnpm --filter backend dev",
+    "backend:build": "pnpm --filter backend build",
+    "backend:test": "pnpm --filter backend test",
+    "backend:lint": "pnpm --filter backend lint",
+    "backend:migrate": "pnpm --filter backend migrate"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.0.0"
+}

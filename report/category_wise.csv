@@ -1,0 +1,10 @@
+category_code,category_name,spots_count,pct_of_total,with_photos,photo_coverage_pct
+beach,Beaches & Coastal,7,35.0,7,100.0
+fort,Forts & Palaces,5,25.0,4,80.0
+monument,Monuments & Memorials,1,5.0,1,100.0
+church,Churches & Cathedrals,1,5.0,1,100.0
+temple,Temples,1,5.0,1,100.0
+waterfall,Waterfalls,1,5.0,1,100.0
+national_park,National Parks & Sanctuaries,1,5.0,1,100.0
+viewpoint,Scenic Viewpoints,2,10.0,2,100.0
+museum,Museums & Galleries,2,10.0,2,100.0

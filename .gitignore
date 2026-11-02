@@ -1,0 +1,53 @@
+# ─── Secrets ──────────────────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ─── Node ─────────────────────────────────────────────────────────────────────
+node_modules/
+dist/
+build/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# ─── NestJS ───────────────────────────────────────────────────────────────────
+apps/backend/dist/
+
+# ─── Flutter ──────────────────────────────────────────────────────────────────
+apps/mobile/.dart_tool/
+apps/mobile/.flutter-plugins
+apps/mobile/.flutter-plugins-dependencies
+apps/mobile/build/
+apps/mobile/android/local.properties
+apps/mobile/android/.gradle/
+apps/mobile/ios/Pods/
+apps/mobile/ios/Flutter/Flutter.framework
+apps/mobile/ios/Flutter/Flutter.podspec
+apps/mobile/.env
+
+# ─── IDEs ─────────────────────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.suo
+*.user
+
+# ─── OS ───────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── CI / Workflows (excluded for standard PAT without workflow scope) ───────
+.github/
+
+# ─── Large Media ─────────────────────────────────────────────────────────────
+apps/web/videos/
+*.mp4
+*.webm
+*.mov
+*.avi
+
+# ─── Scratch & Downloads ──────────────────────────────────────────────────────
+scratch/
+download/
+*.db
+*.sqlite

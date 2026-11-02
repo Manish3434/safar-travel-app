@@ -1,0 +1,16 @@
+id,code,name_en,name_hi,parent_code
+1,heritage,Heritage & Monuments,विरासत और स्मारक,
+2,fort,Forts & Palaces,किले और महल,heritage
+3,monument,Monuments & Memorials,स्मारक,heritage
+4,religious,Pilgrimage & Sacred Sites,धार्मिक और तीर्थ स्थल,
+5,temple,Temples,मंदिर,religious
+6,church,Churches & Cathedrals,चर्च,religious
+7,nature,Nature & Wildlife,प्रकृति और वन्यजीव,
+8,waterfall,Waterfalls,जलप्रपात,nature
+9,beach,Beaches & Coastal,समुद्र तट,nature
+10,national_park,National Parks & Sanctuaries,राष्ट्रीय उद्यान,nature
+11,hill_station,Hill Stations & Peaks,पर्वतीय स्थल,nature
+12,viewpoint,Scenic Viewpoints,प्राकृतिक दृश्य स्थल,nature
+13,urban,Urban & Culture,शहरी और सांस्कृतिक,
+14,museum,Museums & Galleries,संग्रहालय,urban
+15,attraction,General Attractions,पर्यटन स्थल,urban

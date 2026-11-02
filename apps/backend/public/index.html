@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safar — India's 28 States & Districts Travel Companion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  
+  <style>
+    :root {
+      --bg-dark: #0B1120;
+      --card-bg: #151F32;
+      --card-border: rgba(255, 255, 255, 0.08);
+      --saffron: #FF7A00;
+      --saffron-glow: rgba(255, 122, 0, 0.25);
+      --teal: #0D9488;
+      --teal-glow: rgba(13, 148, 136, 0.25);
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --text-dim: #64748B;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Header ── */
+    header {
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--card-border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 16px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .brand-logo {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, var(--saffron), #EA580C);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 22px;
+      color: white;
+      box-shadow: 0 4px 14px var(--saffron-glow);
+    }
+
+    .brand-name {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 800;
+      font-size: 24px;
+      letter-spacing: 0.5px;
+      background: linear-gradient(90deg, #FFFFFF, #CBD5E1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .badge-dev {
+      background: rgba(13, 148, 136, 0.15);
+      color: var(--teal);
+      border: 1px solid rgba(13, 148, 136, 0.3);
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Hero & Search ── */
+    .hero {
+      padding: 36px 24px 16px;
+      max-width: 1080px;
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 38px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(90deg, var(--saffron), #F59E0B);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      color: var(--text-muted);
+      font-size: 15px;
+      margin-bottom: 24px;
+    }
+
+    .search-box {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      transition: all 0.25s ease;
+      margin-bottom: 20px;
+    }
+
+    .search-box:focus-within {
+      border-color: var(--saffron);
+      box-shadow: 0 0 0 3px var(--saffron-glow);
+    }
+
+    .search-input {
+      background: transparent;
+      border: none;
+      color: var(--text-main);
+      font-size: 16px;
+      width: 100%;
+      outline: none;
+      padding: 8px 0;
+    }
+
+    .search-input::placeholder {
+      color: var(--text-dim);
+    }
+
+    /* ── States Horizontal Carousel ── */
+    .states-section {
+      text-align: left;
+      margin: 24px 0 12px;
+    }
+
+    .section-headline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .section-headline h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .states-scroll {
+      display: flex;
+      gap: 14px;
+      overflow-x: auto;
+      padding-bottom: 10px;
+      scroll-behavior: smooth;
+    }
+
+    .states-scroll::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .states-scroll::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+    }
+
+    .state-card {
+      min-width: 160px;
+      height: 105px;
+      border-radius: 14px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      border: 1px solid var(--card-border);
+      transition: transform 0.25s ease, border-color 0.25s ease;
+      flex-shrink: 0;
+    }
+
+    .state-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--saffron);
+    }
+
+    .state-card.active {
+      border-color: var(--saffron);
+      box-shadow: 0 0 0 2px var(--saffron);
+    }
+
+    .state-card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.65);
+    }
+
+    .state-card-info {
+      position: absolute;
+      inset: 0;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background: linear-gradient(180deg, transparent 30%, rgba(11, 17, 32, 0.95) 100%);
+    }
+
+    .state-card-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: white;
+    }
+
+    .state-card-subtitle {
+      font-size: 11px;
+      color: #CBD5E1;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2px;
+    }
+
+    /* Active Filter Pill */
+    .filter-banner {
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(255, 122, 0, 0.12);
+      border: 1px solid rgba(255, 122, 0, 0.3);
+      padding: 10px 16px;
+      border-radius: 12px;
+      margin: 16px 0;
+      font-size: 13px;
+    }
+
+    .filter-banner.active {
+      display: flex;
+    }
+
+    .filter-banner-text {
+      color: var(--saffron);
+      font-weight: 600;
+    }
+
+    .clear-filter-btn {
+      background: transparent;
+      border: 1px solid var(--saffron);
+      color: var(--saffron);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .clear-filter-btn:hover {
+      background: var(--saffron);
+      color: white;
+    }
+
+    /* ── Category Chips ── */
+    .categories {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .chip {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      padding: 7px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .chip:hover {
+      color: var(--text-main);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .chip.active {
+      background: var(--saffron);
+      border-color: var(--saffron);
+      color: white;
+      box-shadow: 0 4px 12px var(--saffron-glow);
+    }
+
+    /* ── Results Grid ── */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 24px;
+      width: 100%;
+      flex: 1;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 24px;
+    }
+
+    .place-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .place-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .card-img-wrapper {
+      position: relative;
+      height: 180px;
+      background: #1E293B;
+      overflow: hidden;
+    }
+
+    .card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .place-card:hover .card-img {
+      transform: scale(1.04);
+    }
+
+    .card-category-tag {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(15, 23, 42, 0.8);
+      backdrop-filter: blur(8px);
+      color: var(--teal);
+      border: 1px solid rgba(13, 148, 136, 0.3);
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .card-rating-tag {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(8px);
+      color: #FBBF24;
+      padding: 4px 8px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .card-content {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .card-location-tag {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--saffron);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .card-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .card-subnames {
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-bottom: 8px;
+    }
+
+    .card-desc {
+      color: var(--text-muted);
+      font-size: 13px;
+      line-height: 1.5;
+      margin-bottom: 16px;
+      flex: 1;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .card-footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding-top: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      color: var(--text-dim);
+    }
+
+    .card-sensitive-pill {
+      color: #F59E0B;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-weight: 600;
+    }
+
+    /* ── Districts Modal ── */
+    .district-modal-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      max-width: 760px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+      padding: 24px;
+    }
+
+    .districts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+      max-height: 55vh;
+      overflow-y: auto;
+      padding-right: 6px;
+    }
+
+    .district-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 10px;
+      padding: 12px 14px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .district-item:hover {
+      background: rgba(255, 122, 0, 0.1);
+      border-color: var(--saffron);
+      transform: translateY(-2px);
+    }
+
+    .district-item-name {
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--text-main);
+    }
+
+    .district-item-regional {
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-top: 2px;
+    }
+
+    .district-item-badge {
+      align-self: flex-start;
+      margin-top: 6px;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: rgba(13, 148, 136, 0.15);
+      color: var(--teal);
+    }
+
+    /* ── Detail Modal ── */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-overlay.open {
+      display: flex;
+    }
+
+    .modal-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      max-width: 840px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+      position: relative;
+    }
+
+    .modal-header {
+      position: sticky;
+      top: 0;
+      background: rgba(21, 31, 50, 0.95);
+      backdrop-filter: blur(8px);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--card-border);
+      z-index: 10;
+    }
+
+    .close-btn {
+      background: rgba(255, 255, 255, 0.08);
+      border: none;
+      color: var(--text-main);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+
+    .close-btn:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .modal-body {
+      padding: 24px;
+    }
+
+    #map {
+      height: 240px;
+      border-radius: 12px;
+      margin: 16px 0;
+      border: 1px solid var(--card-border);
+    }
+
+    .section-title {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      margin: 20px 0 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--saffron);
+    }
+
+    .specs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin: 16px 0;
+    }
+
+    .spec-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 12px;
+      border-radius: 10px;
+    }
+
+    .spec-label {
+      font-size: 11px;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .spec-value {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .mini-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#" class="brand" onclick="clearFilters()">
+      <div class="brand-logo">S</div>
+      <div class="brand-name">SAFAR</div>
+    </a>
+    <div class="badge-dev">PHASE 1 · 28 STATES & DISTRICTS</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Explore India by <span>State & District</span></h1>
+      <p>Select any of India's 28 States, pick from all 38 districts (Tamil Nadu), and uncover tourist spots with live weather, maps, stays & transit.</p>
+
+      <div class="search-box">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search places, districts (e.g. Nilgiris, Ooty, Jog Falls, Hampi)...">
+      </div>
+
+      <!-- States Horizontal Selector -->
+      <div class="states-section">
+        <div class="section-headline">
+          <h2>🇮🇳 Select a State to Browse Districts</h2>
+          <span style="font-size: 12px; color: var(--text-muted);">28 States Available</span>
+        </div>
+        <div id="statesScroll" class="states-scroll">
+          <!-- Rendered from /api/v1/places/states -->
+        </div>
+      </div>
+
+      <!-- Active Filter Banner -->
+      <div id="filterBanner" class="filter-banner">
+        <span id="filterBannerText" class="filter-banner-text">Filtered by: Tamil Nadu › Nilgiris</span>
+        <button class="clear-filter-btn" onclick="clearFilters()">Clear Filter ✕</button>
+      </div>
+
+      <!-- Category Filter Chips -->
+      <div class="categories">
+        <button class="chip active" onclick="filterCategory('')">All Spots</button>
+        <button class="chip" onclick="filterCategory('waterfall')">Waterfalls</button>
+        <button class="chip" onclick="filterCategory('hill-station')">Hill Stations</button>
+        <button class="chip" onclick="filterCategory('heritage')">Heritage</button>
+        <button class="chip" onclick="filterCategory('forest')">Forests (Rule 8 Protected)</button>
+      </div>
+    </section>
+
+    <div class="container">
+      <div id="resultsGrid" class="grid">
+        <!-- Rendered dynamically from /api/v1/places/search -->
+      </div>
+    </div>
+  </main>
+
+  <!-- District Selection Modal -->
+  <div id="districtModal" class="modal-overlay">
+    <div class="district-modal-card">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+        <div>
+          <h2 id="districtModalTitle" style="font-family:'Outfit'; font-size:22px; color:white;">Tamil Nadu Districts</h2>
+          <p id="districtModalSubtitle" style="font-size:13px; color:var(--text-muted);">Choose from 38 districts to view spots</p>
+        </div>
+        <button class="close-btn" onclick="closeDistrictModal()">×</button>
+      </div>
+
+      <input type="text" id="districtSearchInput" class="search-input" placeholder="Search district (e.g. Nilgiris, Dharmapuri, Madurai)..." style="background:var(--bg-dark); padding:10px 14px; border-radius:10px; border:1px solid var(--card-border); margin:10px 0;">
+
+      <div id="districtsGrid" class="districts-grid">
+        <!-- Rendered from /api/v1/places/states/:code/districts -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Detail Modal -->
+  <div id="detailModal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2 id="modalTitle" style="font-family:'Outfit'; font-size:20px;">Place Detail</h2>
+        <button class="close-btn" onclick="closeModal()">×</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let currentPlaces = [];
+    let currentFilter = '';
+    let selectedState = null;
+    let selectedDistrict = null;
+    let allStates = [];
+    let stateDistricts = [];
+    let leafletMap = null;
+
+    async function init() {
+      await Promise.all([
+        loadStates(),
+        loadPlaces(),
+      ]);
+    }
+
+    async function loadStates() {
+      try {
+        const res = await fetch('/api/v1/places/states');
+        const json = await res.json();
+        allStates = json.data || json || [];
+        renderStates();
+      } catch (err) {
+        console.error('Failed to load states:', err);
+      }
+    }
+
+    function renderStates() {
+      const container = document.getElementById('statesScroll');
+      container.innerHTML = '';
+
+      allStates.forEach(st => {
+        const card = document.createElement('div');
+        card.className = `state-card ${selectedState?.code === st.code ? 'active' : ''}`;
+        card.onclick = () => openDistrictsModal(st);
+
+        card.innerHTML = `
+          <img src="${st.image_url}" alt="${st.name}" class="state-card-img" onerror="this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=400&q=80'">
+          <div class="state-card-info">
+            <div class="state-card-title">${st.name}</div>
+            <div class="state-card-subtitle">
+              <span>${st.name_ta || ''}</span>
+              <span style="color:var(--saffron); font-weight:700;">${st.district_count} Dist.</span>
+            </div>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    async function openDistrictsModal(state) {
+      selectedState = state;
+      renderStates();
+
+      document.getElementById('districtModalTitle').textContent = `${state.name} (${state.name_ta || ''})`;
+      document.getElementById('districtModalSubtitle').textContent = `Explore spots across all ${state.district_count} districts`;
+      document.getElementById('districtModal').classList.add('open');
+
+      try {
+        const res = await fetch(`/api/v1/places/states/${state.code}/districts`);
+        const json = await res.json();
+        stateDistricts = json.data || json || [];
+        renderDistricts(stateDistricts);
+      } catch (err) {
+        console.error('Failed to load districts:', err);
+      }
+    }
+
+    function renderDistricts(districts) {
+      const container = document.getElementById('districtsGrid');
+      container.innerHTML = '';
+
+      if (districts.length === 0) {
+        container.innerHTML = '<div style="color:var(--text-muted); padding:20px;">No districts available yet.</div>';
+        return;
+      }
+
+      districts.forEach(d => {
+        const item = document.createElement('div');
+        item.className = 'district-item';
+        item.onclick = () => selectDistrict(d);
+
+        item.innerHTML = `
+          <div class="district-item-name">${d.name}</div>
+          <div class="district-item-regional">${d.name_ta || d.name_hi || ''}</div>
+          <div class="district-item-badge">${d.spot_count > 0 ? `★ ${d.spot_count} spots available` : 'Explore spots'}</div>
+        `;
+        container.appendChild(item);
+      });
+    }
+
+    document.getElementById('districtSearchInput').addEventListener('input', (e) => {
+      const q = e.target.value.toLowerCase().trim();
+      const filtered = stateDistricts.filter(d => 
+        d.name.toLowerCase().includes(q) ||
+        (d.name_ta && d.name_ta.includes(q)) ||
+        (d.name_hi && d.name_hi.includes(q))
+      );
+      renderDistricts(filtered);
+    });
+
+    function selectDistrict(district) {
+      selectedDistrict = district;
+      closeDistrictModal();
+
+      // Show filter banner
+      const banner = document.getElementById('filterBanner');
+      const text = document.getElementById('filterBannerText');
+      banner.classList.add('active');
+      text.textContent = `📍 Showing spots in: ${selectedState.name} › ${district.name} (${district.name_ta || ''})`;
+
+      loadPlaces();
+    }
+
+    function closeDistrictModal() {
+      document.getElementById('districtModal').classList.remove('open');
+    }
+
+    function clearFilters() {
+      selectedState = null;
+      selectedDistrict = null;
+      document.getElementById('filterBanner').classList.remove('active');
+      document.getElementById('searchInput').value = '';
+      renderStates();
+      loadPlaces();
+    }
+
+    async function loadPlaces(query = '') {
+      try {
+        let url = `/api/v1/places/search?q=${encodeURIComponent(query)}`;
+        if (selectedState) url += `&state=${encodeURIComponent(selectedState.code)}`;
+        if (selectedDistrict) url += `&district=${encodeURIComponent(selectedDistrict.id)}`;
+
+        const res = await fetch(url);
+        const json = await res.json();
+        const data = json.data || json;
+        currentPlaces = Array.isArray(data) ? data : [];
+        renderGrid();
+      } catch (err) {
+        console.error('Failed to fetch places:', err);
+      }
+    }
+
+    function filterCategory(category) {
+      currentFilter = category;
+      document.querySelectorAll('.chip').forEach(c => {
+        c.classList.remove('active');
+        if (c.textContent.toLowerCase().includes(category) || (!category && c.textContent.includes('All'))) {
+          c.classList.add('active');
+        }
+      });
+      renderGrid();
+    }
+
+    function renderGrid() {
+      const grid = document.getElementById('resultsGrid');
+      grid.innerHTML = '';
+
+      const filtered = currentFilter
+        ? currentPlaces.filter(p => p.category.toLowerCase() === currentFilter.toLowerCase())
+        : currentPlaces;
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '<div style="grid-column: 1/-1; text-align:center; padding: 40px; color:#94A3B8;">No tourist spots found matching this filter. Try clearing filters or exploring another district.</div>';
+        return;
+      }
+
+      filtered.forEach(place => {
+        const card = document.createElement('div');
+        card.className = 'place-card';
+        card.onclick = () => openDetail(place.id);
+
+        const imgUrl = place.main_photo_url || 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=640&q=80';
+
+        card.innerHTML = `
+          <div class="card-img-wrapper">
+            <img src="${imgUrl}" alt="${place.name}" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=640&q=80'">
+            <div class="card-category-tag">${place.category}</div>
+            ${place.rating ? `<div class="card-rating-tag">★ ${place.rating}</div>` : ''}
+          </div>
+          <div class="card-content">
+            <div class="card-location-tag">${place.district_name || 'Spot'} · ${place.state_name || 'India'}</div>
+            <h3 class="card-title">${place.name}</h3>
+            ${place.name_ta || place.name_hi ? `<div class="card-subnames">${[place.name_ta, place.name_hi].filter(Boolean).join(' · ')}</div>` : ''}
+            <p class="card-desc">${place.description}</p>
+            <div class="card-footer">
+              ${place.sensitive ? '<span class="card-sensitive-pill">🛡️ Rule 8 Protected Area</span>' : '<span>Verified Spot</span>'}
+              <span style="color:var(--saffron); font-weight:600;">View Details →</span>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    async function openDetail(id) {
+      const modal = document.getElementById('detailModal');
+      const body = document.getElementById('modalBody');
+      const title = document.getElementById('modalTitle');
+
+      modal.classList.add('open');
+      body.innerHTML = '<div style="text-align:center; padding:40px; color:#94A3B8;">Loading spot details...</div>';
+
+      try {
+        const [placeRes, weatherRes, staysRes] = await Promise.all([
+          fetch(`/api/v1/places/${id}`).then(r => r.json()),
+          fetch(`/api/v1/places/${id}/weather`).then(r => r.json()).catch(() => null),
+          fetch(`/api/v1/places/${id}/stays`).then(r => r.json()).catch(() => null),
+        ]);
+
+        const place = placeRes.data || placeRes;
+        const weather = weatherRes?.data || weatherRes;
+        const stays = staysRes?.data || staysRes || [];
+
+        title.textContent = place.name;
+
+        body.innerHTML = `
+          <div style="font-size:12px; font-weight:700; color:var(--saffron); text-transform:uppercase; margin-bottom:6px;">
+            ${place.district_name || ''} · ${place.state_name || 'India'}
+          </div>
+          <div style="font-size:14px; line-height:1.6; color:#CBD5E1; margin-bottom:16px;">
+            ${place.description}
+          </div>
+
+          <div class="specs-grid">
+            <div class="spec-item">
+              <div class="spec-label">District</div>
+              <div class="spec-value">${place.district_name || 'General'}</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-label">Best Season</div>
+              <div class="spec-value">${place.best_season || 'Year Round'}</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-label">Permit Required</div>
+              <div class="spec-value">${place.permit_required ? '⚠️ Yes (Forest Dept)' : 'No'}</div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-label">Guide Required</div>
+              <div class="spec-value">${place.guide_required ? '⚠️ Yes (Certified Guide)' : 'No'}</div>
+            </div>
+          </div>
+
+          ${place.how_to_reach ? `
+            <div class="section-title">Navigation & Transit</div>
+            <div style="font-size:13px; color:#94A3B8; background:rgba(255,255,255,0.02); padding:12px; border-radius:8px;">
+              ${place.how_to_reach}
+            </div>
+          ` : ''}
+
+          <div class="section-title">Interactive Map Preview</div>
+          <div id="map"></div>
+          ${place.sensitive ? '<div style="font-size:11px; color:#F59E0B; margin-top:-8px; margin-bottom:12px;">🛡️ Rule 8: Exact coordinates protected. 2,000m approximate area shown.</div>' : ''}
+
+          ${weather ? `
+            <div class="section-title">Current Weather</div>
+            <div class="mini-card">
+              <div>
+                <div style="font-weight:700; font-size:16px;">${weather.temp_c}°C · ${weather.condition}</div>
+                <div style="font-size:12px; color:#94A3B8;">Humidity: ${weather.humidity_pct}% · Wind: ${weather.wind_kph} km/h</div>
+              </div>
+              <div style="font-size:11px; color:#94A3B8;">Source: ${weather.source || 'Local Weather Provider'}</div>
+            </div>
+          ` : ''}
+
+          <div class="section-title">Nearby Stays</div>
+          ${Array.isArray(stays) && stays.length > 0 ? stays.map(s => `
+            <div class="mini-card">
+              <div>
+                <div style="font-weight:600; font-size:14px;">${s.name}</div>
+                <div style="font-size:11px; color:#94A3B8;">${s.type?.toUpperCase()} · ${s.distance_km || s.distanceKm || 'Nearby'} km away</div>
+              </div>
+              <div style="font-weight:700; color:var(--saffron);">₹${s.price_per_night_inr || s.pricePerNightInr} / night</div>
+            </div>
+          `).join('') : '<div style="font-size:13px; color:#94A3B8;">No stays listed right now.</div>'}
+        `;
+
+        // Initialize Leaflet map
+        setTimeout(() => {
+          if (leafletMap) leafletMap.remove();
+          const lat = place.location?.lat || 12.97;
+          const lng = place.location?.lng || 77.59;
+          leafletMap = L.map('map').setView([lat, lng], 12);
+          
+          L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap contributors'
+          }).addTo(leafletMap);
+
+          if (place.sensitive) {
+            L.circle([lat, lng], {
+              color: '#F59E0B',
+              fillColor: '#F59E0B',
+              fillOpacity: 0.25,
+              radius: 2000
+            }).addTo(leafletMap);
+          } else {
+            L.marker([lat, lng]).addTo(leafletMap);
+          }
+        }, 100);
+
+      } catch (err) {
+        body.innerHTML = '<div style="text-align:center; padding:40px; color:#EF4444;">Failed to load spot details.</div>';
+      }
+    }
+
+    function closeModal() {
+      document.getElementById('detailModal').classList.remove('open');
+      if (leafletMap) {
+        leafletMap.remove();
+        leafletMap = null;
+      }
+    }
+
+    // Search with debounce
+    let debounceTimer;
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(() => {
+        loadPlaces(e.target.value.trim());
+      }, 300);
+    });
+
+    // Close modal on Escape
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeModal();
+        closeDistrictModal();
+      }
+    });
+
+    init();
+  </script>
+</body>
+</html>

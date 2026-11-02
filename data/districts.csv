@@ -1,0 +1,782 @@
+id,state_id,state_code,name,census_2011_code,hq_name,area_km2,population_2011,subdivision_type,slug
+1,1,AP,Alluri Sitharama Raju,28540,Paderu,12251.0,953960,district,alluri-sitharama-raju-ap
+2,1,AP,Anakapalli,28541,Anakapalli,4292.0,1726998,district,anakapalli-ap
+3,1,AP,Ananthapuramu,28553,Anantapur,10205.0,2241103,district,ananthapuramu-ap
+4,1,AP,Annamayya,28554,Rayachoti,7951.0,1697308,district,annamayya-ap
+5,1,AP,Bapatla,28548,Bapatla,3829.0,1586918,district,bapatla-ap
+6,1,AP,Chittoor,28555,Chittoor,6855.0,1872951,district,chittoor-ap
+7,1,AP,Dr. B.R. Ambedkar Konaseema,28544,Amalapuram,2083.0,1719093,district,dr-br-ambedkar-konaseema-ap
+8,1,AP,East Godavari,28543,Rajahmundry,2561.0,1832332,district,east-godavari-ap
+9,1,AP,Eluru,28545,Eluru,6579.0,2071700,district,eluru-ap
+10,1,AP,Guntur,28547,Guntur,2443.0,2091075,district,guntur-ap
+11,1,AP,Kakinada,28542,Kakinada,3019.0,2092374,district,kakinada-ap
+12,1,AP,Krishna,28546,Machilipatnam,3775.0,1735079,district,krishna-ap
+13,1,AP,Kurnool,28551,Kurnool,7980.0,2271686,district,kurnool-ap
+14,1,AP,Nandyal,28552,Nandyal,9682.0,1781777,district,nandyal-ap
+15,1,AP,NTR,28549,Vijayawada,3316.0,2218591,district,ntr-ap
+16,1,AP,Palnadu,28550,Narasaraopet,7298.0,2041723,district,palnadu-ap
+17,1,AP,Parvathipuram Manyam,28539,Parvathipuram,3659.0,925340,district,parvathipuram-manyam-ap
+18,1,AP,Prakasam,28556,Ongole,14322.0,2288026,district,prakasam-ap
+19,1,AP,Sri Potti Sriramulu Nellore,28557,Nellore,10441.0,2469712,district,sri-potti-sriramulu-nellore-ap
+20,1,AP,Sri Sathya Sai,28558,Puttaparthi,7771.0,1840002,district,sri-sathya-sai-ap
+21,1,AP,Srikakulam,28537,Srikakulam,5837.0,2191471,district,srikakulam-ap
+22,1,AP,Tirupati,28559,Tirupati,8231.0,2196984,district,tirupati-ap
+23,1,AP,Visakhapatnam,28538,Visakhapatnam,1048.0,1959544,district,visakhapatnam-ap
+24,1,AP,Vizianagaram,28536,Vizianagaram,4122.0,1930811,district,vizianagaram-ap
+25,1,AP,West Godavari,28545,Bhimavaram,2178.0,1779935,district,west-godavari-ap
+26,1,AP,YSR Kadapa,28554,Kadapa,11228.0,2060654,district,ysr-kadapa-ap
+27,2,AR,Anjaw,12260,Hawai,6190.0,21167,district,anjaw-ar
+28,2,AR,Changlang,12255,Changlang,4662.0,148226,district,changlang-ar
+29,2,AR,Dibang Valley,12257,Anini,9129.0,8004,district,dibang-valley-ar
+30,2,AR,East Kameng,12247,Seppa,4134.0,78690,district,east-kameng-ar
+31,2,AR,East Siang,12251,Pasighat,3655.0,99214,district,east-siang-ar
+32,2,AR,Kamle,12261,Raga,1500.0,22256,district,kamle-ar
+33,2,AR,Kra Daadi,12262,Jamin,2202.0,22290,district,kra-daadi-ar
+34,2,AR,Kurung Kumey,12250,Koloriang,6340.0,92076,district,kurung-kumey-ar
+35,2,AR,Lepa Rada,12263,Basar,1200.0,20000,district,lepa-rada-ar
+36,2,AR,Lohit,12258,Tezu,2402.0,145726,district,lohit-ar
+37,2,AR,Longding,12264,Longding,1200.0,56953,district,longding-ar
+38,2,AR,Lower Dibang Valley,12259,Roing,3900.0,54080,district,lower-dibang-valley-ar
+39,2,AR,Lower Siang,12265,Likabali,1500.0,22636,district,lower-siang-ar
+40,2,AR,Lower Subansiri,12249,Ziro,3508.0,83030,district,lower-subansiri-ar
+41,2,AR,Namsai,12266,Namsai,1587.0,95950,district,namsai-ar
+42,2,AR,Pakke Kessang,12267,Lemmi,1932.0,15000,district,pakke-kessang-ar
+43,2,AR,Papum Pare,12248,Yupia,3462.0,176573,district,papum-pare-ar
+44,2,AR,Shi Yomi,12268,Tato,2875.0,13310,district,shi-yomi-ar
+45,2,AR,Siang,12269,Boleng,2919.0,31920,district,siang-ar
+46,2,AR,Tawang,12245,Tawang,2085.0,49977,district,tawang-ar
+47,2,AR,Tirap,12256,Khonsa,2362.0,111975,district,tirap-ar
+48,2,AR,Upper Siang,12252,Yingkiong,6188.0,35320,district,upper-siang-ar
+49,2,AR,Upper Subansiri,12253,Daporijo,7032.0,83448,district,upper-subansiri-ar
+50,2,AR,West Kameng,12246,Bomdila,7422.0,83947,district,west-kameng-ar
+51,2,AR,West Siang,12254,Aalo,8325.0,112274,district,west-siang-ar
+52,2,AR,Itanagar Capital Complex,12270,Itanagar,200.0,122935,district,itanagar-capital-complex-ar
+53,3,AS,Baksa,18324,Mushalpur,2400.0,950075,district,baksa-as
+54,3,AS,Barpeta,18303,Barpeta,3245.0,1693622,district,barpeta-as
+55,3,AS,Biswanath,18328,Biswanath Chariali,1100.0,612491,district,biswanath-as
+56,3,AS,Bongaigaon,18302,Bongaigaon,1724.0,738804,district,bongaigaon-as
+57,3,AS,Cachar,18316,Silchar,3786.0,1736617,district,cachar-as
+58,3,AS,Charaideo,18329,Sonari,1069.0,471418,district,charaideo-as
+59,3,AS,Chirang,18323,Kajalgaon,1923.0,482162,district,chirang-as
+60,3,AS,Darrang,18325,Mangaldai,1849.0,928500,district,darrang-as
+61,3,AS,Dhemaji,18308,Dhemaji,3237.0,686133,district,dhemaji-as
+62,3,AS,Dhubri,18301,Dhubri,2176.0,1949258,district,dhubri-as
+63,3,AS,Dibrugarh,18310,Dibrugarh,3381.0,1326335,district,dibrugarh-as
+64,3,AS,Dima Hasao,18315,Haflong,4888.0,214102,district,dima-hasao-as
+65,3,AS,Goalpara,18304,Goalpara,1824.0,1008183,district,goalpara-as
+66,3,AS,Golaghat,18312,Golaghat,3502.0,1066888,district,golaghat-as
+67,3,AS,Hailakandi,18318,Hailakandi,1327.0,659296,district,hailakandi-as
+68,3,AS,Hojai,18330,Hojai,1686.0,931218,district,hojai-as
+69,3,AS,Jorhat,18311,Jorhat,2851.0,1092256,district,jorhat-as
+70,3,AS,Kamrup,18305,Amingaon,3105.0,1517542,district,kamrup-as
+71,3,AS,Kamrup Metropolitan,18326,Guwahati,1528.0,1253938,district,kamrup-metropolitan-as
+72,3,AS,Karbi Anglong,18314,Diphu,7366.0,956313,district,karbi-anglong-as
+73,3,AS,Karimganj,18317,Karimganj,1809.0,1228686,district,karimganj-as
+74,3,AS,Kokrajhar,18300,Kokrajhar,3169.0,887142,district,kokrajhar-as
+75,3,AS,Lakhimpur,18307,North Lakhimpur,2277.0,1042137,district,lakhimpur-as
+76,3,AS,Majuli,18331,Garamur,880.0,167304,district,majuli-as
+77,3,AS,Morigaon,18306,Morigaon,1551.0,957423,district,morigaon-as
+78,3,AS,Nagaon,18313,Nagaon,3973.0,2823768,district,nagaon-as
+79,3,AS,Nalbari,18327,Nalbari,1052.0,771639,district,nalbari-as
+80,3,AS,Sivasagar,18309,Sivasagar,2668.0,1151050,district,sivasagar-as
+81,3,AS,Sonitpur,18319,Tezpur,5324.0,1924110,district,sonitpur-as
+82,3,AS,South Salmara-Mankachar,18332,Hatsingimari,568.0,555114,district,south-salmara-mankachar-as
+83,3,AS,Tinsukia,18320,Tinsukia,3790.0,1327929,district,tinsukia-as
+84,4,BR,Araria,10209,Araria,2830.0,2811569,district,araria-br
+85,4,BR,Arwal,10238,Arwal,638.0,700843,district,arwal-br
+86,4,BR,Aurangabad,10235,Aurangabad,3305.0,2540073,district,aurangabad-br
+87,4,BR,Banka,10225,Banka,3018.0,2034763,district,banka-br
+88,4,BR,Begusarai,10222,Begusarai,1918.0,2970541,district,begusarai-br
+89,4,BR,Bhagalpur,10224,Bhagalpur,2569.0,3037766,district,bhagalpur-br
+90,4,BR,Bhojpur,10231,Arrah,2395.0,2728407,district,bhojpur-br
+91,4,BR,Buxar,10232,Buxar,1703.0,1706352,district,buxar-br
+92,4,BR,Darbhanga,10215,Darbhanga,2279.0,3937385,district,darbhanga-br
+93,4,BR,East Champaran,10203,Motihari,3968.0,5099371,district,east-champaran-br
+94,4,BR,Gaya,10236,Gaya,4976.0,4391418,district,gaya-br
+95,4,BR,Gopalganj,10216,Gopalganj,2033.0,2562012,district,gopalganj-br
+96,4,BR,Jamui,10227,Jamui,3098.0,1760405,district,jamui-br
+97,4,BR,Jehanabad,10237,Jehanabad,931.0,1125313,district,jehanabad-br
+98,4,BR,Kaimur,10233,Bhabua,3332.0,1626384,district,kaimur-br
+99,4,BR,Katihar,10212,Katihar,3057.0,3071029,district,katihar-br
+100,4,BR,Khagaria,10223,Khagaria,1486.0,1666886,district,khagaria-br
+101,4,BR,Kishanganj,10210,Kishanganj,1884.0,1690400,district,kishanganj-br
+102,4,BR,Lakhisarai,10226,Lakhisarai,1228.0,1000912,district,lakhisarai-br
+103,4,BR,Madhepura,10207,Madhepura,1788.0,2001762,district,madhepura-br
+104,4,BR,Madhubani,10206,Madhubani,3501.0,4487379,district,madhubani-br
+105,4,BR,Munger,10221,Munger,1419.0,1367765,district,munger-br
+106,4,BR,Muzaffarpur,10218,Muzaffarpur,3172.0,4801062,district,muzaffarpur-br
+107,4,BR,Nalanda,10229,Bihar Sharif,2355.0,2874553,district,nalanda-br
+108,4,BR,Nawada,10237,Nawada,2494.0,2219146,district,nawada-br
+109,4,BR,Patna,10230,Patna,3202.0,5838465,district,patna-br
+110,4,BR,Purnia,10211,Purnia,3229.0,3264619,district,purnia-br
+111,4,BR,Rohtas,10234,Sasaram,3881.0,2959918,district,rohtas-br
+112,4,BR,Saharsa,10208,Saharsa,1687.0,1900661,district,saharsa-br
+113,4,BR,Samastipur,10220,Samastipur,2904.0,4261566,district,samastipur-br
+114,4,BR,Saran,10217,Chhapra,2641.0,3951862,district,saran-br
+115,4,BR,Sheikhpura,10228,Sheikhpura,689.0,636342,district,sheikhpura-br
+116,4,BR,Sheohar,10204,Sheohar,349.0,656916,district,sheohar-br
+117,4,BR,Sitamarhi,10205,Dumra,2294.0,3423574,district,sitamarhi-br
+118,4,BR,Siwan,10219,Siwan,2219.0,3330464,district,siwan-br
+119,4,BR,Supaul,10207,Supaul,2425.0,2229076,district,supaul-br
+120,4,BR,Vaishali,10219,Hajipur,2036.0,3495021,district,vaishali-br
+121,4,BR,West Champaran,10201,Bettiah,5228.0,3935042,district,west-champaran-br
+122,5,CG,Balod,22415,Balod,3527.0,826165,district,balod-cg
+123,5,CG,Baloda Bazar,22416,Baloda Bazar,3733.0,1305343,district,baloda-bazar-cg
+124,5,CG,Balrampur,22417,Balrampur,3806.0,730491,district,balrampur-cg
+125,5,CG,Bastar,22411,Jagdalpur,4030.0,834375,district,bastar-cg
+126,5,CG,Bemetara,22418,Bemetara,2855.0,795759,district,bemetara-cg
+127,5,CG,Bijapur,22414,Bijapur,6555.0,255230,district,bijapur-cg
+128,5,CG,Bilaspur,22405,Bilaspur,3511.0,1983340,district,bilaspur-cg
+129,5,CG,Dantewada,22412,Dantewada,3410.0,533638,district,dantewada-cg
+130,5,CG,Dhamtari,22409,Dhamtari,2029.0,799777,district,dhamtari-cg
+131,5,CG,Durg,22408,Durg,2238.0,1721948,district,durg-cg
+132,5,CG,Gariaband,22419,Gariaband,5823.0,597769,district,gariaband-cg
+133,5,CG,Gaurela-Pendra-Marwahi,22428,Gaurella,2307.0,336420,district,gaurela-pendra-marwahi-cg
+134,5,CG,Janjgir-Champa,22406,Janjgir,3853.0,1619707,district,janjgir-champa-cg
+135,5,CG,Jashpur,22402,Jashpur Nagar,6457.0,851669,district,jashpur-cg
+136,5,CG,Kabirdham,22407,Kawardha,4447.0,822526,district,kabirdham-cg
+137,5,CG,Kanker,22410,Kanker,6432.0,748941,district,kanker-cg
+138,5,CG,Khairagarh-Chhuikhadan-Gandai,22432,Khairagarh,1551.0,368444,district,khairagarh-chhuikhadan-gandai-cg
+139,5,CG,Kondagaon,22420,Kondagaon,7769.0,578326,district,kondagaon-cg
+140,5,CG,Korba,22404,Korba,7145.0,1206640,district,korba-cg
+141,5,CG,Koriya,22401,Baikunthpur,2378.0,658917,district,koriya-cg
+142,5,CG,Mahasamund,22410,Mahasamund,4790.0,1032754,district,mahasamund-cg
+143,5,CG,Manendragarh-Chirmiri-Bharatpur,22430,Manendragarh,4226.0,376000,district,manendragarh-chirmiri-bharatpur-cg
+144,5,CG,Mohla-Manpur-Ambagarh Chowki,22431,Mohla,2146.0,283947,district,mohla-manpur-ambagarh-chowki-cg
+145,5,CG,Mungeli,22421,Mungeli,2750.0,701707,district,mungeli-cg
+146,5,CG,Narayanpur,22413,Narayanpur,7010.0,139820,district,narayanpur-cg
+147,5,CG,Raigarh,22403,Raigarh,7086.0,1493984,district,raigarh-cg
+148,5,CG,Raipur,22409,Raipur,12383.0,2160876,district,raipur-cg
+149,5,CG,Rajnandgaon,22408,Rajnandgaon,8070.0,1537133,district,rajnandgaon-cg
+150,5,CG,Sarangarh-Bilaigarh,22433,Sarangarh,1650.0,607234,district,sarangarh-bilaigarh-cg
+151,5,CG,Sakti,22429,Sakti,1223.0,653036,district,sakti-cg
+152,5,CG,Sukma,22422,Sukma,5636.0,250159,district,sukma-cg
+153,5,CG,Surajpur,22423,Surajpur,2787.0,789065,district,surajpur-cg
+154,5,CG,Surguja,22402,Ambikapur,5701.0,840352,district,surguja-cg
+155,6,GA,North Goa,30585,Panaji,1736.0,818008,district,north-goa-ga
+156,6,GA,South Goa,30586,Margao,1966.0,640537,district,south-goa-ga
+157,7,GJ,Ahmedabad,24474,Ahmedabad,7170.0,7214225,district,ahmedabad-gj
+158,7,GJ,Amreli,24479,Amreli,6760.0,1514190,district,amreli-gj
+159,7,GJ,Anand,24482,Anand,2942.0,2092745,district,anand-gj
+160,7,GJ,Aravalli,24495,Modasa,3217.0,1039918,district,aravalli-gj
+161,7,GJ,Banaskantha,24469,Palanpur,12703.0,3120506,district,banaskantha-gj
+162,7,GJ,Bharuch,24488,Bharuch,6524.0,1551019,district,bharuch-gj
+163,7,GJ,Bhavnagar,24480,Bhavnagar,10034.0,2880365,district,bhavnagar-gj
+164,7,GJ,Botad,24496,Botad,2564.0,652556,district,botad-gj
+165,7,GJ,Chhota Udaipur,24497,Chhota Udaipur,3237.0,1071799,district,chhota-udaipur-gj
+166,7,GJ,Dahod,24485,Dahod,3642.0,2127086,district,dahod-gj
+167,7,GJ,Dang,24491,Ahwa,1764.0,228291,district,dang-gj
+168,7,GJ,Devbhumi Dwarka,24498,Khambhalia,5684.0,752484,district,devbhumi-dwarka-gj
+169,7,GJ,Gandhinagar,24473,Gandhinagar,2163.0,1391753,district,gandhinagar-gj
+170,7,GJ,Gir Somnath,24499,Veraval,3754.0,1217477,district,gir-somnath-gj
+171,7,GJ,Jamnagar,24477,Jamnagar,14184.0,2160119,district,jamnagar-gj
+172,7,GJ,Junagadh,24478,Junagadh,8839.0,2743082,district,junagadh-gj
+173,7,GJ,Kheda,24483,Nadiad,3991.0,2299885,district,kheda-gj
+174,7,GJ,Kutch,24468,Bhuj,45652.0,2092371,district,kutch-gj
+175,7,GJ,Mahisagar,24500,Lunawada,2500.0,994624,district,mahisagar-gj
+176,7,GJ,Mehsana,24471,Mehsana,4386.0,2035064,district,mehsana-gj
+177,7,GJ,Morbi,24501,Morbi,4871.0,960329,district,morbi-gj
+178,7,GJ,Narmada,24487,Rajpipla,2749.0,590297,district,narmada-gj
+179,7,GJ,Navsari,24490,Navsari,2211.0,1329672,district,navsari-gj
+180,7,GJ,Panchmahal,24484,Godhra,5219.0,2390776,district,panchmahal-gj
+181,7,GJ,Patan,24470,Patan,5738.0,1343734,district,patan-gj
+182,7,GJ,Porbandar,24476,Porbandar,2294.0,585449,district,porbandar-gj
+183,7,GJ,Rajkot,24475,Rajkot,11203.0,3804558,district,rajkot-gj
+184,7,GJ,Sabarkantha,24472,Himmatnagar,7390.0,2428697,district,sabarkantha-gj
+185,7,GJ,Surat,24489,Surat,4418.0,6081322,district,surat-gj
+186,7,GJ,Surendranagar,24474,Surendranagar,10489.0,1756268,district,surendranagar-gj
+187,7,GJ,Tapi,24493,Vyara,3249.0,807022,district,tapi-gj
+188,7,GJ,Vadodara,24486,Vadodara,7794.0,4165626,district,vadodara-gj
+189,7,GJ,Valsad,24492,Valsad,3035.0,1705678,district,valsad-gj
+190,8,HR,Ambala,06070,Ambala,1574.0,1128350,district,ambala-hr
+191,8,HR,Bhiwani,06081,Bhiwani,4778.0,1634445,district,bhiwani-hr
+192,8,HR,Charkhi Dadri,06092,Charkhi Dadri,1370.0,502276,district,charkhi-dadri-hr
+193,8,HR,Faridabad,06088,Faridabad,741.0,1809733,district,faridabad-hr
+194,8,HR,Fatehabad,06078,Fatehabad,2538.0,942011,district,fatehabad-hr
+195,8,HR,Gurugram,06086,Gurugram,1258.0,1514437,district,gurugram-hr
+196,8,HR,Hisar,06080,Hisar,3983.0,1743931,district,hisar-hr
+197,8,HR,Jhajjar,06085,Jhajjar,1834.0,958405,district,jhajjar-hr
+198,8,HR,Jind,06076,Jind,2702.0,1334152,district,jind-hr
+199,8,HR,Kaithal,06073,Kaithal,2317.0,1074304,district,kaithal-hr
+200,8,HR,Karnal,06074,Karnal,2520.0,1505324,district,karnal-hr
+201,8,HR,Kurukshetra,06072,Kurukshetra,1530.0,964655,district,kurukshetra-hr
+202,8,HR,Mahendragarh,06083,Narnaul,1899.0,922088,district,mahendragarh-hr
+203,8,HR,Nuh,06090,Nuh,1860.0,1089263,district,nuh-hr
+204,8,HR,Palwal,06089,Palwal,1359.0,1042708,district,palwal-hr
+205,8,HR,Panchkula,06069,Panchkula,898.0,561293,district,panchkula-hr
+206,8,HR,Panipat,06075,Panipat,1268.0,1205437,district,panipat-hr
+207,8,HR,Rewari,06084,Rewari,1594.0,900332,district,rewari-hr
+208,8,HR,Rohtak,06082,Rohtak,1745.0,1061048,district,rohtak-hr
+209,8,HR,Sirsa,06079,Sirsa,4277.0,1295189,district,sirsa-hr
+210,8,HR,Sonipat,06077,Sonipat,2122.0,1450001,district,sonipat-hr
+211,8,HR,Yamunanagar,06071,Yamunanagar,1768.0,1214205,district,yamunanagar-hr
+212,9,HP,Bilaspur,02018,Bilaspur,1167.0,381956,district,bilaspur-hp
+213,9,HP,Chamba,02011,Chamba,6522.0,519080,district,chamba-hp
+214,9,HP,Hamirpur,02016,Hamirpur,1118.0,454768,district,hamirpur-hp
+215,9,HP,Kangra,02012,Dharamshala,5739.0,1510075,district,kangra-hp
+216,9,HP,Kinnaur,02022,Reckong Peo,6401.0,84121,district,kinnaur-hp
+217,9,HP,Kullu,02014,Kullu,5503.0,437903,district,kullu-hp
+218,9,HP,Lahaul and Spiti,02013,Keylong,13841.0,31564,district,lahaul-and-spiti-hp
+219,9,HP,Mandi,02015,Mandi,3950.0,999777,district,mandi-hp
+220,9,HP,Shimla,02020,Shimla,5131.0,814010,district,shimla-hp
+221,9,HP,Sirmaur,02021,Nahan,2825.0,529851,district,sirmaur-hp
+222,9,HP,Solan,02019,Solan,1936.0,580320,district,solan-hp
+223,9,HP,Una,02017,Una,1540.0,521173,district,una-hp
+224,10,JH,Bokaro,20361,Bokaro Steel City,2883.0,2062330,district,bokaro-jh
+225,10,JH,Chatra,20349,Chatra,3718.0,1042886,district,chatra-jh
+226,10,JH,Deoghar,20353,Deoghar,2477.0,1492073,district,deoghar-jh
+227,10,JH,Dhanbad,20362,Dhanbad,2040.0,2684487,district,dhanbad-jh
+228,10,JH,Dumka,20355,Dumka,3761.0,1321442,district,dumka-jh
+229,10,JH,East Singhbhum,20364,Jamshedpur,3562.0,2293919,district,east-singhbhum-jh
+230,10,JH,Garhwa,20347,Garhwa,4093.0,1322784,district,garhwa-jh
+231,10,JH,Giridih,20352,Giridih,4962.0,2445474,district,giridih-jh
+232,10,JH,Godda,20354,Godda,2266.0,1313551,district,godda-jh
+233,10,JH,Gumla,20367,Gumla,5360.0,1025213,district,gumla-jh
+234,10,JH,Hazaribagh,20350,Hazaribagh,3555.0,1734495,district,hazaribagh-jh
+235,10,JH,Jamtara,20356,Jamtara,1811.0,791042,district,jamtara-jh
+236,10,JH,Khunti,20369,Khunti,2535.0,531885,district,khunti-jh
+237,10,JH,Koderma,20351,Koderma,1500.0,716259,district,koderma-jh
+238,10,JH,Latehar,20348,Latehar,4291.0,726978,district,latehar-jh
+239,10,JH,Lohardaga,20366,Lohardaga,1502.0,461790,district,lohardaga-jh
+240,10,JH,Pakur,20357,Pakur,1806.0,900422,district,pakur-jh
+241,10,JH,Palamu,20346,Medininagar,4391.0,1939869,district,palamu-jh
+242,10,JH,Ramgarh,20370,Ramgarh Cantonment,1341.0,949443,district,ramgarh-jh
+243,10,JH,Ranchi,20360,Ranchi,5097.0,2914253,district,ranchi-jh
+244,10,JH,Sahebganj,20358,Sahebganj,2063.0,1150567,district,sahebganj-jh
+245,10,JH,Seraikela Kharsawan,20365,Seraikela,2657.0,1065056,district,seraikela-kharsawan-jh
+246,10,JH,Simdega,20368,Simdega,3774.0,599578,district,simdega-jh
+247,10,JH,West Singhbhum,20363,Chaibasa,7224.0,1502338,district,west-singhbhum-jh
+248,11,KA,Bagalkote,29556,Bagalkote,6575.0,1889752,district,bagalkote-ka
+249,11,KA,Ballari,29563,Ballari,8450.0,2452595,district,ballari-ka
+250,11,KA,Belagavi,29555,Belagavi,13415.0,4779661,district,belagavi-ka
+251,11,KA,Bengaluru Rural,29583,Bengaluru,2295.0,990923,district,bengaluru-rural-ka
+252,11,KA,Bengaluru Urban,29572,Bengaluru,2190.0,9621551,district,bengaluru-urban-ka
+253,11,KA,Bidar,29558,Bidar,5448.0,1700018,district,bidar-ka
+254,11,KA,Chamarajanagara,29579,Chamarajanagara,5101.0,1020791,district,chamarajanagara-ka
+255,11,KA,Chikkaballapura,29581,Chikkaballapura,4524.0,1255104,district,chikkaballapura-ka
+256,11,KA,Chikkamagaluru,29570,Chikkamagaluru,7201.0,1137961,district,chikkamagaluru-ka
+257,11,KA,Chitradurga,29566,Chitradurga,8440.0,1659456,district,chitradurga-ka
+258,11,KA,Dakshina Kannada,29575,Mangaluru,4560.0,2089649,district,dakshina-kannada-ka
+259,11,KA,Davanagere,29567,Davanagere,5924.0,1945497,district,davanagere-ka
+260,11,KA,Dharwad,29561,Dharwad,4260.0,1847023,district,dharwad-ka
+261,11,KA,Gadag,29560,Gadag,4656.0,1064570,district,gadag-ka
+262,11,KA,Hassan,29574,Hassan,6814.0,1776421,district,hassan-ka
+263,11,KA,Haveri,29564,Haveri,4823.0,1597668,district,haveri-ka
+264,11,KA,Kalaburagi,29559,Kalaburagi,10951.0,2566326,district,kalaburagi-ka
+265,11,KA,Kodagu,29576,Madikeri,4102.0,554519,district,kodagu-ka
+266,11,KA,Kolar,29582,Kolar,3969.0,1536401,district,kolar-ka
+267,11,KA,Koppal,29562,Koppal,7189.0,1389920,district,koppal-ka
+268,11,KA,Mandya,29573,Mandya,4961.0,1805769,district,mandya-ka
+269,11,KA,Mysuru,29577,Mysuru,6854.0,3001127,district,mysuru-ka
+270,11,KA,Raichur,29557,Raichur,6827.0,1928812,district,raichur-ka
+271,11,KA,Ramanagara,29584,Ramanagara,3556.0,1082636,district,ramanagara-ka
+272,11,KA,Shivamogga,29568,Shivamogga,8477.0,1752753,district,shivamogga-ka
+273,11,KA,Tumakuru,29571,Tumakuru,10597.0,2678480,district,tumakuru-ka
+274,11,KA,Udupi,29569,Udupi,3880.0,1177361,district,udupi-ka
+275,11,KA,Uttara Kannada,29565,Karwar,10291.0,1437169,district,uttara-kannada-ka
+276,11,KA,Vijayanagara,29585,Hosapete,5644.0,1353628,district,vijayanagara-ka
+277,11,KA,Vijayapura,29554,Vijayapura,10498.0,2177331,district,vijayapura-ka
+278,11,KA,Yadgir,29580,Yadgir,5270.0,1174271,district,yadgir-ka
+279,12,KL,Alappuzha,32598,Alappuzha,1414.0,2127789,district,alappuzha-kl
+280,12,KL,Ernakulam,32595,Kochi,3068.0,3282388,district,ernakulam-kl
+281,12,KL,Idukki,32596,Painavu,4358.0,1108974,district,idukki-kl
+282,12,KL,Kannur,32589,Kannur,2966.0,2523003,district,kannur-kl
+283,12,KL,Kasaragod,32588,Kasaragod,1992.0,1307500,district,kasaragod-kl
+284,12,KL,Kollam,32600,Kollam,2491.0,2635375,district,kollam-kl
+285,12,KL,Kottayam,32597,Kottayam,2208.0,1974551,district,kottayam-kl
+286,12,KL,Kozhikode,32591,Kozhikode,2344.0,3086293,district,kozhikode-kl
+287,12,KL,Malappuram,32592,Malappuram,3550.0,4112920,district,malappuram-kl
+288,12,KL,Palakkad,32593,Palakkad,4480.0,2809934,district,palakkad-kl
+289,12,KL,Pathanamthitta,32599,Pathanamthitta,2637.0,1197412,district,pathanamthitta-kl
+290,12,KL,Thiruvananthapuram,32601,Thiruvananthapuram,2192.0,3301427,district,thiruvananthapuram-kl
+291,12,KL,Thrissur,32594,Thrissur,3032.0,3121200,district,thrissur-kl
+292,12,KL,Wayanad,32590,Kalpetta,2131.0,817420,district,wayanad-kl
+293,13,MP,Agar Malwa,23465,Agar,2785.0,571275,district,agar-malwa-mp
+294,13,MP,Alirajpur,23460,Alirajpur,3182.0,728999,district,alirajpur-mp
+295,13,MP,Anuppur,23461,Anuppur,3701.0,749521,district,anuppur-mp
+296,13,MP,Ashoknagar,23462,Ashoknagar,4674.0,845071,district,ashoknagar-mp
+297,13,MP,Balaghat,23457,Balaghat,9229.0,1701698,district,balaghat-mp
+298,13,MP,Barwani,23440,Barwani,5427.0,1385881,district,barwani-mp
+299,13,MP,Betul,23443,Betul,10043.0,1575362,district,betul-mp
+300,13,MP,Bhind,23419,Bhind,4459.0,1703005,district,bhind-mp
+301,13,MP,Bhopal,23444,Bhopal,2772.0,2371061,district,bhopal-mp
+302,13,MP,Burhanpur,23463,Burhanpur,3427.0,757847,district,burhanpur-mp
+303,13,MP,Chhatarpur,23428,Chhatarpur,8687.0,1762375,district,chhatarpur-mp
+304,13,MP,Chhindwara,23455,Chhindwara,11815.0,2090922,district,chhindwara-mp
+305,13,MP,Damoh,23429,Damoh,7306.0,1264219,district,damoh-mp
+306,13,MP,Datia,23421,Datia,2691.0,786725,district,datia-mp
+307,13,MP,Dewas,23437,Dewas,7020.0,1563715,district,dewas-mp
+308,13,MP,Dhar,23438,Dhar,8153.0,2185793,district,dhar-mp
+309,13,MP,Dindori,23453,Dindori,7470.0,704524,district,dindori-mp
+310,13,MP,Guna,23422,Guna,6390.0,1241519,district,guna-mp
+311,13,MP,Gwalior,23420,Gwalior,4560.0,2032036,district,gwalior-mp
+312,13,MP,Harda,23442,Harda,3335.0,570465,district,harda-mp
+313,13,MP,Hoshangabad,23441,Narmadapuram,6707.0,1241350,district,hoshangabad-mp
+314,13,MP,Indore,23439,Indore,3898.0,3276697,district,indore-mp
+315,13,MP,Jabalpur,23451,Jabalpur,5211.0,2463289,district,jabalpur-mp
+316,13,MP,Jhabua,23435,Jhabua,3601.0,1025048,district,jhabua-mp
+317,13,MP,Katni,23450,Katni,4950.0,1292042,district,katni-mp
+318,13,MP,Khandwa,23447,Khandwa,7350.0,1310061,district,khandwa-mp
+319,13,MP,Khargone,23446,Khargone,8030.0,1873046,district,khargone-mp
+320,13,MP,Maihar,23468,Maihar,2722.0,648483,district,maihar-mp
+321,13,MP,Mandla,23454,Mandla,8771.0,1054905,district,mandla-mp
+322,13,MP,Mandsaur,23432,Mandsaur,5535.0,1340411,district,mandsaur-mp
+323,13,MP,Mauganj,23466,Mauganj,1866.0,616645,district,mauganj-mp
+324,13,MP,Morena,23418,Morena,4989.0,1965970,district,morena-mp
+325,13,MP,Narsinghpur,23452,Narsinghpur,5126.0,1091854,district,narsinghpur-mp
+326,13,MP,Neemuch,23431,Neemuch,4256.0,826067,district,neemuch-mp
+327,13,MP,Niwari,23467,Niwari,1318.0,404807,district,niwari-mp
+328,13,MP,Pandhurna,23469,Pandhurna,1522.0,362846,district,pandhurna-mp
+329,13,MP,Panna,23427,Panna,7135.0,1016520,district,panna-mp
+330,13,MP,Raisen,23445,Raisen,8466.0,1335173,district,raisen-mp
+331,13,MP,Rajgarh,23434,Rajgarh,6153.0,1545814,district,rajgarh-mp
+332,13,MP,Ratlam,23433,Ratlam,4861.0,1455069,district,ratlam-mp
+333,13,MP,Rewa,23424,Rewa,6314.0,2365106,district,rewa-mp
+334,13,MP,Sagar,23430,Sagar,10252.0,2378458,district,sagar-mp
+335,13,MP,Satna,23425,Satna,7502.0,2228935,district,satna-mp
+336,13,MP,Sehore,23446,Sehore,6578.0,1311332,district,sehore-mp
+337,13,MP,Seoni,23456,Seoni,8758.0,1379131,district,seoni-mp
+338,13,MP,Shahdol,23426,Shahdol,6205.0,1066063,district,shahdol-mp
+339,13,MP,Shajapur,23436,Shajapur,6195.0,1512681,district,shajapur-mp
+340,13,MP,Sheopur,23417,Sheopur,6606.0,687861,district,sheopur-mp
+341,13,MP,Shivpuri,23423,Shivpuri,10277.0,1726050,district,shivpuri-mp
+342,13,MP,Sidhi,23448,Sidhi,10536.0,1127020,district,sidhi-mp
+343,13,MP,Singrauli,23464,Waidhan,5672.0,1178273,district,singrauli-mp
+344,13,MP,Tikamgarh,23427,Tikamgarh,5048.0,1445166,district,tikamgarh-mp
+345,13,MP,Ujjain,23435,Ujjain,6091.0,1986864,district,ujjain-mp
+346,13,MP,Umaria,23449,Umaria,4077.0,644758,district,umaria-mp
+347,13,MP,Vidisha,23431,Vidisha,7371.0,1458875,district,vidisha-mp
+348,14,MH,Ahmednagar,27522,Ahilyanagar,17048.0,4543159,district,ahmednagar-mh
+349,14,MH,Akola,27501,Akola,5429.0,1813906,district,akola-mh
+350,14,MH,Amravati,27503,Amravati,12210.0,2888445,district,amravati-mh
+351,14,MH,Beed,27523,Beed,10693.0,2585049,district,beed-mh
+352,14,MH,Bhandara,27507,Bhandara,3895.0,1200334,district,bhandara-mh
+353,14,MH,Buldhana,27500,Buldhana,9661.0,2586258,district,buldhana-mh
+354,14,MH,Chandrapur,27509,Chandrapur,11443.0,2204307,district,chandrapur-mh
+355,14,MH,Chhatrapati Sambhajinagar,27515,Chhatrapati Sambhajinagar,10107.0,3701282,district,chhatrapati-sambhajinagar-mh
+356,14,MH,Dhule,27498,Dhule,7195.0,2050862,district,dhule-mh
+357,14,MH,Gadchiroli,27508,Gadchiroli,14412.0,1072942,district,gadchiroli-mh
+358,14,MH,Gondia,27506,Gondia,5431.0,1322507,district,gondia-mh
+359,14,MH,Hingoli,27512,Hingoli,4526.0,1177345,district,hingoli-mh
+360,14,MH,Jalgaon,27499,Jalgaon,11765.0,4229917,district,jalgaon-mh
+361,14,MH,Jalna,27514,Jalna,7718.0,1959046,district,jalna-mh
+362,14,MH,Kolhapur,27530,Kolhapur,7685.0,3876001,district,kolhapur-mh
+363,14,MH,Latur,27524,Latur,7157.0,2454196,district,latur-mh
+364,14,MH,Mumbai City,27519,Mumbai,157.0,3085411,district,mumbai-city-mh
+365,14,MH,Mumbai Suburban,27518,Bandra,446.0,9356962,district,mumbai-suburban-mh
+366,14,MH,Nagpur,27505,Nagpur,9892.0,4653570,district,nagpur-mh
+367,14,MH,Nanded,27511,Nanded,10528.0,3361292,district,nanded-mh
+368,14,MH,Nandurbar,27497,Nandurbar,5035.0,1648295,district,nandurbar-mh
+369,14,MH,Nashik,27516,Nashik,15530.0,6107187,district,nashik-mh
+370,14,MH,Dharashiv,27525,Dharashiv,7569.0,1657576,district,dharashiv-mh
+371,14,MH,Palghar,27533,Palghar,5344.0,2990116,district,palghar-mh
+372,14,MH,Parbhani,27513,Parbhani,6511.0,1836086,district,parbhani-mh
+373,14,MH,Pune,27521,Pune,15643.0,9429408,district,pune-mh
+374,14,MH,Raigad,27520,Alibag,7152.0,2634200,district,raigad-mh
+375,14,MH,Ratnagiri,27528,Ratnagiri,8208.0,1615069,district,ratnagiri-mh
+376,14,MH,Sangli,27531,Sangli,8572.0,2822143,district,sangli-mh
+377,14,MH,Satara,27527,Satara,10480.0,3003741,district,satara-mh
+378,14,MH,Sindhudurg,27529,Oros,5207.0,849651,district,sindhudurg-mh
+379,14,MH,Solapur,27526,Solapur,14895.0,4317756,district,solapur-mh
+380,14,MH,Thane,27517,Thane,4214.0,8070032,district,thane-mh
+381,14,MH,Wardha,27504,Wardha,6309.0,1300774,district,wardha-mh
+382,14,MH,Washim,27502,Washim,5155.0,1197160,district,washim-mh
+383,14,MH,Yavatmal,27510,Yavatmal,13582.0,2772348,district,yavatmal-mh
+384,15,MN,Bishnupur,14273,Bishnupur,496.0,237399,district,bishnupur-mn
+385,15,MN,Chandel,14278,Chandel,3313.0,144182,district,chandel-mn
+386,15,MN,Churachandpur,14274,Churachandpur,4570.0,274143,district,churachandpur-mn
+387,15,MN,Imphal East,14279,Porompat,709.0,456113,district,imphal-east-mn
+388,15,MN,Imphal West,14277,Lamphelpat,519.0,517992,district,imphal-west-mn
+389,15,MN,Jiribam,14280,Jiribam,232.0,43838,district,jiribam-mn
+390,15,MN,Kakching,14281,Kakching,448.0,135056,district,kakching-mn
+391,15,MN,Kamjong,14282,Kamjong,2000.0,45616,district,kamjong-mn
+392,15,MN,Kangpokpi,14283,Kangpokpi,1698.0,193871,district,kangpokpi-mn
+393,15,MN,Noney,14284,Longmai,1000.0,38533,district,noney-mn
+394,15,MN,Pherzawl,14285,Pherzawl,1485.0,47250,district,pherzawl-mn
+395,15,MN,Senapati,14272,Senapati,3271.0,479148,district,senapati-mn
+396,15,MN,Tamenglong,14275,Tamenglong,4391.0,140651,district,tamenglong-mn
+397,15,MN,Tengnoupal,14286,Tengnoupal,1313.0,59110,district,tengnoupal-mn
+398,15,MN,Thoubal,14276,Thoubal,514.0,420517,district,thoubal-mn
+399,15,MN,Ukhrul,14271,Ukhrul,4544.0,183998,district,ukhrul-mn
+400,16,ML,East Garo Hills,17295,Williamnagar,2603.0,317917,district,east-garo-hills-ml
+401,16,ML,East Jaintia Hills,17298,Khliehriat,2115.0,122939,district,east-jaintia-hills-ml
+402,16,ML,East Khasi Hills,17297,Shillong,2748.0,825922,district,east-khasi-hills-ml
+403,16,ML,Eastern West Khasi Hills,17300,Mairang,1356.0,131451,district,eastern-west-khasi-hills-ml
+404,16,ML,North Garo Hills,17299,Resubelpara,1113.0,118325,district,north-garo-hills-ml
+405,16,ML,Ri Bhoi,17296,Nongpoh,2448.0,258840,district,ri-bhoi-ml
+406,16,ML,South Garo Hills,17294,Baghmara,1887.0,142334,district,south-garo-hills-ml
+407,16,ML,South West Garo Hills,17301,Ampati,822.0,172495,district,south-west-garo-hills-ml
+408,16,ML,South West Khasi Hills,17302,Mawkyrwat,1341.0,110152,district,south-west-khasi-hills-ml
+409,16,ML,West Garo Hills,17293,Tura,3677.0,643291,district,west-garo-hills-ml
+410,16,ML,West Jaintia Hills,17292,Jowai,1693.0,270352,district,west-jaintia-hills-ml
+411,16,ML,West Khasi Hills,17291,Nongstoin,5247.0,383461,district,west-khasi-hills-ml
+412,17,MZ,Aizawl,15283,Aizawl,3576.0,400309,district,aizawl-mz
+413,17,MZ,Champhai,15284,Champhai,3185.0,125745,district,champhai-mz
+414,17,MZ,Hnahthial,15289,Hnahthial,1922.0,28468,district,hnahthial-mz
+415,17,MZ,Khawzawl,15290,Khawzawl,1356.0,36381,district,khawzawl-mz
+416,17,MZ,Kolasib,15282,Kolasib,1282.0,83955,district,kolasib-mz
+417,17,MZ,Lawngtlai,15287,Lawngtlai,2577.0,117894,district,lawngtlai-mz
+418,17,MZ,Lunglei,15285,Lunglei,4538.0,161428,district,lunglei-mz
+419,17,MZ,Mamit,15281,Mamit,3025.0,86364,district,mamit-mz
+420,17,MZ,Saitual,15291,Saitual,1478.0,50575,district,saitual-mz
+421,17,MZ,Serchhip,15286,Serchhip,1421.0,64937,district,serchhip-mz
+422,17,MZ,Siaha,15288,Siaha,1399.0,56574,district,siaha-mz
+423,18,NL,Chumoukedima,13271,Chumoukedima,610.0,125414,district,chumoukedima-nl
+424,18,NL,Dimapur,13265,Dimapur,927.0,378811,district,dimapur-nl
+425,18,NL,Kiphire,13269,Kiphire,1130.0,74004,district,kiphire-nl
+426,18,NL,Kohima,13270,Kohima,1463.0,267473,district,kohima-nl
+427,18,NL,Longleng,13267,Longleng,562.0,50484,district,longleng-nl
+428,18,NL,Mokokchung,13262,Mokokchung,1615.0,194622,district,mokokchung-nl
+429,18,NL,Mon,13261,Mon,1786.0,250260,district,mon-nl
+430,18,NL,Niuland,13272,Niuland,522.0,41235,district,niuland-nl
+431,18,NL,Noklak,13273,Noklak,1152.0,59300,district,noklak-nl
+432,18,NL,Peren,13266,Peren,1651.0,95219,district,peren-nl
+433,18,NL,Phek,13264,Phek,2026.0,163418,district,phek-nl
+434,18,NL,Shamator,13274,Shamator,780.0,34223,district,shamator-nl
+435,18,NL,Tseminyu,13275,Tseminyu,256.0,63629,district,tseminyu-nl
+436,18,NL,Tuensang,13263,Tuensang,4228.0,196596,district,tuensang-nl
+437,18,NL,Wokha,13268,Wokha,1628.0,166343,district,wokha-nl
+438,18,NL,Zunheboto,13267,Zunheboto,1255.0,140757,district,zunheboto-nl
+439,19,OD,Angul,21384,Angul,6375.0,1273821,district,angul-od
+440,19,OD,Balangir,21393,Balangir,6575.0,1648997,district,balangir-od
+441,19,OD,Balasore,21377,Balasore,3806.0,2320529,district,balasore-od
+442,19,OD,Bargarh,21370,Bargarh,5837.0,1481255,district,bargarh-od
+443,19,OD,Bhadrak,21378,Bhadrak,2505.0,1507199,district,bhadrak-od
+444,19,OD,Boudh,21391,Boudh,3098.0,441162,district,boudh-od
+445,19,OD,Cuttack,21381,Cuttack,3932.0,2624470,district,cuttack-od
+446,19,OD,Deogarh,21373,Deogarh,2940.0,312520,district,deogarh-od
+447,19,OD,Dhenkanal,21383,Dhenkanal,4452.0,1192811,district,dhenkanal-od
+448,19,OD,Gajapati,21398,Paralakhemundi,4325.0,577817,district,gajapati-od
+449,19,OD,Ganjam,21392,Chhatrapur,8206.0,3529031,district,ganjam-od
+450,19,OD,Jagatsinghpur,21380,Jagatsinghpur,1668.0,1136971,district,jagatsinghpur-od
+451,19,OD,Jajpur,21382,Panikoili,2899.0,1827192,district,jajpur-od
+452,19,OD,Jharsuguda,21371,Jharsuguda,2082.0,579505,district,jharsuguda-od
+453,19,OD,Kalahandi,21395,Bhawanipatna,7920.0,1576869,district,kalahandi-od
+454,19,OD,Kandhamal,21390,Phulbani,8021.0,733110,district,kandhamal-od
+455,19,OD,Kendrapara,21379,Kendrapara,2644.0,1440361,district,kendrapara-od
+456,19,OD,Kendujhar,21375,Kendujhar,8303.0,1801733,district,kendujhar-od
+457,19,OD,Khordha,21386,Bhubaneswar,2813.0,2251673,district,khordha-od
+458,19,OD,Koraput,21399,Koraput,8807.0,1379647,district,koraput-od
+459,19,OD,Malkangiri,21400,Malkangiri,5791.0,613192,district,malkangiri-od
+460,19,OD,Mayurbhanj,21376,Baripada,10418.0,2519738,district,mayurbhanj-od
+461,19,OD,Nabarangpur,21397,Nabarangpur,5291.0,1220946,district,nabarangpur-od
+462,19,OD,Nayagarh,21387,Nayagarh,3890.0,962789,district,nayagarh-od
+463,19,OD,Nuapada,21394,Nuapada,3852.0,610382,district,nuapada-od
+464,19,OD,Puri,21388,Puri,3479.0,1698730,district,puri-od
+465,19,OD,Rayagada,21396,Rayagada,7073.0,967911,district,rayagada-od
+466,19,OD,Sambalpur,21372,Sambalpur,6657.0,1041099,district,sambalpur-od
+467,19,OD,Subarnapur,21389,Sonepur,2337.0,610183,district,subarnapur-od
+468,19,OD,Sundargarh,21374,Sundargarh,9712.0,2093437,district,sundargarh-od
+469,20,PB,Amritsar,03034,Amritsar,2683.0,2490656,district,amritsar-pb
+470,20,PB,Barnala,03051,Barnala,1410.0,595527,district,barnala-pb
+471,20,PB,Bathinda,03043,Bathinda,3385.0,1388525,district,bathinda-pb
+472,20,PB,Faridkot,03041,Faridkot,1469.0,617508,district,faridkot-pb
+473,20,PB,Fatehgarh Sahib,03038,Fatehgarh Sahib,1180.0,600163,district,fatehgarh-sahib-pb
+474,20,PB,Fazilka,03052,Fazilka,3113.0,1180483,district,fazilka-pb
+475,20,PB,Ferozepur,03040,Ferozepur,2190.0,965337,district,ferozepur-pb
+476,20,PB,Gurdaspur,03033,Gurdaspur,2635.0,2298323,district,gurdaspur-pb
+477,20,PB,Hoshiarpur,03036,Hoshiarpur,3365.0,1586625,district,hoshiarpur-pb
+478,20,PB,Jalandhar,03035,Jalandhar,2632.0,2193590,district,jalandhar-pb
+479,20,PB,Kapurthala,03035,Kapurthala,1632.0,815168,district,kapurthala-pb
+480,20,PB,Ludhiana,03039,Ludhiana,3767.0,3498739,district,ludhiana-pb
+481,20,PB,Malerkotla,03054,Malerkotla,684.0,452016,district,malerkotla-pb
+482,20,PB,Mansa,03044,Mansa,2171.0,769751,district,mansa-pb
+483,20,PB,Moga,03042,Moga,2216.0,995746,district,moga-pb
+484,20,PB,Muktsar,03045,Sri Muktsar Sahib,2615.0,901896,district,muktsar-pb
+485,20,PB,Pathankot,03053,Pathankot,929.0,676598,district,pathankot-pb
+486,20,PB,Patiala,03048,Patiala,3218.0,1895686,district,patiala-pb
+487,20,PB,Rupnagar,03037,Rupnagar,1369.0,684627,district,rupnagar-pb
+488,20,PB,Sahibzada Ajit Singh Nagar,03050,Mohali,1093.0,994628,district,sahibzada-ajit-singh-nagar-pb
+489,20,PB,Sangrur,03047,Sangrur,2848.0,1203153,district,sangrur-pb
+490,20,PB,Shahid Bhagat Singh Nagar,03049,Nawanshahr,1267.0,612310,district,shahid-bhagat-singh-nagar-pb
+491,20,PB,Tarn Taran,03046,Tarn Taran Sahib,2449.0,1119627,district,tarn-taran-pb
+492,21,RJ,Ajmer,08118,Ajmer,8481.0,2583052,district,ajmer-rj
+493,21,RJ,Alwar,08105,Alwar,8380.0,3674179,district,alwar-rj
+494,21,RJ,Anupgarh,08134,Anupgarh,3840.0,700000,district,anupgarh-rj
+495,21,RJ,Balotra,08135,Balotra,4500.0,800000,district,balotra-rj
+496,21,RJ,Banswara,08127,Banswara,5037.0,1797485,district,banswara-rj
+497,21,RJ,Baran,08130,Baran,6992.0,1222755,district,baran-rj
+498,21,RJ,Barmer,08115,Barmer,28387.0,2603751,district,barmer-rj
+499,21,RJ,Beawar,08136,Beawar,3200.0,650000,district,beawar-rj
+500,21,RJ,Bharatpur,08106,Bharatpur,5066.0,2548462,district,bharatpur-rj
+501,21,RJ,Bhilwara,08121,Bhilwara,10455.0,2408523,district,bhilwara-rj
+502,21,RJ,Bikaner,08101,Bikaner,30247.0,2363937,district,bikaner-rj
+503,21,RJ,Bundi,08123,Bundi,5550.0,1110906,district,bundi-rj
+504,21,RJ,Chittorgarh,08125,Chittorgarh,7822.0,1544338,district,chittorgarh-rj
+505,21,RJ,Churu,08102,Churu,13835.0,2039547,district,churu-rj
+506,21,RJ,Dausa,08107,Dausa,3432.0,1631071,district,dausa-rj
+507,21,RJ,Deeg,08137,Deeg,2600.0,550000,district,deeg-rj
+508,21,RJ,Didwana Kuchaman,08138,Didwana,4200.0,850000,district,didwana-kuchaman-rj
+509,21,RJ,Dholpur,08108,Dholpur,3034.0,1206516,district,dholpur-rj
+510,21,RJ,Dungarpur,08126,Dungarpur,3770.0,1388552,district,dungarpur-rj
+511,21,RJ,Ganganagar,08099,Sri Ganganagar,10978.0,1969168,district,ganganagar-rj
+512,21,RJ,Gangapur City,08139,Gangapur City,2400.0,450000,district,gangapur-city-rj
+513,21,RJ,Hanumangarh,08100,Hanumangarh,9656.0,1774692,district,hanumangarh-rj
+514,21,RJ,Jaipur,08112,Jaipur,484.0,3073350,district,jaipur-rj
+515,21,RJ,Jaipur Rural,08140,Jaipur,10650.0,3553421,district,jaipur-rural-rj
+516,21,RJ,Jaisalmer,08114,Jaisalmer,38401.0,669919,district,jaisalmer-rj
+517,21,RJ,Jalore,08116,Jalore,10640.0,1828730,district,jalore-rj
+518,21,RJ,Jhalawar,08131,Jhalawar,6219.0,1411129,district,jhalawar-rj
+519,21,RJ,Jhunjhunu,08103,Jhunjhunu,5928.0,2137045,district,jhunjhunu-rj
+520,21,RJ,Jodhpur,08113,Jodhpur,214.0,1056191,district,jodhpur-rj
+521,21,RJ,Jodhpur Rural,08141,Jodhpur,22636.0,2624403,district,jodhpur-rural-rj
+522,21,RJ,Karauli,08109,Karauli,5524.0,1458248,district,karauli-rj
+523,21,RJ,Kekri,08142,Kekri,2500.0,400000,district,kekri-rj
+524,21,RJ,Khairthal-Tijara,08143,Khairthal,2800.0,550000,district,khairthal-tijara-rj
+525,21,RJ,Kota,08129,Kota,5217.0,1951014,district,kota-rj
+526,21,RJ,Kotputli-Behror,08144,Kotputli,3100.0,650000,district,kotputli-behror-rj
+527,21,RJ,Nagaur,08111,Nagaur,17718.0,3307743,district,nagaur-rj
+528,21,RJ,Neem Ka Thana,08145,Neem Ka Thana,2700.0,550000,district,neem-ka-thana-rj
+529,21,RJ,Pali,08117,Pali,12387.0,2037624,district,pali-rj
+530,21,RJ,Phalodi,08146,Phalodi,7500.0,600000,district,phalodi-rj
+531,21,RJ,Pratapgarh,08132,Pratapgarh,4449.0,867848,district,pratapgarh-rj
+532,21,RJ,Rajsamand,08120,Rajsamand,4550.0,1156597,district,rajsamand-rj
+533,21,RJ,Salumbar,08147,Salumbar,3200.0,450000,district,salumbar-rj
+534,21,RJ,Sanchore,08148,Sanchore,3800.0,550000,district,sanchore-rj
+535,21,RJ,Sawai Madhopur,08110,Sawai Madhopur,4498.0,1335551,district,sawai-madhopur-rj
+536,21,RJ,Shahpura,08149,Shahpura,2800.0,400000,district,shahpura-rj
+537,21,RJ,Sikar,08104,Sikar,7742.0,2677333,district,sikar-rj
+538,21,RJ,Sirohi,08119,Sirohi,5136.0,1036346,district,sirohi-rj
+539,21,RJ,Tonk,08122,Tonk,7194.0,1421326,district,tonk-rj
+540,21,RJ,Udaipur,08124,Udaipur,11724.0,3068420,district,udaipur-rj
+541,22,SK,Gangtok,11244,Gangtok,560.0,281293,district,gangtok-sk
+542,22,SK,Gyalshing,11241,Gyalshing,1166.0,136435,district,gyalshing-sk
+543,22,SK,Mangan,11242,Mangan,4226.0,43709,district,mangan-sk
+544,22,SK,Namchi,11243,Namchi,750.0,146850,district,namchi-sk
+545,22,SK,Pakyong,11245,Pakyong,404.0,74583,district,pakyong-sk
+546,22,SK,Soreng,11246,Soreng,293.0,64760,district,soreng-sk
+547,23,TN,Ariyalur,33616,Ariyalur,1949.0,754894,district,ariyalur-tn
+548,23,TN,Chengalpattu,33634,Chengalpattu,2945.0,2556244,district,chengalpattu-tn
+549,23,TN,Chennai,33603,Chennai,426.0,7088000,district,chennai-tn
+550,23,TN,Coimbatore,33612,Coimbatore,4723.0,3458045,district,coimbatore-tn
+551,23,TN,Cuddalore,33617,Cuddalore,3678.0,2605914,district,cuddalore-tn
+552,23,TN,Dharmapuri,33609,Dharmapuri,4497.0,1506843,district,dharmapuri-tn
+553,23,TN,Dindigul,33613,Dindigul,6266.0,2159775,district,dindigul-tn
+554,23,TN,Erode,33610,Erode,5722.0,2251744,district,erode-tn
+555,23,TN,Kallakurichi,33635,Kallakurichi,3520.0,1370281,district,kallakurichi-tn
+556,23,TN,Kanchipuram,33604,Kanchipuram,1656.0,1166401,district,kanchipuram-tn
+557,23,TN,Kanyakumari,33629,Nagercoil,1672.0,1870374,district,kanyakumari-tn
+558,23,TN,Karur,33614,Karur,2895.0,1064493,district,karur-tn
+559,23,TN,Krishnagiri,33608,Krishnagiri,5143.0,1879809,district,krishnagiri-tn
+560,23,TN,Madurai,33623,Madurai,3710.0,3038252,district,madurai-tn
+561,23,TN,Mayiladuthurai,33638,Mayiladuthurai,1172.0,918356,district,mayiladuthurai-tn
+562,23,TN,Nagapattinam,33619,Nagapattinam,1397.0,697069,district,nagapattinam-tn
+563,23,TN,Namakkal,33611,Namakkal,3368.0,1726601,district,namakkal-tn
+564,23,TN,Nilgiris,33611,Udhagamandalam,2549.0,735394,district,nilgiris-tn
+565,23,TN,Perambalur,33615,Perambalur,1757.0,565223,district,perambalur-tn
+566,23,TN,Pudukkottai,33621,Pudukkottai,4663.0,1618345,district,pudukkottai-tn
+567,23,TN,Ramanathapuram,33626,Ramanathapuram,4104.0,1353445,district,ramanathapuram-tn
+568,23,TN,Ranipet,33636,Ranipet,2234.0,1210277,district,ranipet-tn
+569,23,TN,Salem,33607,Salem,5205.0,3482056,district,salem-tn
+570,23,TN,Sivaganga,33622,Sivaganga,4189.0,1339101,district,sivaganga-tn
+571,23,TN,Tenkasi,33637,Tenkasi,2916.0,1407627,district,tenkasi-tn
+572,23,TN,Thanjavur,33620,Thanjavur,3396.0,2405890,district,thanjavur-tn
+573,23,TN,Theni,33624,Theni,3242.0,1245899,district,theni-tn
+574,23,TN,Thoothukudi,33627,Thoothukudi,4707.0,1750176,district,thoothukudi-tn
+575,23,TN,Tiruchirappalli,33614,Tiruchirappalli,4403.0,2722290,district,tiruchirappalli-tn
+576,23,TN,Tirunelveli,33628,Tirunelveli,3842.0,1665253,district,tirunelveli-tn
+577,23,TN,Tirupathur,33635,Tirupathur,1797.0,1111812,district,tirupathur-tn
+578,23,TN,Tiruppur,33633,Tiruppur,5186.0,2479052,district,tiruppur-tn
+579,23,TN,Tiruvallur,33602,Tiruvallur,3422.0,3728104,district,tiruvallur-tn
+580,23,TN,Tiruvannamalai,33606,Tiruvannamalai,6191.0,2464875,district,tiruvannamalai-tn
+581,23,TN,Tiruvarur,33618,Tiruvarur,2097.0,1264277,district,tiruvarur-tn
+582,23,TN,Vellore,33605,Vellore,2030.0,1614242,district,vellore-tn
+583,23,TN,Viluppuram,33607,Viluppuram,3703.0,2092703,district,viluppuram-tn
+584,23,TN,Virudhunagar,33625,Virudhunagar,4241.0,1942288,district,virudhunagar-tn
+585,24,TG,Adilabad,36532,Adilabad,4153.0,708972,district,adilabad-tg
+586,24,TG,Bhadradri Kothagudem,36533,Kothagudem,7483.0,1069261,district,bhadradri-kothagudem-tg
+587,24,TG,Hanumakonda,36534,Hanumakonda,1309.0,1087806,district,hanumakonda-tg
+588,24,TG,Hyderabad,36535,Hyderabad,217.0,3943323,district,hyderabad-tg
+589,24,TG,Jagtial,36536,Jagtial,2419.0,985417,district,jagtial-tg
+590,24,TG,Jangaon,36537,Jangaon,2188.0,566376,district,jangaon-tg
+591,24,TG,Jayashankar Bhupalpally,36538,Bhupalpally,2293.0,416763,district,jayashankar-bhupalpally-tg
+592,24,TG,Jogulamba Gadwal,36539,Gadwal,2928.0,609990,district,jogulamba-gadwal-tg
+593,24,TG,Kamareddy,36540,Kamareddy,3652.0,972625,district,kamareddy-tg
+594,24,TG,Karimnagar,36541,Karimnagar,2128.0,1005711,district,karimnagar-tg
+595,24,TG,Khammam,36542,Khammam,4361.0,1401639,district,khammam-tg
+596,24,TG,Kumuram Bheem Asifabad,36543,Asifabad,4878.0,515812,district,kumuram-bheem-asifabad-tg
+597,24,TG,Mahabubabad,36544,Mahabubabad,2877.0,774549,district,mahabubabad-tg
+598,24,TG,Mahabubnagar,36545,Mahabubnagar,2737.0,919903,district,mahabubnagar-tg
+599,24,TG,Mancherial,36546,Mancherial,4016.0,807037,district,mancherial-tg
+600,24,TG,Medak,36547,Medak,2786.0,767428,district,medak-tg
+601,24,TG,Medchal-Malkajgiri,36548,Shamirpet,1084.0,2440073,district,medchal-malkajgiri-tg
+602,24,TG,Mulugu,36549,Mulugu,3881.0,257744,district,mulugu-tg
+603,24,TG,Nagarkurnool,36550,Nagarkurnool,6545.0,893308,district,nagarkurnool-tg
+604,24,TG,Nalgonda,36551,Nalgonda,7122.0,1618416,district,nalgonda-tg
+605,24,TG,Narayanpet,36552,Narayanpet,2336.0,566874,district,narayanpet-tg
+606,24,TG,Nirmal,36553,Nirmal,3845.0,709418,district,nirmal-tg
+607,24,TG,Nizamabad,36554,Nizamabad,4288.0,1571022,district,nizamabad-tg
+608,24,TG,Peddapalli,36555,Peddapalli,2236.0,777156,district,peddapalli-tg
+609,24,TG,Rajanna Sircilla,36556,Sircilla,2019.0,552037,district,rajanna-sircilla-tg
+610,24,TG,Ranga Reddy,36557,Shamshabad,5031.0,2446265,district,ranga-reddy-tg
+611,24,TG,Sangareddy,36558,Sangareddy,4403.0,1527628,district,sangareddy-tg
+612,24,TG,Siddipet,36559,Siddipet,3632.0,1012065,district,siddipet-tg
+613,24,TG,Suryapet,36560,Suryapet,3607.0,1099529,district,suryapet-tg
+614,24,TG,Vikarabad,36561,Vikarabad,3386.0,927140,district,vikarabad-tg
+615,24,TG,Wanaparthy,36562,Wanaparthy,2152.0,577758,district,wanaparthy-tg
+616,24,TG,Warangal,36563,Warangal,2175.0,718339,district,warangal-tg
+617,24,TG,Yadadri Bhuvanagiri,36564,Bhuvanagiri,3091.0,739448,district,yadadri-bhuvanagiri-tg
+618,25,TR,Dhalai,16289,Ambassa,2522.0,378230,district,dhalai-tr
+619,25,TR,Gomati,16290,Udaipur,1522.0,441538,district,gomati-tr
+620,25,TR,Khowai,16291,Khowai,1005.0,327564,district,khowai-tr
+621,25,TR,North Tripura,16288,Dharmanagar,1422.0,417441,district,north-tripura-tr
+622,25,TR,Sepahijala,16292,Bishramganj,1043.0,542978,district,sepahijala-tr
+623,25,TR,South Tripura,16290,Belonia,1514.0,430751,district,south-tripura-tr
+624,25,TR,Unakoti,16293,Kailashahar,686.0,298574,district,unakoti-tr
+625,25,TR,West Tripura,16287,Agartala,983.0,918200,district,west-tripura-tr
+626,26,UP,Agra,09146,Agra,4027.0,4418797,district,agra-up
+627,26,UP,Aligarh,09143,Aligarh,3700.0,3673889,district,aligarh-up
+628,26,UP,Ambedkar Nagar,09178,Akbarpur,2350.0,2397888,district,ambedkar-nagar-up
+629,26,UP,Amethi,09204,Gauriganj,3070.0,1280000,district,amethi-up
+630,26,UP,Amroha,09138,Amroha,2249.0,1840221,district,amroha-up
+631,26,UP,Auraiya,09162,Auraiya,2016.0,1379545,district,auraiya-up
+632,26,UP,Ayodhya,09177,Ayodhya,2522.0,2470996,district,ayodhya-up
+633,26,UP,Azamgarh,09191,Azamgarh,4054.0,4613913,district,azamgarh-up
+634,26,UP,Baghpat,09139,Baghpat,1321.0,1303048,district,baghpat-up
+635,26,UP,Bahraich,09180,Bahraich,4696.0,3487731,district,bahraich-up
+636,26,UP,Ballia,09193,Ballia,2981.0,3239774,district,ballia-up
+637,26,UP,Balrampur,09182,Balrampur,3349.0,2148665,district,balrampur-up
+638,26,UP,Banda,09170,Banda,4408.0,1799410,district,banda-up
+639,26,UP,Barabanki,09176,Barabanki,4402.0,3260699,district,barabanki-up
+640,26,UP,Bareilly,09150,Bareilly,4120.0,4448359,district,bareilly-up
+641,26,UP,Basti,09185,Basti,2688.0,2464464,district,basti-up
+642,26,UP,Bhadohi,09198,Gyanpur,1015.0,1578213,district,bhadohi-up
+643,26,UP,Bijnor,09134,Bijnor,4561.0,3682713,district,bijnor-up
+644,26,UP,Budaun,09149,Budaun,4234.0,3681896,district,budaun-up
+645,26,UP,Bulandshahr,09142,Bulandshahr,4512.0,3499171,district,bulandshahr-up
+646,26,UP,Chandauli,09196,Chandauli,2541.0,1952756,district,chandauli-up
+647,26,UP,Chitrakoot,09171,Chitrakoot,3216.0,991730,district,chitrakoot-up
+648,26,UP,Deoria,09190,Deoria,2540.0,3100946,district,deoria-up
+649,26,UP,Etah,09147,Etah,2431.0,1774480,district,etah-up
+650,26,UP,Etawah,09161,Etawah,2311.0,1581810,district,etawah-up
+651,26,UP,Farrukhabad,09159,Fatehgarh,2181.0,1885204,district,farrukhabad-up
+652,26,UP,Fatehpur,09172,Fatehpur,4152.0,2632733,district,fatehpur-up
+653,26,UP,Firozabad,09147,Firozabad,2407.0,2498156,district,firozabad-up
+654,26,UP,Gautam Buddha Nagar,09141,Greater Noida,1442.0,1648115,district,gautam-buddha-nagar-up
+655,26,UP,Ghaziabad,09140,Ghaziabad,1179.0,4681645,district,ghaziabad-up
+656,26,UP,Ghazipur,09195,Ghazipur,3377.0,3620268,district,ghazipur-up
+657,26,UP,Gonda,09183,Gonda,4003.0,3433919,district,gonda-up
+658,26,UP,Gorakhpur,09188,Gorakhpur,3321.0,4440895,district,gorakhpur-up
+659,26,UP,Hamirpur,09168,Hamirpur,4021.0,1104285,district,hamirpur-up
+660,26,UP,Hapur,09205,Hapur,1124.0,1338311,district,hapur-up
+661,26,UP,Hardoi,09155,Hardoi,5986.0,4092845,district,hardoi-up
+662,26,UP,Hathras,09144,Hathras,1840.0,1564708,district,hathras-up
+663,26,UP,Jalaun,09166,Orai,4565.0,1689974,district,jalaun-up
+664,26,UP,Jaunpur,09194,Jaunpur,4038.0,4494204,district,jaunpur-up
+665,26,UP,Jhansi,09167,Jhansi,5024.0,1998603,district,jhansi-up
+666,26,UP,Kannauj,09160,Kannauj,2093.0,1656616,district,kannauj-up
+667,26,UP,Kanpur Dehat,09163,Akbarpur Mati,3021.0,1796184,district,kanpur-dehat-up
+668,26,UP,Kanpur Nagar,09164,Kanpur,3155.0,4581268,district,kanpur-nagar-up
+669,26,UP,Kasganj,09203,Kasganj,1955.0,1436728,district,kasganj-up
+670,26,UP,Kaushambi,09174,Manjhanpur,2012.0,1599596,district,kaushambi-up
+671,26,UP,Kheri,09153,Lakhimpur,7221.0,4021243,district,kheri-up
+672,26,UP,Kushinagar,09189,Padrauna,2905.0,3564544,district,kushinagar-up
+673,26,UP,Lalitpur,09167,Lalitpur,5039.0,1221592,district,lalitpur-up
+674,26,UP,Lucknow,09157,Lucknow,2528.0,4589838,district,lucknow-up
+675,26,UP,Maharajganj,09187,Maharajganj,2952.0,2684703,district,maharajganj-up
+676,26,UP,Mahoba,09169,Mahoba,3116.0,875958,district,mahoba-up
+677,26,UP,Mainpuri,09148,Mainpuri,2760.0,1868529,district,mainpuri-up
+678,26,UP,Mathura,09145,Mathura,3340.0,2547184,district,mathura-up
+679,26,UP,Mau,09192,Mau,1717.0,2205968,district,mau-up
+680,26,UP,Meerut,09138,Meerut,2559.0,3443689,district,meerut-up
+681,26,UP,Mirzapur,09199,Mirzapur,4405.0,2496970,district,mirzapur-up
+682,26,UP,Moradabad,09135,Moradabad,3718.0,4772006,district,moradabad-up
+683,26,UP,Muzaffarnagar,09133,Muzaffarnagar,4008.0,4143512,district,muzaffarnagar-up
+684,26,UP,Pilibhit,09151,Pilibhit,3686.0,2031107,district,pilibhit-up
+685,26,UP,Pratapgarh,09173,Pratapgarh,3717.0,3209141,district,pratapgarh-up
+686,26,UP,Prayagraj,09175,Prayagraj,5482.0,5954391,district,prayagraj-up
+687,26,UP,Raebareli,09158,Raebareli,4609.0,3405359,district,raebareli-up
+688,26,UP,Rampur,09136,Rampur,2367.0,2335819,district,rampur-up
+689,26,UP,Saharanpur,09132,Saharanpur,3689.0,3466382,district,saharanpur-up
+690,26,UP,Sambhal,09206,Sambhal,2453.0,2192792,district,sambhal-up
+691,26,UP,Sant Kabir Nagar,09186,Khalilabad,1646.0,1715183,district,sant-kabir-nagar-up
+692,26,UP,Shahjahanpur,09152,Shahjahanpur,4388.0,3006538,district,shahjahanpur-up
+693,26,UP,Shamli,09207,Shamli,1167.0,1274815,district,shamli-up
+694,26,UP,Shravasti,09181,Bhinga,1640.0,1117361,district,shravasti-up
+695,26,UP,Siddharthnagar,09184,Naugarh,2895.0,2559297,district,siddharthnagar-up
+696,26,UP,Sitapur,09154,Sitapur,5743.0,4483992,district,sitapur-up
+697,26,UP,Sonbhadra,09200,Robertsganj,6905.0,1862559,district,sonbhadra-up
+698,26,UP,Sultanpur,09179,Sultanpur,2672.0,2249036,district,sultanpur-up
+699,26,UP,Unnao,09156,Unnao,4558.0,3108367,district,unnao-up
+700,26,UP,Varanasi,09197,Varanasi,1535.0,3676841,district,varanasi-up
+701,27,UK,Almora,05064,Almora,3139.0,622506,district,almora-uk
+702,27,UK,Bageshwar,05063,Bageshwar,2246.0,259898,district,bageshwar-uk
+703,27,UK,Chamoli,05058,Gopeshwar,8030.0,391605,district,chamoli-uk
+704,27,UK,Champawat,05065,Champawat,1766.0,259648,district,champawat-uk
+705,27,UK,Dehradun,05060,Dehradun,3088.0,1696694,district,dehradun-uk
+706,27,UK,Haridwar,05068,Haridwar,2360.0,1890422,district,haridwar-uk
+707,27,UK,Nainital,05066,Nainital,4251.0,955128,district,nainital-uk
+708,27,UK,Pauri Garhwal,05061,Pauri,5329.0,687271,district,pauri-garhwal-uk
+709,27,UK,Pithoragarh,05062,Pithoragarh,7090.0,483439,district,pithoragarh-uk
+710,27,UK,Rudraprayag,05057,Rudraprayag,1984.0,242285,district,rudraprayag-uk
+711,27,UK,Tehri Garhwal,05059,New Tehri,3642.0,618931,district,tehri-garhwal-uk
+712,27,UK,Udham Singh Nagar,05067,Rudrapur,3055.0,1648902,district,udham-singh-nagar-uk
+713,27,UK,Uttarkashi,05056,Uttarkashi,8016.0,330086,district,uttarkashi-uk
+714,28,WB,Alipurduar,19342,Alipurduar,3383.0,1491250,district,alipurduar-wb
+715,28,WB,Bankura,19339,Bankura,6882.0,3596674,district,bankura-wb
+716,28,WB,Birbhum,19334,Suri,4545.0,3502404,district,birbhum-wb
+717,28,WB,Cooch Behar,19328,Cooch Behar,3387.0,2819086,district,cooch-behar-wb
+718,28,WB,Dakshin Dinajpur,19331,Balurghat,2219.0,1676276,district,dakshin-dinajpur-wb
+719,28,WB,Darjeeling,19327,Darjeeling,2092.0,1599940,district,darjeeling-wb
+720,28,WB,Hooghly,19338,Chinsurah,3149.0,5519145,district,hooghly-wb
+721,28,WB,Howrah,19341,Howrah,1467.0,4850029,district,howrah-wb
+722,28,WB,Jalpaiguri,19329,Jalpaiguri,3044.0,2381596,district,jalpaiguri-wb
+723,28,WB,Jhargram,19343,Jhargram,3037.0,1136548,district,jhargram-wb
+724,28,WB,Kalimpong,19344,Kalimpong,1053.0,251642,district,kalimpong-wb
+725,28,WB,Kolkata,19342,Kolkata,185.0,4496694,district,kolkata-wb
+726,28,WB,Malda,19332,English Bazar,3733.0,3988845,district,malda-wb
+727,28,WB,Murshidabad,19333,Baharampur,5324.0,7103807,district,murshidabad-wb
+728,28,WB,Nadia,19336,Krishnanagar,3927.0,5167600,district,nadia-wb
+729,28,WB,North 24 Parganas,19337,Barasat,4094.0,10009781,district,north-24-parganas-wb
+730,28,WB,Paschim Bardhaman,19345,Asansol,1603.0,2882031,district,paschim-bardhaman-wb
+731,28,WB,Paschim Medinipur,19340,Medinipur,6308.0,4776909,district,paschim-medinipur-wb
+732,28,WB,Purba Bardhaman,19335,Bardhaman,5432.0,4835532,district,purba-bardhaman-wb
+733,28,WB,Purba Medinipur,19344,Tamluk,4736.0,5095875,district,purba-medinipur-wb
+734,28,WB,Purulia,19340,Purulia,6259.0,2930115,district,purulia-wb
+735,28,WB,South 24 Parganas,19343,Alipore,9960.0,8161961,district,south-24-parganas-wb
+736,28,WB,Uttar Dinajpur,19330,Raiganj,3140.0,3007134,district,uttar-dinajpur-wb
+737,29,AN,Nicobar,35638,Car Nicobar,1841.0,36842,district,nicobar-an
+738,29,AN,North and Middle Andaman,35639,Mayabunder,3227.0,105597,district,north-and-middle-andaman-an
+739,29,AN,South Andaman,35640,Port Blair,2980.0,238142,district,south-andaman-an
+740,30,CH,Chandigarh,04055,Chandigarh,114.0,1055450,district,chandigarh-ch
+741,31,DN,Dadra and Nagar Haveli,26496,Silvassa,491.0,343709,district,dadra-and-nagar-haveli-dn
+742,31,DN,Daman,25494,Daman,72.0,191173,district,daman-dn
+743,31,DN,Diu,25495,Diu,40.0,52074,district,diu-dn
+744,32,DL,Central Delhi,07094,Daryaganj,25.0,582320,district,central-delhi-dl
+745,32,DL,East Delhi,07093,Preet Vihar,64.0,1709346,district,east-delhi-dl
+746,32,DL,New Delhi,07094,Connaught Place,35.0,142004,district,new-delhi-dl
+747,32,DL,North Delhi,07091,Alipur,61.0,887978,district,north-delhi-dl
+748,32,DL,North East Delhi,07092,Nand Nagri,62.0,2241624,district,north-east-delhi-dl
+749,32,DL,North West Delhi,07090,Kanjhawala,440.0,3656539,district,north-west-delhi-dl
+750,32,DL,Shahdara,07098,Shahdara,60.0,1225000,district,shahdara-dl
+751,32,DL,South Delhi,07096,Saket,250.0,2731929,district,south-delhi-dl
+752,32,DL,South East Delhi,07099,Lajpat Nagar,102.0,637775,district,south-east-delhi-dl
+753,32,DL,South West Delhi,07095,Dwarka,420.0,2292958,district,south-west-delhi-dl
+754,32,DL,West Delhi,07097,Shivaji Place,129.0,2543243,district,west-delhi-dl
+755,33,JK,Anantnag,01014,Anantnag,3574.0,1078692,district,anantnag-jk
+756,33,JK,Bandipora,01009,Bandipora,345.0,392232,district,bandipora-jk
+757,33,JK,Baramulla,01008,Baramulla,4588.0,1008039,district,baramulla-jk
+758,33,JK,Budgam,01002,Budgam,1371.0,753745,district,budgam-jk
+759,33,JK,Doda,01016,Doda,2625.0,409936,district,doda-jk
+760,33,JK,Ganderbal,01011,Ganderbal,259.0,297446,district,ganderbal-jk
+761,33,JK,Jammu,01021,Jammu,3097.0,1529958,district,jammu-jk
+762,33,JK,Kathua,01022,Kathua,2651.0,616435,district,kathua-jk
+763,33,JK,Kishtwar,01018,Kishtwar,1644.0,230696,district,kishtwar-jk
+764,33,JK,Kulgam,01015,Kulgam,1067.0,424483,district,kulgam-jk
+765,33,JK,Kupwara,01001,Kupwara,2379.0,870354,district,kupwara-jk
+766,33,JK,Poonch,01005,Poonch,1674.0,476835,district,poonch-jk
+767,33,JK,Pulwama,01012,Pulwama,1090.0,560440,district,pulwama-jk
+768,33,JK,Rajouri,01006,Rajouri,2630.0,642415,district,rajouri-jk
+769,33,JK,Ramban,01017,Ramban,1329.0,283713,district,ramban-jk
+770,33,JK,Reasi,01020,Reasi,1719.0,314632,district,reasi-jk
+771,33,JK,Samba,01023,Samba,904.0,318898,district,samba-jk
+772,33,JK,Shopian,01013,Shopian,612.0,266215,district,shopian-jk
+773,33,JK,Srinagar,01010,Srinagar,294.0,1236829,district,srinagar-jk
+774,33,JK,Udhampur,01019,Udhampur,4550.0,554985,district,udhampur-jk
+775,34,LA,Kargil,37004,Kargil,14036.0,140802,district,kargil-la
+776,34,LA,Leh,37003,Leh,45110.0,133487,district,leh-la
+777,35,LD,Lakshadweep,31587,Kavaratti,32.0,64473,district,lakshadweep-ld
+778,36,PY,Karaikal,34637,Karaikal,160.0,200222,district,karaikal-py
+779,36,PY,Mahe,34636,Mahe,9.0,41816,district,mahe-py
+780,36,PY,Puducherry,34635,Puducherry,293.0,950289,district,puducherry-py
+781,36,PY,Yanam,34634,Yanam,30.0,55626,district,yanam-py

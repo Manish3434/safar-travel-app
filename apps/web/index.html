@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="no-referrer">
+  <title>Safar — India Travel & Destination Explorer</title>
+  <meta name="description" content="Discover 36 States, canonical districts, hidden forest spots, beaches, heritage monuments, and live weather across India.">
+  
+  <!-- Modern, Vintage & Playful Travel Typography (Titan One, Fredoka, DynaPuff, Chewy, Bebas Neue, Plus Jakarta Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chewy&family=DynaPuff:wght@600;700&family=Fredoka:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Titan+One&display=swap" rel="stylesheet">
+  
+  <!-- Leaflet CSS for Interactive OpenStreetMap -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+
+  <!-- Custom Stylesheet with cache-buster -->
+  <link rel="stylesheet" href="styles.css?v=20261101_9">
+  <!-- Rope Scrollbar Component (Mountain summit to sea climber) -->
+  <link rel="stylesheet" href="rope-scrollbar.css?v=20261101_9">
+
+  <!-- Critical styles for Tall Vertical Photo Cards & Dialogs (ensures immediate rendering under file:///) -->
+  <style>
+    .districts-cards-grid,
+    .all-states-grid {
+      display: grid !important;
+      grid-template-columns: repeat(auto-fill, minmax(165px, 1fr)) !important;
+      gap: 16px !important;
+      padding: 16px 24px 32px !important;
+      overflow-y: auto !important;
+    }
+    .districts-cards-grid .state-card,
+    .all-states-grid .state-card {
+      flex: none !important;
+      height: 245px !important;
+      width: 100% !important;
+      border-radius: var(--radius-lg, 16px) !important;
+      position: relative !important;
+      overflow: hidden !important;
+      border: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.08)) !important;
+      background: var(--bg-surface-elevated, #161E2E) !important;
+      cursor: pointer !important;
+      transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease !important;
+    }
+    .districts-cards-grid .state-card:hover,
+    .all-states-grid .state-card:hover {
+      transform: translateY(-6px) scale(1.02) !important;
+      box-shadow: 0 16px 30px rgba(0, 0, 0, 0.7), 0 0 18px rgba(14, 165, 233, 0.35) !important;
+      border-color: var(--accent-cyan, #38BDF8) !important;
+    }
+    @media (max-width: 600px) {
+      .districts-cards-grid,
+      .all-states-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+        padding: 12px 14px 28px !important;
+      }
+      .districts-cards-grid .state-card,
+      .all-states-grid .state-card {
+        height: 220px !important;
+      }
+    }
+    .all-states-dialog {
+      width: 100% !important;
+      max-width: 960px !important;
+      max-height: 88vh !important;
+    }
+  </style>
+  <script>
+    (function() {
+      try {
+        var m = localStorage.getItem('safar_view_mode') || (window.innerWidth >= 900 ? 'desktop' : 'mobile');
+        if (m === 'desktop') {
+          document.documentElement.classList.add('mode-desktop');
+        }
+      } catch(e) {}
+    })();
+  </script>
+</head>
+<body class="mode-desktop">
+
+  <!-- Top Global Header & View Mode Switcher -->
+  <header class="global-toolbar" role="banner">
+    <div class="toolbar-brand-wrap">
+      <div class="brand-badge" id="brandHeaderBadge" onclick="refreshApplicationWithCompass(event)" title="Touch compass to refresh application">
+        <div class="brand-logo-icon" id="brandCompassIcon">🧭</div>
+        <div>
+          <h1 class="brand-title">SAFAR</h1>
+          <div class="brand-subtitle" data-i18n="app_subtitle">India Travel Explorer</div>
+        </div>
+      </div>
+
+      <!-- Desktop Integrated Location Pill (Placed near SAFAR) -->
+      <div class="toolbar-location-pill" id="toolbarLocationPill" onclick="openLocationPickerModal()" title="Click to choose your location or auto-detect">
+        <span class="toolbar-location-pin">📍</span>
+        <div class="toolbar-location-text-wrap">
+          <span class="toolbar-location-label" data-i18n="current_location_label">CURRENT LOCATION</span>
+          <span class="toolbar-location-val" id="toolbarUserLocationText">Detecting location...</span>
+        </div>
+        <span class="location-edit-badge" title="Select or search city">✏️</span>
+        <button type="button" class="gps-refresh-inline-btn" id="btnToolbarGpsRefresh" onclick="event.stopPropagation(); refreshUserLiveLocation(true);" aria-label="Refresh GPS Location" title="Refresh Live GPS">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="toolbar-actions">
+      <!-- Language Translation Selector (English, Tamil, Hindi) -->
+      <div class="lang-selector-dropdown" id="langSelectorDropdown">
+        <button id="btnLangToggle" class="view-toggle-btn lang-pill-btn" onclick="toggleLanguageDropdown(event)" title="Translate Application Language">
+          🌐 <span id="currentLangLabel">English</span> <span style="font-size: 0.72rem; opacity: 0.7;">▾</span>
+        </button>
+        <div class="lang-dropdown-menu" id="langDropdownMenu" style="display: none;">
+          <button type="button" class="lang-menu-item active" id="langOptEn" onclick="setAppLanguage('en')">
+            <span class="lang-flag">🇬🇧</span>
+            <span class="lang-name">English</span>
+          </button>
+          <button type="button" class="lang-menu-item" id="langOptTa" onclick="setAppLanguage('ta')">
+            <span class="lang-flag">🇮🇳</span>
+            <span class="lang-name">தமிழ் (Tamil)</span>
+          </button>
+          <button type="button" class="lang-menu-item" id="langOptHi" onclick="setAppLanguage('hi')">
+            <span class="lang-flag">🇮🇳</span>
+            <span class="lang-name">हिन्दी (Hindi)</span>
+          </button>
+          <button type="button" class="lang-menu-item" id="langOptMl" onclick="setAppLanguage('ml')">
+            <span class="lang-flag">🇮🇳</span>
+            <span class="lang-name">മലയാളം (Malayalam)</span>
+          </button>
+          <button type="button" class="lang-menu-item" id="langOptTe" onclick="setAppLanguage('te')">
+            <span class="lang-flag">🇮🇳</span>
+            <span class="lang-name">తెలుగు (Telugu)</span>
+          </button>
+          <button type="button" class="lang-menu-item" id="langOptKn" onclick="setAppLanguage('kn')">
+            <span class="lang-flag">🇮🇳</span>
+            <span class="lang-name">ಕನ್ನಡ (Kannada)</span>
+          </button>
+          <button type="button" class="lang-menu-item" id="langOptMr" onclick="setAppLanguage('mr')">
+            <span class="lang-flag">🇮🇳</span>
+            <span class="lang-name">मराठी (Marathi)</span>
+          </button>
+          <button type="button" class="lang-menu-item" id="langOptBn" onclick="setAppLanguage('bn')">
+            <span class="lang-flag">🇮🇳</span>
+            <span class="lang-name">বাংলা (Bengali)</span>
+          </button>
+          <button type="button" class="lang-menu-item" id="langOptGu" onclick="setAppLanguage('gu')">
+            <span class="lang-flag">🇮🇳</span>
+            <span class="lang-name">ગુજરાતી (Gujarati)</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Live Weather & Season Toolbar Button -->
+      <button id="btnToolbarWeather" class="view-toggle-btn weather-toolbar-btn" onclick="openWeatherModal()" title="View Live Weather & Seasonal Advisory">
+        <span id="toolbarWeatherIcon">☀️</span>
+        <span id="toolbarWeatherText">Weather: 32°C</span>
+      </button>
+
+      <button id="btnToolbarBucketList" class="view-toggle-btn" onclick="openBucketListModal()" title="View Saved Bucket List">
+        🎒 Bucket List (<span id="toolbarBucketCount">0</span>)
+      </button>
+      <button id="btnModeMobile" class="view-toggle-btn" onclick="setViewMode('mobile')" title="Preview Mobile App Frame">
+        📱 Mobile Frame
+      </button>
+      <button id="btnModeDesktop" class="view-toggle-btn active" onclick="setViewMode('desktop')" title="Preview Desktop Full View">
+        💻 Desktop View
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Viewport Container -->
+  <main id="appViewport" class="app-viewport mode-mobile">
+    <div class="mobile-frame-wrapper">
+
+      <!-- Inside App Header (Location + Search) -->
+      <div class="app-header">
+        <div class="location-row">
+          <div class="location-info">
+            <span class="location-label" data-i18n="current_location_label">CURRENT LOCATION</span>
+            <div class="location-value" id="headerLocationPill" onclick="openLocationPickerModal()" title="Click to choose your location or auto-detect">
+              <span id="headerUserLocationText">Detecting location...</span>
+              <span class="location-edit-badge" title="Select or search city">✏️</span>
+              <button type="button" class="gps-refresh-inline-btn" id="btnGpsRefresh" onclick="event.stopPropagation(); refreshUserLiveLocation(true);" aria-label="Refresh GPS Location" title="Refresh Live GPS">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="header-icons">
+            <!-- Mobile In-Frame Language Selector -->
+            <div class="lang-selector-dropdown-mobile" id="mobileLangDropdownWrapper">
+              <button id="btnMobileLangToggle" class="icon-circle-btn" onclick="toggleMobileLanguageDropdown(event)" aria-label="Translate Language" title="Translate Language (English, தமிழ், हिन्दी)">
+                🌐
+              </button>
+              <div class="lang-dropdown-menu mobile-lang-dropdown" id="mobileLangDropdownMenu" style="display: none;">
+                <button type="button" class="lang-menu-item active" id="mobileLangOptEn" onclick="setAppLanguage('en')">
+                  <span class="lang-flag">🇬🇧</span>
+                  <span class="lang-name">English</span>
+                </button>
+                <button type="button" class="lang-menu-item" id="mobileLangOptTa" onclick="setAppLanguage('ta')">
+                  <span class="lang-flag">🇮🇳</span>
+                  <span class="lang-name">தமிழ் (Tamil)</span>
+                </button>
+                <button type="button" class="lang-menu-item" id="mobileLangOptHi" onclick="setAppLanguage('hi')">
+                  <span class="lang-flag">🇮🇳</span>
+                  <span class="lang-name">हिन्दी (Hindi)</span>
+                </button>
+                <button type="button" class="lang-menu-item" id="mobileLangOptMl" onclick="setAppLanguage('ml')">
+                  <span class="lang-flag">🇮🇳</span>
+                  <span class="lang-name">മലയാളം (Malayalam)</span>
+                </button>
+                <button type="button" class="lang-menu-item" id="mobileLangOptTe" onclick="setAppLanguage('te')">
+                  <span class="lang-flag">🇮🇳</span>
+                  <span class="lang-name">తెలుగు (Telugu)</span>
+                </button>
+                <button type="button" class="lang-menu-item" id="mobileLangOptKn" onclick="setAppLanguage('kn')">
+                  <span class="lang-flag">🇮🇳</span>
+                  <span class="lang-name">ಕನ್ನಡ (Kannada)</span>
+                </button>
+                <button type="button" class="lang-menu-item" id="mobileLangOptMr" onclick="setAppLanguage('mr')">
+                  <span class="lang-flag">🇮🇳</span>
+                  <span class="lang-name">मराठी (Marathi)</span>
+                </button>
+                <button type="button" class="lang-menu-item" id="mobileLangOptBn" onclick="setAppLanguage('bn')">
+                  <span class="lang-flag">🇮🇳</span>
+                  <span class="lang-name">বাংলা (Bengali)</span>
+                </button>
+                <button type="button" class="lang-menu-item" id="mobileLangOptGu" onclick="setAppLanguage('gu')">
+                  <span class="lang-flag">🇮🇳</span>
+                  <span class="lang-name">ગુજરાતી (Gujarati)</span>
+                </button>
+              </div>
+            </div>
+
+            <button id="btnOpenBucketList" class="icon-circle-btn bucket-list-header-btn" onclick="openBucketListModal()" aria-label="Bucket List" title="My Travel Bucket List" style="position: relative;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/>
+              </svg>
+              <span id="bucketListHeaderBadge" class="badge-counter" style="display: none;">0</span>
+            </button>
+            <!-- Live Seasonal Weather Button (Replaces static alert/notification bell) -->
+            <button id="btnMobileWeather" class="icon-circle-btn weather-circle-btn" onclick="openWeatherModal()" aria-label="Live Weather & Season" title="Live Weather & Season">
+              <div id="weatherIconContainer" class="weather-icon-anim-wrap">
+                <!-- Dynamically rendered: Sun with spinning rays, or Cloud with falling raindrops -->
+              </div>
+              <span id="weatherTempMiniBadge" class="weather-temp-badge">32°</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scrollable Content Area: HOME VIEW -->
+      <div id="homeScreenView" class="app-content">
+
+        <!-- CINEMATIC TRAVEL VIDEO HERO BANNER (Mindtrip Aesthetic: Expansive, Full-Bleed) -->
+        <div class="cinematic-hero-banner" id="cinematicHeroBanner">
+          <div class="hero-video-container">
+            <video id="heroCinematicVideo" class="hero-video-bg" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=3840&q=95">
+              <source id="heroVideoSource" src="videos/hero_drone_muted.mp4" type="video/mp4">
+            </video>
+            <div class="hero-video-overlay"></div>
+          </div>
+          
+          <div class="hero-video-content">
+            <h1 class="hero-video-title" data-i18n="hero_title">Oh, the places you'll go!</h1>
+            <p class="hero-video-desc" data-i18n="hero_desc">Explore 36 States, 781 canonical districts, untouched forests, secret waterfalls & pristine coastlines across India.</p>
+            
+            <!-- Hero Search & AI Voice Search Engine Bar -->
+            <div class="hero-search-engine-wrap">
+              <div class="hero-search-engine">
+                <svg class="hero-search-icon-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"/>
+                  <path d="m21 21-4.3-4.3"/>
+                </svg>
+                <input type="text" id="heroSearchInput" class="hero-search-input" placeholder="Search destinations, beaches, temples, waterfalls, hills..." data-i18n-placeholder="search_placeholder" autocomplete="off">
+                <div class="hero-search-controls">
+                  <button type="button" class="hero-voice-search-btn cobra-voice-btn-container" id="btnHeroVoiceSearch" onclick="toggleVoiceSearch(event)" title="AI Voice Search (Speak to search)" aria-label="Search by Voice">
+                    <canvas id="cobraVoiceCanvas" class="cobra-voice-canvas"></canvas>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1. EXPLORE BY STATE SECTION (Tall Vertical Cards) -->
+        <div class="section-header">
+          <h2 class="section-title" data-i18n="explore_by_state">Explore by State</h2>
+          <span class="section-action" onclick="openAllStatesModal()" style="cursor: pointer;" data-i18n="view_all_states">View All (36)</span>
+        </div>
+        <div id="stateCarousel" class="state-carousel-container">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+
+        <!-- 2. EXPLORE BY CATEGORY SECTION (Vibrant Blue Square Tiles) -->
+        <div class="section-header" style="margin-top: 4px;">
+          <h2 class="section-title" data-i18n="explore_by_category">Explore by Category</h2>
+          <span class="section-action" onclick="selectCategoryFilter('all')" style="cursor: pointer;" data-i18n="btn_reset">Reset</span>
+        </div>
+        <div id="categoriesContainer" class="categories-container">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+
+        <!-- DEDICATED CATEGORY SHOWCASE VIEW (Revealed ONLY when a category is tapped) -->
+        <div id="categoryShowcaseView" class="category-showcase-view" style="display: none;">
+          <div class="category-showcase-header">
+            <div class="category-showcase-title-group">
+              <h2 id="showcaseCatTitle">🏖️ Beaches across India</h2>
+              <p id="showcaseCatSubtitle">Live API Catalog</p>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span id="showcaseCountBadge" class="district-spot-badge">0 spots</span>
+              <button type="button" class="section-action" onclick="selectCategoryFilter('all')" style="cursor: pointer; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.15); padding: 5px 12px; border-radius: var(--radius-full); color: #fff; font-size: 0.8rem;" title="Close Category Destinations" data-i18n="btn_close">✕ Close</button>
+            </div>
+          </div>
+
+          <!-- Distance Proximity Filter Bar -->
+          <div class="category-proximity-filter-bar">
+            <div class="proximity-filter-pills-row" id="proximityFilterPills">
+              <button type="button" class="proximity-pill active" id="filterPillAll" onclick="applyShowcaseRadiusFilter('all')">📍 Nearest First</button>
+              <button type="button" class="proximity-pill" id="filterPill50" onclick="applyShowcaseRadiusFilter(50)">🚗 Under 50 km</button>
+              <button type="button" class="proximity-pill" id="filterPill150" onclick="applyShowcaseRadiusFilter(150)">🛣️ Under 150 km</button>
+              <button type="button" class="proximity-pill" id="filterPill300" onclick="applyShowcaseRadiusFilter(300)">🧭 Under 300 km</button>
+              <button type="button" class="proximity-pill" id="filterPill500" onclick="applyShowcaseRadiusFilter(500)">✈️ Under 500 km</button>
+            </div>
+          </div>
+
+          <div id="showcaseGrid" class="category-showcase-grid">
+            <!-- Rendered dynamically by app.js when a category is tapped -->
+          </div>
+
+          <!-- Showcase Load More Container -->
+          <div id="showcaseLoadMoreContainer" class="showcase-load-more-container" style="display: none;">
+            <button type="button" id="btnShowcaseLoadMore" class="btn-showcase-load-more" onclick="loadMoreShowcaseSpots()">
+              ✨ Load More Nearby Spots (+24)
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- STATE DISTRICTS FULL VIEW (Page loaded when a state is tapped) -->
+      <div id="stateDistrictsView" class="state-districts-view" style="display: none;">
+        <div id="stateHeroBanner" class="district-hero-banner state-hero-banner">
+          <div class="district-hero-overlay"></div>
+          <div class="district-hero-top">
+            <button class="back-btn-pill" onclick="returnToHomeScreen()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m15 18-6-6 6-6"/>
+              </svg>
+              <span data-i18n="back_to_home">Back to Home</span>
+            </button>
+            <span id="stateDistrictsCountBadge" class="district-spot-badge" data-i18n="districts_count_badge">Districts</span>
+          </div>
+          <div class="district-hero-bottom">
+            <h1 id="stateDistrictsViewTitle">State Name</h1>
+            <p id="stateDistrictsViewSubtitle">Canonical Districts & Regions</p>
+          </div>
+        </div>
+
+        <!-- Search Bar for Filtering Districts Inside the State -->
+        <div class="state-search-bar-wrap">
+          <div class="search-container">
+            <svg class="search-icon-left" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <path d="m21 21-4.3-4.3"/>
+            </svg>
+            <input type="text" id="stateDistrictsSearchInput" class="search-input" placeholder="Search districts in this state..." oninput="filterStateDistricts(this.value)" autocomplete="off">
+          </div>
+        </div>
+
+        <!-- Section Header -->
+        <div class="section-header">
+          <h2 class="section-title" data-i18n="all_districts">All Districts</h2>
+          <span id="stateDistrictsFilteredCount" class="section-action" data-i18n="showing_all">Showing all</span>
+        </div>
+
+        <!-- Full-Size Edge-to-Edge Grid of Districts -->
+        <div id="stateDistrictsFullGrid" class="districts-cards-grid">
+          <!-- Rendered dynamically as tall vertical photo cards -->
+        </div>
+      </div>
+
+      <!-- DISTRICT TRIP SPOTS VIEW (Sub-page loaded when a district is tapped) -->
+      <div id="districtScreenView" class="district-screen-view">
+        <div id="districtHeroBanner" class="district-hero-banner">
+          <div class="district-hero-overlay"></div>
+          <div class="district-hero-top">
+            <button class="back-btn-pill" onclick="handleBackFromDistrictScreen()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m15 18-6-6 6-6"/>
+              </svg>
+              <span id="districtBackBtnText" data-i18n="back_to_districts">Back to Districts</span>
+            </button>
+          </div>
+          <div class="district-hero-bottom">
+            <h1 id="districtViewTitle">Explore District</h1>
+            <p id="districtViewSubtitle">Canonical Travel Guide</p>
+          </div>
+        </div>
+
+        <!-- Pinned Category Filter Bar in District Screen -->
+        <div id="pinnedCategoryBar" class="pinned-category-bar">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+
+        <!-- Spots Grid in District Screen -->
+        <div id="districtSpotsGrid" class="spots-grid-container">
+          <!-- Rendered dynamically by app.js -->
+        </div>
+      </div>
+
+      <!-- MAP EXPLORER VIEW (Interactive In-App Map Split Layout) -->
+      <div id="mapScreenView" class="map-screen-view" style="display: none;">
+        <div class="map-split-container" id="mapSplitContainer">
+          
+          <!-- LEFT PANEL: Multi-Modal Route & Toll Breakdown Sidebar -->
+          <aside class="map-route-panel-left" id="mapRoutePanelLeft">
+            
+            <!-- Panel Header with Back to Home -->
+            <div class="route-panel-top-bar">
+              <button type="button" class="route-panel-back-btn" onclick="returnFromMapToHome()" title="Back to Home Feed">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                <span data-i18n="back_to_home">Back to Feed</span>
+              </button>
+              <div class="route-panel-badge">
+                <span class="live-pulse-dot"></span>
+                <span data-i18n="live_route_engine">Live Route Engine</span>
+              </div>
+            </div>
+
+            <!-- Destination Spotlight Card -->
+            <div class="route-dest-spotlight" id="mapDestSpotlightCard">
+              <img id="mapDestThumb" src="images/categories/beach.jpg" alt="" class="route-dest-thumb" />
+              <div class="route-dest-meta">
+                <div class="route-dest-tags">
+                  <span id="mapDestCategoryPill" class="dest-category-pill">Beach</span>
+                  <span id="mapDestRating" class="dest-rating-pill">★ 4.8</span>
+                </div>
+                <h3 id="mapDestTitle" class="route-dest-title">Marina Beach</h3>
+                <p id="mapDestLocationText" class="route-dest-subtitle">Chennai, Tamil Nadu</p>
+              </div>
+            </div>
+
+            <!-- Origin & Destination Inputs -->
+            <div class="calc-inputs-row">
+              <div class="calc-input-field">
+                <span class="calc-dot origin-dot"></span>
+                <input type="text" id="calcOriginInput" class="calc-text-input" placeholder="Your live GPS location" />
+                <button type="button" class="calc-gps-btn" onclick="refreshUserLiveLocation(true)" title="Use Current GPS">📍</button>
+              </div>
+              <div class="calc-input-field">
+                <span class="calc-dot dest-dot"></span>
+                <input type="text" id="calcDestInput" class="calc-text-input" placeholder="Search or click any destination pin" />
+              </div>
+            </div>
+
+            <!-- Transport Mode Selection Grid (Car, Bike, Cycle, Flight, Train) -->
+            <div class="route-modes-section">
+              <div class="section-label-row">
+                <span class="section-label" data-i18n="select_travel_mode">Travel Mode</span>
+                <span class="section-subtext" id="calcModesSummaryNote">Fastest route options</span>
+              </div>
+              <div class="transport-modes-grid" id="mapTransportModesGrid">
+                <div class="transport-card active" onclick="selectTransportMode('car')" data-mode="car">
+                  <div class="transport-icon">🚗</div>
+                  <div class="transport-label" data-i18n="mode_car">Car</div>
+                  <div class="transport-time" id="calcTimeCar">--</div>
+                </div>
+                <div class="transport-card" onclick="selectTransportMode('bike')" data-mode="bike">
+                  <div class="transport-icon">🏍️</div>
+                  <div class="transport-label" data-i18n="mode_bike">Bike</div>
+                  <div class="transport-time" id="calcTimeBike">--</div>
+                </div>
+                <div class="transport-card" onclick="selectTransportMode('cycle')" data-mode="cycle">
+                  <div class="transport-icon">🚲</div>
+                  <div class="transport-label" data-i18n="mode_cycle">Cycle</div>
+                  <div class="transport-time" id="calcTimeCycle">--</div>
+                </div>
+                <div class="transport-card" onclick="selectTransportMode('flight')" data-mode="flight">
+                  <div class="transport-icon">✈️</div>
+                  <div class="transport-label" data-i18n="mode_flight">Flight</div>
+                  <div class="transport-time" id="calcTimeFlight">--</div>
+                </div>
+                <div class="transport-card" onclick="selectTransportMode('train')" data-mode="train">
+                  <div class="transport-icon">🚆</div>
+                  <div class="transport-label" data-i18n="mode_train">Train/Bus</div>
+                  <div class="transport-time" id="calcTimeTrain">--</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Distance & Active Mode Metric Display -->
+            <div class="transport-detail-box" id="calcTransportDetailBox">
+              <div class="transport-detail-stats">
+                <span class="stat-dist" id="calcTotalDistanceVal">0 km</span>
+                <span class="stat-divider">•</span>
+                <span class="stat-time" id="calcActiveModeTime">Select a destination</span>
+              </div>
+              <p class="transport-detail-note" id="calcModeNote">Click any destination pin on the map or cards to calculate real distance & travel suggestions.</p>
+            </div>
+
+            <!-- TOLL GATE BREAKDOWN SECTION ("how many tool gate") -->
+            <div class="toll-section-card" id="mapTollSectionCard">
+              <div class="toll-header-row">
+                <div class="toll-title-wrap">
+                  <span class="toll-badge-icon">🚧</span>
+                  <div>
+                    <h4 class="toll-heading" data-i18n="toll_gates">Toll Gates & FASTag</h4>
+                    <span class="toll-subheading" id="mapTollSubheading">NHAI Highway Plazas</span>
+                  </div>
+                </div>
+                <div class="toll-count-pill" id="mapTollCountPill">0 Tolls</div>
+              </div>
+
+              <!-- Toll fee stat row -->
+              <div class="toll-fee-row" id="mapTollFeeRow">
+                <div class="toll-fee-item">
+                  <span class="fee-label" data-i18n="toll_estimated_fee">Est. Toll Fee</span>
+                  <span class="fee-val" id="mapTollFeeVal">₹0</span>
+                </div>
+                <div class="toll-fee-item">
+                  <span class="fee-label" data-i18n="toll_fastag">FASTag Status</span>
+                  <span class="fee-badge" id="mapTollFastagBadge">Exempt</span>
+                </div>
+              </div>
+
+              <!-- List of Toll Gates on Route -->
+              <div class="toll-plazas-list" id="mapTollPlazasList">
+                <!-- Dynamically populated e.g. "1. Omalur Toll Plaza - ₹85" -->
+              </div>
+            </div>
+
+            <!-- AVOID TOLLS (TOLL-FREE ROUTE) SECTION ("how to avoid the tool is there any option") -->
+            <div class="avoid-tolls-card" id="mapAvoidTollsCard">
+              <div class="avoid-tolls-header">
+                <div class="avoid-tolls-title-wrap">
+                  <span class="avoid-leaf-icon">🌿</span>
+                  <div>
+                    <h4 class="avoid-tolls-heading" data-i18n="avoid_tolls">Avoid Tolls (Free Route)</h4>
+                    <span class="avoid-tolls-subtext" data-i18n="avoid_tolls_desc">Bypass highway tolls via State Highways</span>
+                  </div>
+                </div>
+                <label class="toll-switch" title="Toggle Toll-Free Bypass Route">
+                  <input type="checkbox" id="avoidTollsSwitch" onchange="toggleAvoidTollsMode(this.checked)">
+                  <span class="toll-slider"></span>
+                </label>
+              </div>
+
+              <!-- Route Comparison Cards (Fastest vs Toll-Free) -->
+              <div class="route-compare-grid" id="routeCompareGrid">
+                <div class="compare-card active" id="cardFastestRoute" onclick="setAvoidTollsActive(false)">
+                  <div class="compare-badge fastest">⚡ Fastest</div>
+                  <div class="compare-dist" id="compareFastestDist">-- km</div>
+                  <div class="compare-time" id="compareFastestTime">--</div>
+                  <div class="compare-toll" id="compareFastestToll">-- Tolls • ₹--</div>
+                </div>
+                <div class="compare-card" id="cardTollFreeRoute" onclick="setAvoidTollsActive(true)">
+                  <div class="compare-badge free">🌿 ₹0 Tolls</div>
+                  <div class="compare-dist" id="compareFreeDist">-- km</div>
+                  <div class="compare-time" id="compareFreeTime">--</div>
+                  <div class="compare-toll save" id="compareFreeToll">Save ₹--</div>
+                </div>
+              </div>
+
+              <!-- Bypass Instructions & How-To Guidance -->
+              <div class="avoid-instructions-box" id="avoidInstructionsBox" style="display: none;">
+                <h5 class="instructions-heading">
+                  <span>🛣️</span> <span data-i18n="how_to_avoid_tolls">How to Avoid Tolls on this Route</span>
+                </h5>
+                <ul class="instructions-steps-list" id="instructionsStepsList">
+                  <!-- Dynamically populated steps -->
+                </ul>
+              </div>
+            </div>
+
+            <!-- Action buttons -->
+            <div class="route-panel-actions">
+              <button type="button" class="btn-calc-navigate" id="btnCalcNavigateGoogle" onclick="openCurrentRouteInGoogleMaps()">
+                🗺️ <span data-i18n="calc_open_google">Open Turn-by-Turn in Google Maps</span>
+              </button>
+            </div>
+
+          </aside>
+
+          <!-- RIGHT PANEL: Live Interactive Leaflet Map Canvas -->
+          <div class="map-canvas-right" id="mapCanvasRight">
+            
+            <!-- Map Top Floating Bar -->
+            <div class="map-top-bar-floating">
+              <button class="map-panel-toggle-btn" id="btnToggleRoutePanel" onclick="toggleRoutePanel()" title="Toggle Route Panel">
+                <span id="routePanelToggleIcon">◀</span>
+                <span class="panel-toggle-text">Route Panel</span>
+              </button>
+
+              <div class="map-search-box">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"/>
+                  <path d="m21 21-4.3-4.3"/>
+                </svg>
+                <input type="text" id="mapSearchInput" placeholder="Search destinations, beaches, forts..." oninput="filterMapMarkers(this.value)" autocomplete="off">
+                <button id="mapClearSearchBtn" class="map-clear-btn" onclick="clearMapSearch()" style="display: none;">✕</button>
+              </div>
+
+              <button class="map-action-icon-btn" onclick="locateUserOnMap()" title="Locate Near Me">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <circle cx="12" cy="12" r="3"/>
+                  <line x1="12" x2="12" y1="2" y2="5"/>
+                  <line x1="12" x2="12" y1="19" y2="22"/>
+                  <line x1="2" x2="5" y1="12" y2="12"/>
+                  <line x1="19" x2="22" y1="12" y2="12"/>
+                </svg>
+              </button>
+
+              <button class="map-action-icon-btn" onclick="toggleMapLayerStyle()" id="btnMapLayerToggle" title="Switch Map Style (Google Streets / Satellite)">
+                🛰️
+              </button>
+
+              <button class="map-action-icon-btn" onclick="fitRouteBoundsOnMap()" id="btnFitBounds" title="Fit Entire Route">
+                🎯
+              </button>
+            </div>
+
+            <!-- Category Filter Chips -->
+            <div class="map-filter-chips" id="mapFilterChips">
+              <button class="map-chip active" onclick="setMapCategoryFilter('all')" data-i18n="map_all_spots">All Spots</button>
+              <button class="map-chip" onclick="setMapCategoryFilter('beach')">🏖️ <span data-i18n="cat_beach">Beaches</span></button>
+              <button class="map-chip" onclick="setMapCategoryFilter('forest')">🌲 <span data-i18n="cat_forest">Forests</span></button>
+              <button class="map-chip" onclick="setMapCategoryFilter('fort')">🏰 <span data-i18n="cat_fort">Forts</span></button>
+              <button class="map-chip" onclick="setMapCategoryFilter('temple')">🛕 <span data-i18n="cat_temple">Temples</span></button>
+              <button class="map-chip" onclick="setMapCategoryFilter('waterfall')">🌊 <span data-i18n="cat_waterfall">Waterfalls</span></button>
+              <button class="map-chip" onclick="setMapCategoryFilter('bird-sanctuary')">🦅 <span data-i18n="cat_bird-sanctuary">Sanctuaries</span></button>
+            </div>
+
+            <!-- Leaflet Map Canvas -->
+            <div id="fullExplorerMap" class="full-explorer-map"></div>
+
+            <!-- Floating Bottom Spot Preview Card (When pin clicked) -->
+            <div id="mapSpotPreviewCard" class="map-spot-preview-card" style="display: none;">
+              <div class="preview-card-close" onclick="closeMapSpotPreview()">✕</div>
+              <div class="preview-card-inner">
+                <img id="previewCardImg" src="" alt="" class="preview-card-img" />
+                <div class="preview-card-info">
+                  <div class="preview-card-tags">
+                    <span id="previewCardCategory" class="preview-tag">Beach</span>
+                    <span id="previewCardRating" class="preview-rating">★ 4.8</span>
+                  </div>
+                  <h4 id="previewCardTitle" class="preview-title">Spot Name</h4>
+                  <p id="previewCardMeta" class="preview-meta">District, State • 10 km</p>
+                  <div class="preview-card-actions">
+                    <button class="preview-btn-nav" id="previewNavGoogleBtn">
+                      🧭 Calculate Route Here
+                    </button>
+                    <button class="preview-btn-detail" id="previewViewDetailBtn">
+                      View Full Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Simulated Bottom Navigation Bar -->
+      <nav class="mobile-bottom-nav" role="navigation">
+        <div class="nav-item active" id="navItemHome" onclick="returnToHomeScreen()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+          <span data-i18n="nav_home">Home</span>
+        </div>
+        <div class="nav-item" id="navItemMap" onclick="openMapScreen()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/>
+            <line x1="8" x2="8" y1="2" y2="18"/>
+            <line x1="16" x2="16" y1="6" y2="22"/>
+          </svg>
+          <span data-i18n="nav_map">Map</span>
+        </div>
+        <div class="nav-item" id="navItemBucketList" onclick="openBucketListModal()" style="position: relative;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/>
+          </svg>
+          <span id="bucketListBottomBadge" class="badge-counter" style="display: none; top: -3px; right: 10px;">0</span>
+          <span data-i18n="nav_bucket_list">Bucket List</span>
+        </div>
+        <div class="nav-item" id="navItemBeaches" onclick="selectCategoryFilter('beach')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+          </svg>
+          <span data-i18n="nav_beaches">Beaches</span>
+        </div>
+        <div class="nav-item" id="navItemForests" onclick="selectCategoryFilter('forest')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+          <span data-i18n="nav_forests">Forests</span>
+        </div>
+      </nav>
+
+    </div>
+  </main>
+
+  <!-- ======================================================================
+       MODAL 1: ALL 36 STATES & UNION TERRITORIES (View All)
+       ====================================================================== -->
+  <div id="allStatesModal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="all-states-dialog">
+      <div class="drawer-header" style="border-bottom: 1px solid var(--border-subtle); padding: 18px 24px;">
+        <div class="drawer-title-group">
+          <h2 data-i18n="all_states_modal_title">All 36 States & Union Territories</h2>
+          <p data-i18n="all_states_modal_subtitle">Official administrative regions of India with canonical districts</p>
+        </div>
+        <button class="drawer-close-btn" onclick="closeAllStatesModal()" aria-label="Close">✕</button>
+      </div>
+
+      <div class="drawer-search-box" style="padding: 14px 24px 10px;">
+        <div class="search-container">
+          <svg class="search-icon-left" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="m21 21-4.3-4.3"/>
+          </svg>
+          <input type="text" id="allStatesSearchInput" class="search-input" placeholder="Search states or UTs by name, Hindi, or Tamil...">
+        </div>
+      </div>
+
+      <!-- Filter tabs: All (36) | States (28) | Union Territories (8) -->
+      <div class="state-filter-tabs">
+        <button id="tabStateALL" class="state-tab-btn active" onclick="filterAllStatesTab('all')" data-i18n="tab_all">All (36)</button>
+        <button id="tabStateSTATE" class="state-tab-btn" onclick="filterAllStatesTab('state')" data-i18n="tab_states">States (28)</button>
+        <button id="tabStateUT" class="state-tab-btn" onclick="filterAllStatesTab('ut')" data-i18n="tab_uts">Union Territories (8)</button>
+      </div>
+
+      <div id="allStatesGrid" class="all-states-grid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL 2: Canonical Districts of State
+       ====================================================================== -->
+  <div id="districtDrawerModal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="district-dialog-card">
+      <div class="drawer-handle-bar"></div>
+      <div class="drawer-header">
+        <div class="drawer-title-group">
+          <h2 id="drawerStateTitle">Himachal Pradesh</h2>
+          <p id="drawerStateSubtitle">12 Canonical Districts • Snow-capped Himalayas</p>
+        </div>
+        <button class="drawer-close-btn" onclick="closeDistrictDrawer()" aria-label="Close">✕</button>
+      </div>
+      <div class="drawer-search-box">
+        <div class="search-container">
+          <svg class="search-icon-left" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="m21 21-4.3-4.3"/>
+          </svg>
+          <input type="text" id="drawerDistrictSearch" class="search-input" placeholder="Search districts in this state...">
+        </div>
+      </div>
+      <div id="drawerDistrictsList" class="districts-cards-grid">
+        <!-- Rendered dynamically as tall vertical photo cards by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL 3: Spot Details & Interactive Leaflet Map
+       ====================================================================== -->
+  <!-- ======================================================================
+       DESTINATION DETAILS FULL-PAGE VIEW (Replaces Floating Dialog Box)
+       ====================================================================== -->
+  <div id="spotDetailsModal" class="spot-page-view" role="region" aria-label="Destination Details">
+    <!-- Top Sticky Navigation Bar -->
+    <header class="spot-page-topbar">
+      <div class="spot-page-topbar-inner">
+        <button class="spot-page-back-btn" onclick="closeSpotDetailsModal()" aria-label="Back to Destinations">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span class="spot-page-back-text" data-i18n="back_to_explore">Back to Explore</span>
+        </button>
+
+        <div class="spot-page-topbar-crumbs">
+          <span class="crumb-link" onclick="closeSpotDetailsModal()">Explore</span>
+          <span class="crumb-sep">/</span>
+          <span id="spotPageCrumbState" class="crumb-sub">India</span>
+          <span class="crumb-sep">/</span>
+          <span id="spotPageCrumbDistrict" class="crumb-sub">District</span>
+          <span class="crumb-sep">/</span>
+          <span id="spotPageCrumbSpot" class="crumb-current">Destination</span>
+        </div>
+
+        <div class="spot-page-topbar-actions">
+          <button id="spotDetailHeroBookmarkBtn" class="spot-topbar-btn" onclick="toggleSpotDetailBookmark()" aria-label="Save to Bucket List" title="Save to Bucket List">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/>
+            </svg>
+            <span class="topbar-btn-label">Save</span>
+          </button>
+          <button class="spot-topbar-btn primary" onclick="openInAppMapForActiveSpot()" title="Open Interactive Split Map">
+            🗺️ <span class="topbar-btn-label">Route & Map</span>
+          </button>
+          <button class="spot-detail-close-btn spot-page-close-icon" onclick="closeSpotDetailsModal()" aria-label="Close page">✕</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Full-Page Scrollable Body -->
+    <div class="spot-page-body-scroll" id="spotPageBodyScroll">
+      <!-- Panoramic Hero Header -->
+      <section class="spot-page-hero">
+        <div class="spot-page-hero-media">
+          <img id="spotDetailImg" src="" alt="Spot Hero" class="spot-page-hero-img">
+          <div class="spot-page-hero-scrim"></div>
+        </div>
+        <div class="spot-page-hero-caption">
+          <div class="spot-page-hero-caption-inner">
+            <div class="spot-page-hero-pills">
+              <span id="spotPageHeroCategoryBadge" class="hero-cat-pill">📌 Destination</span>
+              <span class="hero-rating-pill" id="spotDetailRating">★ 4.8 / 5.0</span>
+              <span class="hero-dist-pill" id="spotDetailDistance">📍 14.9 km away</span>
+            </div>
+            <h1 id="spotDetailTitle" class="spot-page-h1">Destination Title</h1>
+            <p id="spotDetailSubtitle" class="spot-page-subloc">Category • District, State</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Full-Page Three-Column Content Grid -->
+      <main class="spot-page-main-wrap">
+        <div class="spot-page-3col-grid">
+          
+          <!-- ============================================================
+               COLUMN 1 (LEFT SIDE): DISTANCE & MULTI-MODAL TRAVEL CALCULATOR
+               ============================================================ -->
+          <div class="spot-page-col-left">
+            <div class="spot-calc-card-panel">
+              <div class="spot-panel-header">
+                <div class="spot-panel-title-wrap">
+                  <span class="spot-panel-icon">🧭</span>
+                  <h3 class="spot-panel-title" data-i18n="location_calc_title">Distance Calculator</h3>
+                </div>
+                <span id="spotCalcLiveDistBadge" class="spot-panel-dist-pill">-- km</span>
+              </div>
+
+              <div class="spot-calc-card-body" id="spotMapCalcOverlay">
+                <!-- Origin Input Row with Live GPS button -->
+                <div class="spot-calc-input-row">
+                  <span class="spot-calc-dot"></span>
+                  <div class="spot-calc-input-wrap">
+                    <input type="text" id="spotCalcOriginInput" class="spot-calc-input" placeholder="Enter starting city/town" autocomplete="off" onkeydown="if(event.key==='Enter') executeSpotDistanceCalculation()" />
+                    <button type="button" class="spot-calc-gps-btn" onclick="useCurrentLocationForSpotCalc()" title="Use My Current Live Location">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="7" r="4"/>
+                        <path d="M12 2v3m0 14v3M2 12h3m14 0h3"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="spot-calc-action-row">
+                  <button type="button" class="spot-calc-submit-btn" onclick="executeSpotDistanceCalculation()" data-i18n="btn_calculate">
+                    Calculate Route
+                  </button>
+                </div>
+
+                <!-- Multi-modal transport recommendations (Car, Bike, Cycle, Flight, Train, Walk) -->
+                <div class="spot-calc-modes-wrap" id="spotCalcModesWrap">
+                  <div class="calc-mode-chips">
+                    <button type="button" class="mode-chip active" id="spotModeCar" onclick="selectSpotTravelMode('car')">
+                      🚗 <span data-i18n="mode_car">Drive</span> <span class="mode-chip-time" id="chipTimeCar">--</span>
+                    </button>
+                    <button type="button" class="mode-chip" id="spotModeBike" onclick="selectSpotTravelMode('bike')">
+                      🏍️ <span data-i18n="mode_bike">Bike</span> <span class="mode-chip-time" id="chipTimeBike">--</span>
+                    </button>
+                    <button type="button" class="mode-chip" id="spotModeCycle" onclick="selectSpotTravelMode('cycle')">
+                      🚲 <span data-i18n="mode_cycle">Cycle</span> <span class="mode-chip-time" id="chipTimeCycle">--</span>
+                    </button>
+                    <button type="button" class="mode-chip" id="spotModeFlight" onclick="selectSpotTravelMode('flight')">
+                      ✈️ <span data-i18n="mode_flight">Flight</span> <span class="mode-chip-time" id="chipTimeFlight">--</span>
+                    </button>
+                    <button type="button" class="mode-chip" id="spotModeWalk" onclick="selectSpotTravelMode('walk')">
+                      🚶 <span data-i18n="mode_walk">Walk</span> <span class="mode-chip-time" id="chipTimeWalk">--</span>
+                    </button>
+                    <button type="button" class="mode-chip" id="spotModeTrain" onclick="selectSpotTravelMode('train')">
+                      🚆 <span data-i18n="mode_train">Train/Bus</span> <span class="mode-chip-time" id="chipTimeTrain">--</span>
+                    </button>
+                  </div>
+
+                  <!-- Active Mode Summary Box -->
+                  <div class="spot-mode-summary-box">
+                    <div class="mode-summary-dist-row">
+                      <strong id="spotCalcActiveDistLabel">-- km</strong>
+                      <span id="spotCalcActiveTimeLabel">--</span>
+                    </div>
+                    <p id="spotCalcActiveNoteLabel" class="mode-summary-note">Calculating fastest route...</p>
+                    <div id="spotCalcOriginSubtitle" style="font-size: 0.76rem; color: var(--text-muted); margin-top: 4px;">Live Location</div>
+                  </div>
+
+                  <!-- Primary Navigation Action Buttons -->
+                  <div class="spot-calc-nav-buttons">
+                    <button type="button" class="btn-navigate-inapp" onclick="openInAppMapForActiveSpot()">
+                      🗺️ <span data-i18n="open_inapp_map">Explore Route in In-App Map</span>
+                    </button>
+                    <button type="button" class="btn-navigate-gmaps" onclick="openSpotRouteInGoogleMaps()">
+                      <span data-i18n="navigate_gmaps">External Google Maps</span>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                        <polyline points="15 3 21 3 21 9"/>
+                        <line x1="10" y1="14" x2="21" y2="3"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ============================================================
+               COLUMN 2 (CENTER): UNOBSTRUCTED INTERACTIVE LEAFLET MAP
+               ============================================================ -->
+          <div class="spot-page-col-center">
+            <div class="spot-map-center-panel">
+              <div class="spot-panel-header">
+                <div class="spot-panel-title-wrap">
+                  <span class="spot-panel-icon">🗺️</span>
+                  <h3 class="spot-panel-title">Interactive Map & Route Pin</h3>
+                </div>
+                <span id="spotMapDestCoordsBadge" class="spot-panel-dist-pill highlight">📍 Destination Pin</span>
+              </div>
+
+              <div class="map-center-canvas-wrap" id="spotMapCanvasContainer" title="Double tap or click to open in full interactive app map">
+                <div id="leafletMap" class="spot-page-leaflet-canvas"></div>
+
+                <!-- Floating Bottom Tap-To-Open Banner -->
+                <div class="spot-map-inapp-pill" onclick="openInAppMapForActiveSpot()" title="Open Interactive App Map with Tolls & Avoid-Toll Options">
+                  <span class="pill-pulse"></span>
+                  <span data-i18n="tap_open_map">Tap map to explore In-App (Tolls, Cycle, Car)</span> ↗
+                </div>
+              </div>
+
+              <!-- Map Footer Note -->
+              <div class="map-center-footer-note">
+                <span>📍 Real-time GPS location pin with OpenStreetMap satellite & terrain layers</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ============================================================
+               COLUMN 3 (RIGHT SIDE): ABOUT THE DESTINATION & ESSENTIALS
+               ============================================================ -->
+          <div class="spot-page-col-right">
+            <div class="spot-about-side-panel">
+              <!-- Key Timing / Fee / Season Badges -->
+              <div class="spot-badges-row spot-page-metrics-grid" style="margin-bottom: 18px;">
+                <div class="info-chip">
+                  <span id="spotDetailTiming">🕒 Open daily</span>
+                </div>
+                <div class="info-chip">
+                  <span id="spotDetailFee">🎟️ ₹40</span>
+                </div>
+                <div class="info-chip">
+                  <span id="spotDetailSeason">🌤️ Mar - Jun</span>
+                </div>
+              </div>
+
+              <!-- Eco-Sensitive & Safety Advisory Box (Rule 8) -->
+              <div id="spotDetailSafetyBox" class="safety-advisory-box" style="display: none; margin-bottom: 18px;"></div>
+
+              <!-- About Destination Section -->
+              <section class="spot-page-section" style="margin-bottom: 18px;">
+                <h3 class="spot-section-heading" data-i18n="about_destination">About this destination</h3>
+                <p id="spotDetailDesc" class="spot-page-desc-text"></p>
+              </section>
+
+              <!-- Travel Highlights & Essentials -->
+              <section class="spot-page-section" style="margin-bottom: 18px;">
+                <h3 class="spot-section-heading">Traveler Highlights & Essentials</h3>
+                <div class="spot-essentials-grid">
+                  <div class="essential-card">
+                    <div class="essential-icon">📸</div>
+                    <div class="essential-text">
+                      <h4>Photography & Scenery</h4>
+                      <p>Golden hour (sunrise & sunset) provides prime lighting for vistas.</p>
+                    </div>
+                  </div>
+                  <div class="essential-card">
+                    <div class="essential-icon">📶</div>
+                    <div class="essential-text">
+                      <h4>Network & Connectivity</h4>
+                      <p>4G/5G available in town corridors. Offline map downloaded for remote stretches.</p>
+                    </div>
+                  </div>
+                  <div class="essential-card">
+                    <div class="essential-icon">🛡️</div>
+                    <div class="essential-text">
+                      <h4>Safe Travel Guidelines</h4>
+                      <p>Follow local tourism department advisories, respect cultural monuments.</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Save to Bucket List Action Button -->
+              <div class="spot-detail-action-grid">
+                <button id="spotDetailBookmarkBtn" class="btn-secondary spot-bookmark-btn" onclick="toggleSpotDetailBookmark()" title="Save to Bucket List" style="width: 100%; justify-content: center;">
+                  <svg class="spot-bookmark-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/>
+                  </svg>
+                  <span id="spotDetailBookmarkLabel" data-i18n="save_bucket_list">Save to Bucket List</span>
+                </button>
+                <button id="spotDetailNavBtn" class="btn-primary" onclick="openInAppMapForActiveSpot()" style="display: none;">
+                  🧭 <span data-i18n="spot_get_directions">Open Live Route in In-App Map</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL 4: TRAVEL BUCKET LIST & SAVED DESTINATIONS
+       ====================================================================== -->
+  <div id="bucketListModal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="drawer-panel bucket-list-dialog">
+      <div class="drawer-header" style="border-bottom: 1px solid var(--border-subtle); padding: 18px 24px;">
+        <div class="drawer-title-row" style="display: flex; align-items: center; gap: 12px;">
+          <span style="font-size: 1.6rem;">🎒</span>
+          <div>
+            <h2 class="drawer-title" style="font-size: 1.25rem; font-weight: 800; color: #fff;" data-i18n="bucket_list_title">My Travel Bucket List</h2>
+            <div id="bucketListSubtitle" class="drawer-subtitle" style="font-size: 0.8rem; color: var(--text-secondary);">0 dream destinations saved</div>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <button id="btnClearBucketList" class="btn-clear-bucket" onclick="clearAllBucketList()" title="Clear all bookmarks" data-i18n="btn_clear_all">
+            🗑️ Clear All
+          </button>
+          <button class="drawer-close-btn" onclick="closeBucketListModal()" aria-label="Close bucket list">✕</button>
+        </div>
+      </div>
+
+      <!-- Category Filter Chips Inside Bucket List -->
+      <div class="bucket-filter-bar" style="padding: 12px 24px 4px; border-bottom: 1px solid rgba(255, 255, 255, 0.06);">
+        <div id="bucketFilterChips" class="map-filter-chips">
+          <button class="map-chip active" onclick="filterBucketList('all')">All Saved (<span id="bucketChipCountAll">0</span>)</button>
+          <button class="map-chip" onclick="filterBucketList('beach')">🏖️ Beaches</button>
+          <button class="map-chip" onclick="filterBucketList('forest')">🌲 Forests</button>
+          <button class="map-chip" onclick="filterBucketList('waterfall')">🌊 Waterfalls</button>
+          <button class="map-chip" onclick="filterBucketList('heritage')">🏛️ Heritage</button>
+          <button class="map-chip" onclick="filterBucketList('wildlife')">🦁 Wildlife</button>
+          <button class="map-chip" onclick="filterBucketList('hill-station')">🌄 Hill Stations</button>
+        </div>
+      </div>
+
+      <!-- Saved Destinations Grid -->
+      <div id="bucketListGrid" class="bucket-list-grid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. FLOATING ASSISTANT VOICE PILL WIDGET (No dialog box overlay!) -->
+  <div id="voicePillWidget" class="voice-floating-container" style="display: none;">
+    <!-- Main Floating Capsule Pill Bar matching screenshot -->
+    <div class="voice-pill-bar" id="voicePillBar">
+      <span class="voice-pill-status" id="voicePillStatus" data-i18n="voice_listening">Listening...</span>
+      <div class="voice-pill-mic-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
+          <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+          <line x1="12" x2="12" y1="19" y2="22"/>
+        </svg>
+      </div>
+
+      <!-- 3-Row Dynamic Dot Matrix Equalizer Visualizer matching screenshot -->
+      <div class="voice-dot-matrix" id="voiceDotMatrix">
+        <div class="voice-dot-row">
+          <span class="voice-dot dot-1"></span><span class="voice-dot dot-2"></span><span class="voice-dot dot-3"></span><span class="voice-dot dot-4"></span><span class="voice-dot dot-5"></span><span class="voice-dot dot-6"></span><span class="voice-dot dot-7"></span><span class="voice-dot dot-8"></span><span class="voice-dot dot-9"></span><span class="voice-dot dot-10"></span>
+        </div>
+        <div class="voice-dot-row">
+          <span class="voice-dot dot-3"></span><span class="voice-dot dot-5"></span><span class="voice-dot dot-7"></span><span class="voice-dot dot-9"></span><span class="voice-dot dot-10"></span><span class="voice-dot dot-8"></span><span class="voice-dot dot-6"></span><span class="voice-dot dot-4"></span><span class="voice-dot dot-2"></span><span class="voice-dot dot-1"></span>
+        </div>
+        <div class="voice-dot-row">
+          <span class="voice-dot dot-2"></span><span class="voice-dot dot-4"></span><span class="voice-dot dot-6"></span><span class="voice-dot dot-8"></span><span class="voice-dot dot-10"></span><span class="voice-dot dot-9"></span><span class="voice-dot dot-7"></span><span class="voice-dot dot-5"></span><span class="voice-dot dot-3"></span><span class="voice-dot dot-1"></span>
+        </div>
+      </div>
+
+      <!-- Amber Rounded Square Stop / Done Button -->
+      <button type="button" class="voice-pill-stop-btn" id="voicePillStopBtn" onclick="stopVoiceSearch()" aria-label="Stop listening" title="Stop listening">
+        <span class="voice-stop-square"></span>
+      </button>
+    </div>
+
+    <!-- Side Floating Actions matching screenshot (Expand & Search image) -->
+    <div class="voice-floating-side-actions">
+      <button type="button" class="voice-side-btn voice-expand-btn" onclick="toggleVoicePromptsSheet()" aria-label="Expand voice suggestions" title="Suggestions">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 3 21 3 21 9"></polyline>
+          <polyline points="9 21 3 21 3 15"></polyline>
+          <line x1="21" y1="3" x2="14" y2="10"></line>
+          <line x1="3" y1="21" x2="10" y2="14"></line>
+        </svg>
+      </button>
+
+      <button type="button" class="voice-side-btn voice-search-image-btn" onclick="triggerVisualImageSearch()" aria-label="Search image" title="Visual Image Search">
+        <span>Search image</span>
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="7"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          <path d="M19 8c.5 1 1 1.5 2 2-1 .5-1.5 1-2 2-.5-1-1-1.5-2-2 1-.5 1.5-1 2-2Z" fill="currentColor"/>
+        </svg>
+      </button>
+      <input type="file" id="visualSearchFileInput" accept="image/*" style="display:none;" onchange="handleVisualSearchFile(event)">
+    </div>
+
+    <!-- Compact Floating Quick Suggestions Drawer -->
+    <div id="voicePromptsSheet" class="voice-prompts-sheet" style="display: none;">
+      <div style="font-size: 0.78rem; font-weight: 700; color: #cbd5e1; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em;" data-i18n="voice_popular">Popular Destinations</div>
+      <div class="voice-chips-grid">
+        <button type="button" class="voice-chip" onclick="applyVoiceQuery('Goa Beaches')">🏖️ Goa</button>
+        <button type="button" class="voice-chip" onclick="applyVoiceQuery('Munnar, Kerala')">🌲 Munnar</button>
+        <button type="button" class="voice-chip" onclick="applyVoiceQuery('Manali')">🏔️ Manali</button>
+        <button type="button" class="voice-chip" onclick="applyVoiceQuery('Hampi')">🏛️ Hampi</button>
+        <button type="button" class="voice-chip" onclick="applyVoiceQuery('Ooty')">🌄 Ooty</button>
+        <button type="button" class="voice-chip" onclick="applyVoiceQuery('Wildlife Safari')">🦁 Wildlife</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL 5: LOCATION PICKER & AUTO-DETECTION MODAL
+       ====================================================================== -->
+  <div id="locationPickerModal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="drawer-panel location-picker-dialog">
+      <div class="drawer-header" style="border-bottom: 1px solid var(--border-subtle); padding: 18px 24px;">
+        <div class="drawer-title-row" style="display: flex; align-items: center; gap: 12px;">
+          <span style="font-size: 1.6rem;">📍</span>
+          <div>
+            <h2 class="drawer-title" style="font-size: 1.2rem; font-weight: 800; color: #fff;" data-i18n="location_picker_title">Select Your Location</h2>
+            <div class="drawer-subtitle" style="font-size: 0.8rem; color: var(--text-secondary);" data-i18n="location_picker_subtitle">Set your starting city for accurate distances & routes</div>
+          </div>
+        </div>
+        <button class="drawer-close-btn" onclick="closeLocationPickerModal()" aria-label="Close location picker">✕</button>
+      </div>
+
+      <!-- Live GPS Warning / Helper Alert (Populated when GPS denied or unavailable) -->
+      <div id="locationPickerGpsAlert" class="location-picker-alert" style="display: none;"></div>
+
+      <!-- Auto-Detect Live Location Button (GPS + IP) -->
+      <div style="padding: 14px 24px 8px;">
+        <button type="button" class="btn-auto-detect-gps" onclick="autoDetectLocationFromModal()">
+          <span class="gps-pulse-dot"></span>
+          <span data-i18n="auto_detect_btn">🎯 Auto-Detect My Live Location (GPS / IP)</span>
+        </button>
+      </div>
+
+      <!-- Search Across All 781 Districts in India -->
+      <div class="drawer-search-box" style="padding: 6px 24px 12px;">
+        <div class="search-container">
+          <svg class="search-icon-left" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="m21 21-4.3-4.3"/>
+          </svg>
+          <input type="text" id="locationPickerSearchInput" class="search-input" placeholder="Type city, district or state (e.g. Coimbatore, Chennai, Trichy, Tirunelveli...)" oninput="filterLocationPickerDistricts(this.value)" autocomplete="off">
+        </div>
+      </div>
+
+      <!-- Popular Cities Quick Selection Chips -->
+      <div class="popular-cities-section" style="padding: 0 24px 12px;">
+        <div style="font-size: 0.74rem; font-weight: 700; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;" data-i18n="popular_cities_header">Popular Hubs & Cities</div>
+        <div class="popular-cities-pills">
+          <button type="button" class="city-pill" onclick="setUserLocationManually('Chennai', 'Tamil Nadu', 13.0827, 80.2707)">📍 Chennai</button>
+          <button type="button" class="city-pill" onclick="setUserLocationManually('Coimbatore', 'Tamil Nadu', 11.0168, 76.9558)">📍 Coimbatore</button>
+          <button type="button" class="city-pill" onclick="setUserLocationManually('Madurai', 'Tamil Nadu', 9.9252, 78.1198)">📍 Madurai</button>
+          <button type="button" class="city-pill" onclick="setUserLocationManually('Tiruchirappalli', 'Tamil Nadu', 10.7905, 78.7047)">📍 Trichy</button>
+          <button type="button" class="city-pill" onclick="setUserLocationManually('Salem', 'Tamil Nadu', 11.6643, 78.1460)">📍 Salem</button>
+          <button type="button" class="city-pill" onclick="setUserLocationManually('Tirunelveli', 'Tamil Nadu', 8.7139, 77.7567)">📍 Tirunelveli</button>
+          <button type="button" class="city-pill" onclick="setUserLocationManually('Erode', 'Tamil Nadu', 11.3410, 77.7172)">📍 Erode</button>
+          <button type="button" class="city-pill" onclick="setUserLocationManually('Tiruppur', 'Tamil Nadu', 11.1085, 77.3411)">📍 Tiruppur</button>
+          <button type="button" class="city-pill" onclick="setUserLocationManually('Vellore', 'Tamil Nadu', 12.9165, 79.1325)">📍 Vellore</button>
+          <button type="button" class="city-pill" onclick="setUserLocationManually('Thanjavur', 'Tamil Nadu', 10.7870, 79.1378)">📍 Thanjavur</button>
+          <button type="button" class="city-pill" onclick="setUserLocationManually('Dindigul', 'Tamil Nadu', 10.3673, 77.9803)">📍 Dindigul</button>
+          <button type="button" class="city-pill" onclick="setUserLocationManually('Tenkasi', 'Tamil Nadu', 8.9592, 77.3150)">📍 Tenkasi</button>
+          <button type="button" class="city-pill" onclick="setUserLocationManually('Kanyakumari', 'Tamil Nadu', 8.0883, 77.5385)">📍 Kanyakumari</button>
+          <button type="button" class="city-pill" onclick="setUserLocationManually('Nilgiris (Ooty)', 'Tamil Nadu', 11.4102, 76.6950)">📍 Ooty</button>
+          <button type="button" class="city-pill" onclick="setUserLocationManually('Bengaluru', 'Karnataka', 12.9716, 77.5946)">📍 Bengaluru</button>
+          <button type="button" class="city-pill" onclick="setUserLocationManually('Kochi', 'Kerala', 9.9312, 76.2673)">📍 Kochi</button>
+          <button type="button" class="city-pill" onclick="setUserLocationManually('Mumbai', 'Maharashtra', 19.0760, 72.8777)">📍 Mumbai</button>
+          <button type="button" class="city-pill" onclick="setUserLocationManually('Delhi NCR', 'Delhi', 28.6139, 77.2090)">📍 Delhi NCR</button>
+          <button type="button" class="city-pill" onclick="setUserLocationManually('Hyderabad', 'Telangana', 17.3850, 78.4867)">📍 Hyderabad</button>
+        </div>
+      </div>
+
+      <!-- Scrollable District Search Results List -->
+      <div id="locationPickerDistrictsList" class="location-districts-list">
+        <!-- Populated dynamically by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL 6: LIVE WEATHER & SEASON ADVISORY MODAL
+       ====================================================================== -->
+  <div id="weatherModal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="drawer-panel weather-modal-dialog">
+      <div class="drawer-header" style="border-bottom: 1px solid var(--border-subtle); padding: 18px 24px;">
+        <div class="drawer-title-row" style="display: flex; align-items: center; gap: 12px;">
+          <div id="modalWeatherHeaderIcon" style="font-size: 1.8rem; line-height: 1;">☀️</div>
+          <div>
+            <h2 class="drawer-title" style="font-size: 1.2rem; font-weight: 800; color: #fff;">Live Weather & Season</h2>
+            <div id="weatherModalSubtitle" class="drawer-subtitle" style="font-size: 0.8rem; color: var(--text-secondary);">Detecting location weather...</div>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <button type="button" class="weather-refresh-btn" onclick="refreshLiveWeather(true)" title="Refresh Live Weather Data" aria-label="Refresh live weather">🔄</button>
+          <button class="drawer-close-btn" onclick="closeWeatherModal()" aria-label="Close weather modal">✕</button>
+        </div>
+      </div>
+
+      <div class="weather-modal-body" style="padding: 20px 24px; overflow-y: auto; max-height: calc(85vh - 90px);">
+        <!-- Active Simulation Warning Banner (Hidden by default in Live mode) -->
+        <div id="weatherSimulationAlert" class="weather-simulation-alert" style="display: none;">
+          <span>ℹ️ Previewing seasonal simulation</span>
+          <button type="button" class="btn-return-live" onclick="setSimulatedWeather('auto')">⚡ Return to Live Weather</button>
+        </div>
+
+        <!-- Season Explorer Selector -->
+        <div class="weather-season-selector-bar">
+          <div class="weather-selector-label">🌦️ Forecast Mode & Season Preview:</div>
+          <div class="weather-chips-row">
+            <button type="button" class="weather-mode-chip auto-btn active" id="btnWeatherModeAuto" onclick="setSimulatedWeather('auto')">
+              <span class="live-radar-ping"></span> Live Real-time
+            </button>
+            <button type="button" class="weather-mode-chip" id="btnWeatherModeSummer" onclick="setSimulatedWeather('summer')">
+              ☀️ Summer
+            </button>
+            <button type="button" class="weather-mode-chip" id="btnWeatherModeRain" onclick="setSimulatedWeather('rain')">
+              🌧️ Monsoon
+            </button>
+            <button type="button" class="weather-mode-chip" id="btnWeatherModeCloudy" onclick="setSimulatedWeather('cloudy')">
+              ⛅ Post-Monsoon
+            </button>
+            <button type="button" class="weather-mode-chip" id="btnWeatherModeWinter" onclick="setSimulatedWeather('winter')">
+              ❄️ Winter
+            </button>
+          </div>
+        </div>
+
+        <!-- Big Hero Weather Card -->
+        <div id="weatherHeroCard" class="weather-hero-card weather-theme-summer">
+          <div class="weather-hero-visual" id="weatherHeroVisualContainer">
+            <!-- Injected dynamically: Large animated sun or animated rain cloud -->
+          </div>
+          <div class="weather-hero-info">
+            <div class="weather-temp-display">
+              <span id="weatherHeroTemp" class="weather-temp-num">32</span>
+              <span class="weather-temp-unit">°C</span>
+            </div>
+            <div id="weatherHeroCondition" class="weather-condition-text">Sunny & Clear Skies</div>
+            <div id="weatherHeroFeelsLike" class="weather-feels-like">Feels like 35°C • Peak Summer</div>
+          </div>
+        </div>
+
+        <!-- 6-Hour Hourly Forecast Strip -->
+        <div class="weather-hourly-wrap">
+          <div class="weather-hourly-title">🕒 Upcoming 6-Hour Trend</div>
+          <div id="weatherHourlyStrip" class="weather-hourly-strip">
+            <!-- Dynamically populated with next 5 hours -->
+          </div>
+        </div>
+
+        <!-- Weather Metrics Grid -->
+        <div class="weather-metrics-grid">
+          <div class="weather-metric-card">
+            <div class="metric-icon">💧</div>
+            <div class="metric-label">Humidity</div>
+            <div id="weatherMetricHumidity" class="metric-val">62%</div>
+          </div>
+          <div class="weather-metric-card">
+            <div class="metric-icon">🌧️</div>
+            <div class="metric-label">Rain Chance</div>
+            <div id="weatherMetricRain" class="metric-val">5%</div>
+          </div>
+          <div class="weather-metric-card">
+            <div class="metric-icon">💨</div>
+            <div class="metric-label">Wind Speed</div>
+            <div id="weatherMetricWind" class="metric-val">14 km/h</div>
+          </div>
+          <div class="weather-metric-card">
+            <div class="metric-icon">🕶️</div>
+            <div class="metric-label">UV Index</div>
+            <div id="weatherMetricUv" class="metric-val">8 (High)</div>
+          </div>
+        </div>
+
+        <!-- Travel Season Advisory & Recommendations -->
+        <div class="weather-advisory-card" id="weatherAdvisoryCard">
+          <div class="advisory-title">
+            <span id="advisoryIcon">🎒</span>
+            <span id="advisoryHeading">Seasonal Travel Guide</span>
+          </div>
+          <p id="advisoryDescription" class="advisory-text">
+            Bright sunny conditions. Perfect for coastal exploration, beach visits, and early morning heritage trails. Stay hydrated with tender coconut and carry UV sunglasses.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global App Toast Notification Container -->
+  <div id="appToastContainer" class="app-toast-container"></div>
+
+  <!-- Leaflet JS for Map -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  
+  <!-- App Data Catalog and Scripts -->
+  <script src="district_coords.js?v=20261102_1730"></script>
+  <script src="districts.js?v=20261102_1730"></script>
+  <script src="kerala_spots.js?v=20261102_1730"></script>
+  <script src="tamilnadu_spots.js?v=20261102_1730"></script>
+  <script src="all_india_beaches.js?v=20261102_1730"></script>
+  <script src="all_india_spots.js?v=20261102_1730"></script>
+  <script src="data.js?v=20261102_1730"></script>
+  <script src="cobra-voice.js?v=20261102_1730"></script>
+  <script src="app.js?v=20261102_1730"></script>
+  <!-- Rope Scrollbar (Mountain summit to sea with traveler climber) -->
+  <script src="rope-scrollbar.js?v=20261102_1730"></script>
+
+</body>
+</html>

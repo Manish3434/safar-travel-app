@@ -1,0 +1,38 @@
+location,file_path,line_number,entity_type,raw_name,canonical_lgd_name,match_status,action_required
+Backend Dictionary,apps/backend/src/places/data/india_states_districts.ts,1230,union_territory,Andaman and Nicobar Islands,Andaman and Nicobar Islands,MISSING_IN_MAP,Add AN entry and 3 districts to ALL_DISTRICTS_MAP
+Backend Dictionary,apps/backend/src/places/data/india_states_districts.ts,1230,union_territory,Chandigarh,Chandigarh,MISSING_IN_MAP,Add CH entry and 1 district to ALL_DISTRICTS_MAP
+Backend Dictionary,apps/backend/src/places/data/india_states_districts.ts,1230,union_territory,Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli and Daman and Diu,MISSING_IN_MAP,Add DN entry and 3 districts to ALL_DISTRICTS_MAP
+Backend Dictionary,apps/backend/src/places/data/india_states_districts.ts,1230,union_territory,Lakshadweep,Lakshadweep,MISSING_IN_MAP,Add LD entry and 1 district to ALL_DISTRICTS_MAP
+Backend State List,apps/backend/src/places/data/india_states_districts.ts,56,state,Andhra Pradesh,Andhra Pradesh,COUNT_MISMATCH,Update district_count from 26 to 28
+Backend Districts,apps/backend/src/places/data/india_states_districts.ts,422,district,Markapuram,Markapuram,MISSING_IN_CODE,Add Markapuram district to Andhra Pradesh
+Backend Districts,apps/backend/src/places/data/india_states_districts.ts,422,district,Polavaram,Polavaram,MISSING_IN_CODE,Add Polavaram district to Andhra Pradesh
+Backend State List,apps/backend/src/places/data/india_states_districts.ts,489,state,Goa,Goa,COUNT_MISMATCH,Update district_count from 2 to 3
+Backend Districts,apps/backend/src/places/data/india_states_districts.ts,490,district,Kushavati,Kushavati,MISSING_IN_CODE,Add Kushavati district to Goa
+Backend State List,apps/backend/src/places/data/india_states_districts.ts,535,state,Gujarat,Gujarat,COUNT_MISMATCH,Update district_count from 33 to 34
+Backend Districts,apps/backend/src/places/data/india_states_districts.ts,536,district,Vav-Tharad,Vav-Tharad,MISSING_IN_CODE,Add Vav-Tharad district to Gujarat
+Backend State List,apps/backend/src/places/data/india_states_districts.ts,495,district,Ahmednagar,Ahilyanagar,NAME_OUTDATED,Rename Ahmednagar to official LGD name Ahilyanagar
+Backend State List,apps/backend/src/places/data/india_states_districts.ts,495,district,Aurangabad,Chhatrapati Sambhajinagar,NAME_OUTDATED,Rename Aurangabad to official LGD name Chhatrapati Sambhajinagar
+Backend State List,apps/backend/src/places/data/india_states_districts.ts,495,district,Osmanabad,Dharashiv,NAME_OUTDATED,Rename Osmanabad to official LGD name Dharashiv
+Backend Districts,apps/backend/src/places/data/india_states_districts.ts,1255,district,Bichom,Bichom,MISSING_IN_CODE,Add Bichom district to Arunachal Pradesh
+Backend Districts,apps/backend/src/places/data/india_states_districts.ts,1255,district,Keyi Panyor,Keyi Panyor,MISSING_IN_CODE,Add Keyi Panyor district to Arunachal Pradesh
+Backend Districts,apps/backend/src/places/data/india_states_districts.ts,1247,district,Bajali,Bajali,MISSING_IN_CODE,Add Bajali district to Assam
+Backend Districts,apps/backend/src/places/data/india_states_districts.ts,1247,district,Tamulpur,Tamulpur,MISSING_IN_CODE,Add Tamulpur district to Assam
+Backend Districts,apps/backend/src/places/data/india_states_districts.ts,1247,district,Sribhumi,Sribhumi,MISSING_OR_RENAMED,Update Karimganj to official Sribhumi in Assam
+Backend Districts,apps/backend/src/places/data/india_states_districts.ts,1250,district,Hansi,Hansi,MISSING_IN_CODE,Add Hansi district to Haryana
+Backend Districts,apps/backend/src/places/data/india_states_districts.ts,1243,district,Maihar,Maihar,MISSING_IN_CODE,Add Maihar district to Madhya Pradesh
+Backend Districts,apps/backend/src/places/data/india_states_districts.ts,1243,district,Mauganj,Mauganj,MISSING_IN_CODE,Add Mauganj district to Madhya Pradesh
+Backend Districts,apps/backend/src/places/data/india_states_districts.ts,1243,district,Pandhurna,Pandhurna,MISSING_IN_CODE,Add Pandhurna district to Madhya Pradesh
+Backend Districts,apps/backend/src/places/data/india_states_districts.ts,1258,district,Meluri,Meluri,MISSING_IN_CODE,Add Meluri district to Nagaland
+Backend Districts,apps/backend/src/places/data/india_states_districts.ts,1248,district,Pakyong,Pakyong,MISSING_IN_CODE,Add Pakyong district to Sikkim
+Backend Districts,apps/backend/src/places/data/india_states_districts.ts,1248,district,Soreng,Soreng,MISSING_IN_CODE,Add Soreng district to Sikkim
+Backend Districts,apps/backend/src/places/data/india_states_districts.ts,1260,district,Central North,Central North,MISSING_IN_CODE,Add Central North district to Delhi
+Backend Districts,apps/backend/src/places/data/india_states_districts.ts,1260,district,Old Delhi,Old Delhi,MISSING_IN_CODE,Add Old Delhi district to Delhi
+Backend Districts,apps/backend/src/places/data/india_states_districts.ts,1221,district,Mahe,Puducherry,EXTRA_SUBDIVISION,Consolidate Mahe into canonical LGD Puducherry/Karaikal
+Backend Districts,apps/backend/src/places/data/india_states_districts.ts,1221,district,Yanam,Puducherry,EXTRA_SUBDIVISION,Consolidate Yanam into canonical LGD Puducherry/Karaikal
+Backend State List,apps/backend/src/places/data/india_states_districts.ts,572,state,Rajasthan,Rajasthan,COUNT_MISMATCH,Reconcile 50 draft districts with official 41 LGD districts
+State Baseline CSV,data/states.csv,30,union_territory,Andaman & Nicobar Islands,Andaman and Nicobar Islands,SPELLING_MISMATCH,Replace ampersand with word and
+State Baseline CSV,data/states.csv,32,union_territory,Dadra & Nagar Haveli and Daman & Diu,Dadra and Nagar Haveli and Daman and Diu,SPELLING_MISMATCH,Replace ampersand with word and
+State Baseline CSV,data/states.csv,34,union_territory,Jammu & Kashmir,Jammu and Kashmir,SPELLING_MISMATCH,Replace ampersand with word and
+State Baseline CSV,data/states.csv,1,metadata,type,type,COLUMN_MISSING,Add explicit type column state vs union territory
+Districts Baseline CSV,data/districts.csv,1,district,Total 781 rows,Total 784 rows,COUNT_MISMATCH,Seed all 784 canonical LGD districts from regions_reference.csv
+Flutter Mobile Endpoints,apps/mobile/lib/core/network/api_endpoints.dart,14,route,/api/v1/places/states,/api/v1/regions/states,ROUTE_UNIFICATION,Add canonical /v1/regions/states and districts routes with offline caching

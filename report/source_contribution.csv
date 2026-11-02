@@ -1,0 +1,11 @@
+source_id,source_name,total_spots_tagged,unique_marginal_spots,contribution_pct,primary_role
+S03,Overpass OSM Grid,20,0,100.0,Precise coordinate geometry and spatial boundaries
+S04,Wikidata SPARQL,20,0,100.0,Entity identity, QID golden key, and inception dates
+S05,Wikipedia Action/REST API,20,0,100.0,Lead descriptions, multilingual page links
+S09,ASI Monument Register,4,0,20.0,Centrally protected monument validation
+S10,UNESCO World Heritage,2,0,10.0,Global heritage status validation
+S11,MoEFCC Protected Areas,2,0,10.0,National park and wildlife sanctuary boundaries
+S13,State Archaeology Dept,5,0,25.0,State protected historical assets
+S14,State Tourism Dept,20,0,100.0,Curated tourist destinations and official hours
+S15,Coastal Zone Register,4,0,20.0,Coastal beach environmental inventory
+S16,Canonical Pilgrimage,2,0,10.0,Sacred temple circuits
