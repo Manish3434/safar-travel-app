@@ -3159,7 +3159,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Ahmednagar",
       "nameHi": "Ahmednagar",
       "headquarters": "Ahilyanagar",
-      "spotCount": 155
+      "spotCount": 186
     },
     {
       "id": "mh-akola",
@@ -3168,7 +3168,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Akola",
       "nameHi": "Akola",
       "headquarters": "Akola",
-      "spotCount": 47
+      "spotCount": 48
     },
     {
       "id": "mh-amravati",
@@ -3177,7 +3177,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Amravati",
       "nameHi": "Amravati",
       "headquarters": "Amravati",
-      "spotCount": 66
+      "spotCount": 71
     },
     {
       "id": "mh-beed",
@@ -3186,7 +3186,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Beed",
       "nameHi": "Beed",
       "headquarters": "Beed",
-      "spotCount": 42
+      "spotCount": 43
     },
     {
       "id": "mh-bhandara",
@@ -3195,7 +3195,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Bhandara",
       "nameHi": "Bhandara",
       "headquarters": "Bhandara",
-      "spotCount": 44
+      "spotCount": 49
     },
     {
       "id": "mh-buldhana",
@@ -3213,7 +3213,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Chandrapur",
       "nameHi": "Chandrapur",
       "headquarters": "Chandrapur",
-      "spotCount": 66
+      "spotCount": 75
     },
     {
       "id": "mh-chhatrapati-sambhajinagar",
@@ -3222,7 +3222,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Chhatrapati Sambhajinagar",
       "nameHi": "Chhatrapati Sambhajinagar",
       "headquarters": "Chhatrapati Sambhajinagar",
-      "spotCount": 199
+      "spotCount": 209
     },
     {
       "id": "mh-dhule",
@@ -3240,7 +3240,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Gadchiroli",
       "nameHi": "Gadchiroli",
       "headquarters": "Gadchiroli",
-      "spotCount": 38
+      "spotCount": 39
     },
     {
       "id": "mh-gondia",
@@ -3249,7 +3249,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Gondia",
       "nameHi": "Gondia",
       "headquarters": "Gondia",
-      "spotCount": 27
+      "spotCount": 28
     },
     {
       "id": "mh-hingoli",
@@ -3285,7 +3285,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Kolhapur",
       "nameHi": "Kolhapur",
       "headquarters": "Kolhapur",
-      "spotCount": 132
+      "spotCount": 146
     },
     {
       "id": "mh-latur",
@@ -3294,7 +3294,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Latur",
       "nameHi": "Latur",
       "headquarters": "Latur",
-      "spotCount": 48
+      "spotCount": 50
     },
     {
       "id": "mh-mumbai-city",
@@ -3303,7 +3303,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Mumbai City",
       "nameHi": "Mumbai City",
       "headquarters": "Mumbai",
-      "spotCount": 219
+      "spotCount": 221
     },
     {
       "id": "mh-mumbai-suburban",
@@ -3312,7 +3312,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Mumbai Suburban",
       "nameHi": "Mumbai Suburban",
       "headquarters": "Bandra",
-      "spotCount": 275
+      "spotCount": 279
     },
     {
       "id": "mh-nagpur",
@@ -3321,7 +3321,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Nagpur",
       "nameHi": "Nagpur",
       "headquarters": "Nagpur",
-      "spotCount": 142
+      "spotCount": 154
     },
     {
       "id": "mh-nanded",
@@ -3330,7 +3330,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Nanded",
       "nameHi": "Nanded",
       "headquarters": "Nanded",
-      "spotCount": 46
+      "spotCount": 51
     },
     {
       "id": "mh-nandurbar",
@@ -3339,7 +3339,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Nandurbar",
       "nameHi": "Nandurbar",
       "headquarters": "Nandurbar",
-      "spotCount": 39
+      "spotCount": 42
     },
     {
       "id": "mh-nashik",
@@ -3348,7 +3348,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Nashik",
       "nameHi": "Nashik",
       "headquarters": "Nashik",
-      "spotCount": 199
+      "spotCount": 213
     },
     {
       "id": "mh-dharashiv",
@@ -3357,7 +3357,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Dharashiv",
       "nameHi": "Dharashiv",
       "headquarters": "Dharashiv",
-      "spotCount": 55
+      "spotCount": 56
     },
     {
       "id": "mh-palghar",
@@ -3366,7 +3366,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Palghar",
       "nameHi": "Palghar",
       "headquarters": "Palghar",
-      "spotCount": 94
+      "spotCount": 98
     },
     {
       "id": "mh-parbhani",
@@ -3375,7 +3375,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Parbhani",
       "nameHi": "Parbhani",
       "headquarters": "Parbhani",
-      "spotCount": 46
+      "spotCount": 48
     },
     {
       "id": "mh-pune",
@@ -3384,7 +3384,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Pune",
       "nameHi": "Pune",
       "headquarters": "Pune",
-      "spotCount": 609
+      "spotCount": 664
     },
     {
       "id": "mh-raigad",
@@ -3393,7 +3393,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Raigad",
       "nameHi": "Raigad",
       "headquarters": "Alibag",
-      "spotCount": 307
+      "spotCount": 348
     },
     {
       "id": "mh-ratnagiri",
@@ -3402,7 +3402,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Ratnagiri",
       "nameHi": "Ratnagiri",
       "headquarters": "Ratnagiri",
-      "spotCount": 202
+      "spotCount": 238
     },
     {
       "id": "mh-sangli",
@@ -3411,7 +3411,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Sangli",
       "nameHi": "Sangli",
       "headquarters": "Sangli",
-      "spotCount": 64
+      "spotCount": 65
     },
     {
       "id": "mh-satara",
@@ -3420,7 +3420,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Satara",
       "nameHi": "Satara",
       "headquarters": "Satara",
-      "spotCount": 201
+      "spotCount": 226
     },
     {
       "id": "mh-sindhudurg",
@@ -3429,7 +3429,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Sindhudurg",
       "nameHi": "Sindhudurg",
       "headquarters": "Oros",
-      "spotCount": 176
+      "spotCount": 202
     },
     {
       "id": "mh-solapur",
@@ -3438,7 +3438,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Solapur",
       "nameHi": "Solapur",
       "headquarters": "Solapur",
-      "spotCount": 69
+      "spotCount": 73
     },
     {
       "id": "mh-thane",
@@ -3447,7 +3447,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Thane",
       "nameHi": "Thane",
       "headquarters": "Thane",
-      "spotCount": 141
+      "spotCount": 152
     },
     {
       "id": "mh-wardha",
@@ -3474,7 +3474,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Yavatmal",
       "nameHi": "Yavatmal",
       "headquarters": "Yavatmal",
-      "spotCount": 59
+      "spotCount": 61
     }
   ],
   "MN": [
