@@ -2253,7 +2253,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Bagalkote",
       "nameHi": "Bagalkote",
       "headquarters": "Bagalkote",
-      "spotCount": 10
+      "spotCount": 117
     },
     {
       "id": "ka-ballari",
@@ -2262,7 +2262,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Ballari",
       "nameHi": "Ballari",
       "headquarters": "Ballari",
-      "spotCount": 10
+      "spotCount": 109
     },
     {
       "id": "ka-belagavi",
@@ -2271,7 +2271,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Belagavi",
       "nameHi": "Belagavi",
       "headquarters": "Belagavi",
-      "spotCount": 10
+      "spotCount": 238
     },
     {
       "id": "ka-bengaluru-rural",
@@ -2280,7 +2280,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Bengaluru Rural",
       "nameHi": "Bengaluru Rural",
       "headquarters": "Bengaluru",
-      "spotCount": 10
+      "spotCount": 79
     },
     {
       "id": "ka-bengaluru-urban",
@@ -2289,7 +2289,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Bengaluru Urban",
       "nameHi": "Bengaluru Urban",
       "headquarters": "Bengaluru",
-      "spotCount": 10
+      "spotCount": 296
     },
     {
       "id": "ka-bidar",
@@ -2298,7 +2298,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Bidar",
       "nameHi": "Bidar",
       "headquarters": "Bidar",
-      "spotCount": 10
+      "spotCount": 120
     },
     {
       "id": "ka-chamarajanagara",
@@ -2307,7 +2307,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Chamarajanagara",
       "nameHi": "Chamarajanagara",
       "headquarters": "Chamarajanagara",
-      "spotCount": 10
+      "spotCount": 134
     },
     {
       "id": "ka-chikkaballapura",
@@ -2316,7 +2316,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Chikkaballapura",
       "nameHi": "Chikkaballapura",
       "headquarters": "Chikkaballapura",
-      "spotCount": 10
+      "spotCount": 122
     },
     {
       "id": "ka-chikkamagaluru",
@@ -2325,7 +2325,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Chikkamagaluru",
       "nameHi": "Chikkamagaluru",
       "headquarters": "Chikkamagaluru",
-      "spotCount": 10
+      "spotCount": 371
     },
     {
       "id": "ka-chitradurga",
@@ -2334,7 +2334,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Chitradurga",
       "nameHi": "Chitradurga",
       "headquarters": "Chitradurga",
-      "spotCount": 10
+      "spotCount": 43
     },
     {
       "id": "ka-dakshina-kannada",
@@ -2343,7 +2343,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Dakshina Kannada",
       "nameHi": "Dakshina Kannada",
       "headquarters": "Mangaluru",
-      "spotCount": 10
+      "spotCount": 272
     },
     {
       "id": "ka-davanagere",
@@ -2352,7 +2352,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Davanagere",
       "nameHi": "Davanagere",
       "headquarters": "Davanagere",
-      "spotCount": 10
+      "spotCount": 44
     },
     {
       "id": "ka-dharwad",
@@ -2361,7 +2361,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Dharwad",
       "nameHi": "Dharwad",
       "headquarters": "Dharwad",
-      "spotCount": 10
+      "spotCount": 52
     },
     {
       "id": "ka-gadag",
@@ -2370,7 +2370,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Gadag",
       "nameHi": "Gadag",
       "headquarters": "Gadag",
-      "spotCount": 10
+      "spotCount": 115
     },
     {
       "id": "ka-hassan",
@@ -2379,7 +2379,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Hassan",
       "nameHi": "Hassan",
       "headquarters": "Hassan",
-      "spotCount": 10
+      "spotCount": 194
     },
     {
       "id": "ka-haveri",
@@ -2388,7 +2388,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Haveri",
       "nameHi": "Haveri",
       "headquarters": "Haveri",
-      "spotCount": 10
+      "spotCount": 65
     },
     {
       "id": "ka-kalaburagi",
@@ -2397,7 +2397,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Kalaburagi",
       "nameHi": "Kalaburagi",
       "headquarters": "Kalaburagi",
-      "spotCount": 10
+      "spotCount": 112
     },
     {
       "id": "ka-kodagu",
@@ -2406,7 +2406,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Kodagu",
       "nameHi": "Kodagu",
       "headquarters": "Madikeri",
-      "spotCount": 10
+      "spotCount": 242
     },
     {
       "id": "ka-kolar",
@@ -2415,7 +2415,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Kolar",
       "nameHi": "Kolar",
       "headquarters": "Kolar",
-      "spotCount": 10
+      "spotCount": 49
     },
     {
       "id": "ka-koppal",
@@ -2424,7 +2424,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Koppal",
       "nameHi": "Koppal",
       "headquarters": "Koppal",
-      "spotCount": 10
+      "spotCount": 54
     },
     {
       "id": "ka-mandya",
@@ -2433,7 +2433,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Mandya",
       "nameHi": "Mandya",
       "headquarters": "Mandya",
-      "spotCount": 10
+      "spotCount": 153
     },
     {
       "id": "ka-mysuru",
@@ -2442,7 +2442,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Mysuru",
       "nameHi": "Mysuru",
       "headquarters": "Mysuru",
-      "spotCount": 10
+      "spotCount": 276
     },
     {
       "id": "ka-raichur",
@@ -2451,7 +2451,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Raichur",
       "nameHi": "Raichur",
       "headquarters": "Raichur",
-      "spotCount": 10
+      "spotCount": 68
     },
     {
       "id": "ka-ramanagara",
@@ -2460,7 +2460,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Ramanagara",
       "nameHi": "Ramanagara",
       "headquarters": "Ramanagara",
-      "spotCount": 10
+      "spotCount": 124
     },
     {
       "id": "ka-shivamogga",
@@ -2469,7 +2469,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Shivamogga",
       "nameHi": "Shivamogga",
       "headquarters": "Shivamogga",
-      "spotCount": 10
+      "spotCount": 201
     },
     {
       "id": "ka-tumakuru",
@@ -2478,7 +2478,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Tumakuru",
       "nameHi": "Tumakuru",
       "headquarters": "Tumakuru",
-      "spotCount": 10
+      "spotCount": 189
     },
     {
       "id": "ka-udupi",
@@ -2487,7 +2487,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Udupi",
       "nameHi": "Udupi",
       "headquarters": "Udupi",
-      "spotCount": 10
+      "spotCount": 133
     },
     {
       "id": "ka-uttara-kannada",
@@ -2496,7 +2496,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Uttara Kannada",
       "nameHi": "Uttara Kannada",
       "headquarters": "Karwar",
-      "spotCount": 10
+      "spotCount": 242
     },
     {
       "id": "ka-vijayanagara",
@@ -2505,7 +2505,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Vijayanagara",
       "nameHi": "Vijayanagara",
       "headquarters": "Hosapete",
-      "spotCount": 10
+      "spotCount": 222
     },
     {
       "id": "ka-vijayapura",
@@ -2514,7 +2514,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Vijayapura",
       "nameHi": "Vijayapura",
       "headquarters": "Vijayapura",
-      "spotCount": 10
+      "spotCount": 106
     },
     {
       "id": "ka-yadgir",
@@ -2523,7 +2523,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Yadgir",
       "nameHi": "Yadgir",
       "headquarters": "Yadgir",
-      "spotCount": 10
+      "spotCount": 39
     }
   ],
   "KL": [

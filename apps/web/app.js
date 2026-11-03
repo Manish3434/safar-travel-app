@@ -2636,17 +2636,27 @@ function findSpotById(spotId) {
     const found = KERALA_SPOTS.find(s => s.id === cleanId || s.name === cleanId || (s.name && s.name.toLowerCase() === lowerId));
     if (found) { cacheSpotObject(found); return found; }
   }
-  // 5. Check ALL_INDIA_BEACHES
+  // 5. Check MAHARASHTRA_SPOTS
+  if (typeof MAHARASHTRA_SPOTS !== 'undefined' && Array.isArray(MAHARASHTRA_SPOTS)) {
+    const found = MAHARASHTRA_SPOTS.find(s => s.id === cleanId || s.name === cleanId || (s.name && s.name.toLowerCase() === lowerId));
+    if (found) { cacheSpotObject(found); return found; }
+  }
+  // 6. Check KARNATAKA_SPOTS
+  if (typeof KARNATAKA_SPOTS !== 'undefined' && Array.isArray(KARNATAKA_SPOTS)) {
+    const found = KARNATAKA_SPOTS.find(s => s.id === cleanId || s.name === cleanId || (s.name && s.name.toLowerCase() === lowerId));
+    if (found) { cacheSpotObject(found); return found; }
+  }
+  // 7. Check ALL_INDIA_BEACHES
   if (typeof ALL_INDIA_BEACHES !== 'undefined' && Array.isArray(ALL_INDIA_BEACHES)) {
     const found = ALL_INDIA_BEACHES.find(s => s.id === cleanId || s.name === cleanId || (s.name && s.name.toLowerCase() === lowerId));
     if (found) { cacheSpotObject(found); return found; }
   }
-  // 6. Check ALL_INDIA_SPOTS
+  // 8. Check ALL_INDIA_SPOTS
   if (typeof ALL_INDIA_SPOTS !== 'undefined' && Array.isArray(ALL_INDIA_SPOTS)) {
     const found = ALL_INDIA_SPOTS.find(s => s.id === cleanId || s.name === cleanId || (s.name && s.name.toLowerCase() === lowerId));
     if (found) { cacheSpotObject(found); return found; }
   }
-  // 7. Check master spots
+  // 9. Check master spots
   if (typeof getAllMasterSpots === 'function') {
     const master = getAllMasterSpots();
     const found = master.find(s => s.id === cleanId || s.name === cleanId || (s.name && s.name.toLowerCase() === lowerId));
@@ -2689,19 +2699,31 @@ function getAllMasterSpots() {
     : (window.TAMILNADU_SPOTS || []);
   tnPool.forEach(addSpot);
 
-  // 3. Kerala Spots (140 verified district spots)
+  // 3. Kerala Spots (verified district spots)
   const klPool = (typeof KERALA_SPOTS !== 'undefined' && Array.isArray(KERALA_SPOTS))
     ? KERALA_SPOTS
     : (window.KERALA_SPOTS || []);
   klPool.forEach(addSpot);
 
-  // 4. All-India Spots (7,810 authentic district spots across all 36 States/UTs)
+  // 4. Maharashtra Spots (verified district spots)
+  const mhPool = (typeof MAHARASHTRA_SPOTS !== 'undefined' && Array.isArray(MAHARASHTRA_SPOTS))
+    ? MAHARASHTRA_SPOTS
+    : (window.MAHARASHTRA_SPOTS || []);
+  mhPool.forEach(addSpot);
+
+  // 5. Karnataka Spots (verified district spots)
+  const kaPool = (typeof KARNATAKA_SPOTS !== 'undefined' && Array.isArray(KARNATAKA_SPOTS))
+    ? KARNATAKA_SPOTS
+    : (window.KARNATAKA_SPOTS || []);
+  kaPool.forEach(addSpot);
+
+  // 6. All-India Spots (authentic district spots across all 36 States/UTs)
   const allIndiaPool = (typeof ALL_INDIA_SPOTS !== 'undefined' && Array.isArray(ALL_INDIA_SPOTS))
     ? ALL_INDIA_SPOTS
     : (window.ALL_INDIA_SPOTS || []);
   allIndiaPool.forEach(addSpot);
 
-  // 5. Curated attractions data & legacy spots
+  // 7. Curated attractions data & legacy spots
   const curatedPool = (typeof ATTRACTIONS_DATA !== 'undefined' && Array.isArray(ATTRACTIONS_DATA))
     ? ATTRACTIONS_DATA
     : (window.ATTRACTIONS_DATA || (typeof FEATURED_SPOTS !== 'undefined' ? FEATURED_SPOTS : []));
