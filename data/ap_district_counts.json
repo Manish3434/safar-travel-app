@@ -1,20 +1,20 @@
 {
   "state": "Andhra Pradesh",
   "stateCode": "AP",
-  "totalSpots": 5233,
+  "totalSpots": 5286,
   "districtsCount": 26,
   "districts": [
     {
       "districtId": "ap-alluri-sitharama-raju",
       "districtName": "Alluri Sitharama Raju",
       "headquarters": "Paderu",
-      "spotCount": 153
+      "spotCount": 160
     },
     {
       "districtId": "ap-anakapalli",
       "districtName": "Anakapalli",
       "headquarters": "Anakapalli",
-      "spotCount": 109
+      "spotCount": 124
     },
     {
       "districtId": "ap-ananthapuramu",
@@ -44,13 +44,13 @@
       "districtId": "ap-dr-b-r-ambedkar-konaseema",
       "districtName": "Dr. B.R. Ambedkar Konaseema",
       "headquarters": "Amalapuram",
-      "spotCount": 75
+      "spotCount": 76
     },
     {
       "districtId": "ap-east-godavari",
       "districtName": "East Godavari",
       "headquarters": "Rajahmundry",
-      "spotCount": 113
+      "spotCount": 120
     },
     {
       "districtId": "ap-eluru",
@@ -104,7 +104,7 @@
       "districtId": "ap-parvathipuram-manyam",
       "districtName": "Parvathipuram Manyam",
       "headquarters": "Parvathipuram",
-      "spotCount": 82
+      "spotCount": 83
     },
     {
       "districtId": "ap-prakasam",
@@ -116,7 +116,7 @@
       "districtId": "ap-sri-potti-sriramulu-nellore",
       "districtName": "Sri Potti Sriramulu Nellore",
       "headquarters": "Nellore",
-      "spotCount": 357
+      "spotCount": 360
     },
     {
       "districtId": "ap-sri-sathya-sai",
@@ -140,13 +140,13 @@
       "districtId": "ap-visakhapatnam",
       "districtName": "Visakhapatnam",
       "headquarters": "Visakhapatnam",
-      "spotCount": 636
+      "spotCount": 649
     },
     {
       "districtId": "ap-vizianagaram",
       "districtName": "Vizianagaram",
       "headquarters": "Vizianagaram",
-      "spotCount": 138
+      "spotCount": 144
     },
     {
       "districtId": "ap-west-godavari",

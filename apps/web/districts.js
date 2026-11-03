@@ -10,7 +10,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTa": "அல்லூரி சீதாராம ராஜு",
         "nameHi": "अल्लूरी सीताराम राजू",
         "headquarters": "Paderu",
-        "spotCount": 153,
+        "spotCount": 160,
         "nameTe": "అల్లూరి సీతారామరాజు",
         "nameKn": "ಅಲ್ಲೂರಿ ಸೀತಾರಾಮ ರಾಜು"
     },
@@ -21,7 +21,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTa": "அனகாபள்ளி",
         "nameHi": "अनकापल्ली",
         "headquarters": "Anakapalli",
-        "spotCount": 109,
+        "spotCount": 124,
         "nameTe": "అనకాపల్లి",
         "nameKn": "ಅನಕಾಪಲ್ಲಿ"
     },
@@ -76,7 +76,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTa": "டாக்டர் பி.ஆர். அம்பேத்கர் கோனசீமா",
         "nameHi": "डॉ. बी.आर. अम्बेडकर कोनासीमा",
         "headquarters": "Amalapuram",
-        "spotCount": 75,
+        "spotCount": 76,
         "nameTe": "డా. బి.ఆర్. అంబేద్కర్ కోనసీమ",
         "nameKn": "ಡಾ. ಬಿ.ಆರ್. ಅಂಬೇಡ್ಕರ್ ಕೋನಸೀಮಾ"
     },
@@ -87,7 +87,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTa": "கிழக்கு கோதாவரி",
         "nameHi": "पूर्वी गोदावरी",
         "headquarters": "Rajahmundry",
-        "spotCount": 113,
+        "spotCount": 120,
         "nameTe": "తూర్పు గోదావరి",
         "nameKn": "ಪೂರ್ವ ಗೋದಾವರಿ"
     },
@@ -186,7 +186,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTa": "பார்வதிபுரம் மன்யம்",
         "nameHi": "पार्वतीपुरम मान्यम",
         "headquarters": "Parvathipuram",
-        "spotCount": 82,
+        "spotCount": 83,
         "nameTe": "పార్వతీపురం మన్యం",
         "nameKn": "ಪಾರ್ವತಿಪುರಂ ಮಾನ್ಯಂ"
     },
@@ -208,7 +208,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTa": "ஸ்ரீ பொட்டி ஸ்ரீராமுலு நெல்லூர்",
         "nameHi": "श्री पोट्टी श्रीरामुलु नेल्लोर",
         "headquarters": "Nellore",
-        "spotCount": 357,
+        "spotCount": 360,
         "nameTe": "శ్రీ పొట్టి శ్రీరాములు నెల్లూరు",
         "nameKn": "ಶ್ರೀ ಪೊಟ್ಟಿ ಶ್ರೀರಾಮುಲು ನೆಲ್ಲೂರು"
     },
@@ -252,7 +252,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTa": "விசாகப்பட்டினம்",
         "nameHi": "विशाखापट्टनम",
         "headquarters": "Visakhapatnam",
-        "spotCount": 636,
+        "spotCount": 649,
         "nameTe": "విశాఖపట్నం",
         "nameKn": "ವಿಶಾಖಪಟ್ಟಣಂ"
     },
@@ -263,7 +263,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTa": "விஜயநகரம்",
         "nameHi": "विजयनगरम",
         "headquarters": "Vizianagaram",
-        "spotCount": 138,
+        "spotCount": 144,
         "nameTe": "విజయనగరం",
         "nameKn": "ವಿಜಯನಗರಂ"
     },
