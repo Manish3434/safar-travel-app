@@ -4968,7 +4968,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Ariyalur",
       "nameHi": "Ariyalur",
       "headquarters": "Ariyalur",
-      "spotCount": 10
+      "spotCount": 96
     },
     {
       "id": "tn-chengalpattu",
@@ -4977,7 +4977,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Chengalpattu",
       "nameHi": "Chengalpattu",
       "headquarters": "Chengalpattu",
-      "spotCount": 10
+      "spotCount": 154
     },
     {
       "id": "tn-chennai",
@@ -4986,7 +4986,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Chennai",
       "nameHi": "Chennai",
       "headquarters": "Chennai",
-      "spotCount": 10
+      "spotCount": 312
     },
     {
       "id": "tn-coimbatore",
@@ -4995,7 +4995,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Coimbatore",
       "nameHi": "Coimbatore",
       "headquarters": "Coimbatore",
-      "spotCount": 10
+      "spotCount": 180
     },
     {
       "id": "tn-cuddalore",
@@ -5004,7 +5004,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Cuddalore",
       "nameHi": "Cuddalore",
       "headquarters": "Cuddalore",
-      "spotCount": 10
+      "spotCount": 147
     },
     {
       "id": "tn-dharmapuri",
@@ -5013,7 +5013,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Dharmapuri",
       "nameHi": "Dharmapuri",
       "headquarters": "Dharmapuri",
-      "spotCount": 10
+      "spotCount": 78
     },
     {
       "id": "tn-dindigul",
@@ -5022,7 +5022,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Dindigul",
       "nameHi": "Dindigul",
       "headquarters": "Dindigul",
-      "spotCount": 10
+      "spotCount": 160
     },
     {
       "id": "tn-erode",
@@ -5031,7 +5031,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Erode",
       "nameHi": "Erode",
       "headquarters": "Erode",
-      "spotCount": 10
+      "spotCount": 158
     },
     {
       "id": "tn-kallakurichi",
@@ -5040,7 +5040,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Kallakurichi",
       "nameHi": "Kallakurichi",
       "headquarters": "Kallakurichi",
-      "spotCount": 10
+      "spotCount": 43
     },
     {
       "id": "tn-kanchipuram",
@@ -5049,7 +5049,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Kanchipuram",
       "nameHi": "Kanchipuram",
       "headquarters": "Kanchipuram",
-      "spotCount": 10
+      "spotCount": 91
     },
     {
       "id": "tn-kanyakumari",
@@ -5058,7 +5058,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Kanyakumari",
       "nameHi": "Kanyakumari",
       "headquarters": "Nagercoil",
-      "spotCount": 10
+      "spotCount": 173
     },
     {
       "id": "tn-karur",
@@ -5067,7 +5067,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Karur",
       "nameHi": "Karur",
       "headquarters": "Karur",
-      "spotCount": 10
+      "spotCount": 46
     },
     {
       "id": "tn-krishnagiri",
@@ -5076,7 +5076,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Krishnagiri",
       "nameHi": "Krishnagiri",
       "headquarters": "Krishnagiri",
-      "spotCount": 10
+      "spotCount": 147
     },
     {
       "id": "tn-madurai",
@@ -5085,7 +5085,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Madurai",
       "nameHi": "Madurai",
       "headquarters": "Madurai",
-      "spotCount": 10
+      "spotCount": 142
     },
     {
       "id": "tn-mayiladuthurai",
@@ -5094,7 +5094,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Mayiladuthurai",
       "nameHi": "Mayiladuthurai",
       "headquarters": "Mayiladuthurai",
-      "spotCount": 10
+      "spotCount": 43
     },
     {
       "id": "tn-nagapattinam",
@@ -5103,7 +5103,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Nagapattinam",
       "nameHi": "Nagapattinam",
       "headquarters": "Nagapattinam",
-      "spotCount": 10
+      "spotCount": 153
     },
     {
       "id": "tn-namakkal",
@@ -5112,7 +5112,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Namakkal",
       "nameHi": "Namakkal",
       "headquarters": "Namakkal",
-      "spotCount": 10
+      "spotCount": 126
     },
     {
       "id": "tn-nilgiris",
@@ -5121,7 +5121,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Nilgiris",
       "nameHi": "Nilgiris",
       "headquarters": "Udhagamandalam",
-      "spotCount": 10
+      "spotCount": 252
     },
     {
       "id": "tn-perambalur",
@@ -5130,7 +5130,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Perambalur",
       "nameHi": "Perambalur",
       "headquarters": "Perambalur",
-      "spotCount": 10
+      "spotCount": 34
     },
     {
       "id": "tn-pudukkottai",
@@ -5139,7 +5139,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Pudukkottai",
       "nameHi": "Pudukkottai",
       "headquarters": "Pudukkottai",
-      "spotCount": 10
+      "spotCount": 127
     },
     {
       "id": "tn-ramanathapuram",
@@ -5148,7 +5148,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Ramanathapuram",
       "nameHi": "Ramanathapuram",
       "headquarters": "Ramanathapuram",
-      "spotCount": 10
+      "spotCount": 112
     },
     {
       "id": "tn-ranipet",
@@ -5157,7 +5157,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Ranipet",
       "nameHi": "Ranipet",
       "headquarters": "Ranipet",
-      "spotCount": 10
+      "spotCount": 53
     },
     {
       "id": "tn-salem",
@@ -5166,7 +5166,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Salem",
       "nameHi": "Salem",
       "headquarters": "Salem",
-      "spotCount": 10
+      "spotCount": 141
     },
     {
       "id": "tn-sivaganga",
@@ -5175,7 +5175,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Sivaganga",
       "nameHi": "Sivaganga",
       "headquarters": "Sivaganga",
-      "spotCount": 10
+      "spotCount": 65
     },
     {
       "id": "tn-tenkasi",
@@ -5184,7 +5184,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Tenkasi",
       "nameHi": "Tenkasi",
       "headquarters": "Tenkasi",
-      "spotCount": 10
+      "spotCount": 96
     },
     {
       "id": "tn-thanjavur",
@@ -5193,7 +5193,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Thanjavur",
       "nameHi": "Thanjavur",
       "headquarters": "Thanjavur",
-      "spotCount": 10
+      "spotCount": 304
     },
     {
       "id": "tn-theni",
@@ -5202,7 +5202,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Theni",
       "nameHi": "Theni",
       "headquarters": "Theni",
-      "spotCount": 10
+      "spotCount": 113
     },
     {
       "id": "tn-thoothukudi",
@@ -5211,7 +5211,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Thoothukudi",
       "nameHi": "Thoothukudi",
       "headquarters": "Thoothukudi",
-      "spotCount": 10
+      "spotCount": 127
     },
     {
       "id": "tn-tiruchirappalli",
@@ -5220,7 +5220,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Tiruchirappalli",
       "nameHi": "Tiruchirappalli",
       "headquarters": "Tiruchirappalli",
-      "spotCount": 10
+      "spotCount": 151
     },
     {
       "id": "tn-tirunelveli",
@@ -5229,7 +5229,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Tirunelveli",
       "nameHi": "Tirunelveli",
       "headquarters": "Tirunelveli",
-      "spotCount": 10
+      "spotCount": 140
     },
     {
       "id": "tn-tirupathur",
@@ -5238,7 +5238,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Tirupathur",
       "nameHi": "Tirupathur",
       "headquarters": "Tirupathur",
-      "spotCount": 10
+      "spotCount": 46
     },
     {
       "id": "tn-tiruppur",
@@ -5247,7 +5247,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Tiruppur",
       "nameHi": "Tiruppur",
       "headquarters": "Tiruppur",
-      "spotCount": 10
+      "spotCount": 70
     },
     {
       "id": "tn-tiruvallur",
@@ -5256,7 +5256,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Tiruvallur",
       "nameHi": "Tiruvallur",
       "headquarters": "Tiruvallur",
-      "spotCount": 10
+      "spotCount": 173
     },
     {
       "id": "tn-tiruvannamalai",
@@ -5265,7 +5265,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Tiruvannamalai",
       "nameHi": "Tiruvannamalai",
       "headquarters": "Tiruvannamalai",
-      "spotCount": 10
+      "spotCount": 108
     },
     {
       "id": "tn-tiruvarur",
@@ -5274,7 +5274,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Tiruvarur",
       "nameHi": "Tiruvarur",
       "headquarters": "Tiruvarur",
-      "spotCount": 10
+      "spotCount": 102
     },
     {
       "id": "tn-vellore",
@@ -5283,7 +5283,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Vellore",
       "nameHi": "Vellore",
       "headquarters": "Vellore",
-      "spotCount": 10
+      "spotCount": 69
     },
     {
       "id": "tn-viluppuram",
@@ -5292,7 +5292,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Viluppuram",
       "nameHi": "Viluppuram",
       "headquarters": "Viluppuram",
-      "spotCount": 10
+      "spotCount": 104
     },
     {
       "id": "tn-virudhunagar",
@@ -5301,7 +5301,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Virudhunagar",
       "nameHi": "Virudhunagar",
       "headquarters": "Virudhunagar",
-      "spotCount": 10
+      "spotCount": 98
     }
   ],
   "TG": [
@@ -7073,7 +7073,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Karaikal",
       "nameHi": "Karaikal",
       "headquarters": "Karaikal",
-      "spotCount": 10
+      "spotCount": 8
     },
     {
       "id": "py-mahe",
@@ -7082,7 +7082,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Mahe",
       "nameHi": "Mahe",
       "headquarters": "Mahe",
-      "spotCount": 10
+      "spotCount": 6
     },
     {
       "id": "py-puducherry",
@@ -7091,7 +7091,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Puducherry",
       "nameHi": "Puducherry",
       "headquarters": "Puducherry",
-      "spotCount": 10
+      "spotCount": 41
     },
     {
       "id": "py-yanam",
@@ -7100,7 +7100,7 @@ const ALL_CANONICAL_DISTRICTS = {
       "nameTa": "Yanam",
       "nameHi": "Yanam",
       "headquarters": "Yanam",
-      "spotCount": 10
+      "spotCount": 5
     }
   ]
 };
