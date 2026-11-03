@@ -1,0 +1,206 @@
+{
+  "state": "Telangana",
+  "stateCode": "TG",
+  "totalSpots": 5359,
+  "districtsCount": 33,
+  "districts": [
+    {
+      "districtId": "tg-adilabad",
+      "districtName": "Adilabad",
+      "headquarters": "Adilabad",
+      "spotCount": 198
+    },
+    {
+      "districtId": "tg-bhadradri-kothagudem",
+      "districtName": "Bhadradri Kothagudem",
+      "headquarters": "Kothagudem",
+      "spotCount": 184
+    },
+    {
+      "districtId": "tg-hanumakonda",
+      "districtName": "Hanumakonda",
+      "headquarters": "Hanumakonda",
+      "spotCount": 198
+    },
+    {
+      "districtId": "tg-hyderabad",
+      "districtName": "Hyderabad",
+      "headquarters": "Hyderabad",
+      "spotCount": 514
+    },
+    {
+      "districtId": "tg-jagtial",
+      "districtName": "Jagtial",
+      "headquarters": "Jagtial",
+      "spotCount": 123
+    },
+    {
+      "districtId": "tg-jangaon",
+      "districtName": "Jangaon",
+      "headquarters": "Jangaon",
+      "spotCount": 21
+    },
+    {
+      "districtId": "tg-jayashankar-bhupalpally",
+      "districtName": "Jayashankar Bhupalpally",
+      "headquarters": "Bhupalpally",
+      "spotCount": 24
+    },
+    {
+      "districtId": "tg-jogulamba-gadwal",
+      "districtName": "Jogulamba Gadwal",
+      "headquarters": "Gadwal",
+      "spotCount": 222
+    },
+    {
+      "districtId": "tg-kamareddy",
+      "districtName": "Kamareddy",
+      "headquarters": "Kamareddy",
+      "spotCount": 156
+    },
+    {
+      "districtId": "tg-karimnagar",
+      "districtName": "Karimnagar",
+      "headquarters": "Karimnagar",
+      "spotCount": 284
+    },
+    {
+      "districtId": "tg-khammam",
+      "districtName": "Khammam",
+      "headquarters": "Khammam",
+      "spotCount": 236
+    },
+    {
+      "districtId": "tg-kumuram-bheem-asifabad",
+      "districtName": "Kumuram Bheem Asifabad",
+      "headquarters": "Asifabad",
+      "spotCount": 11
+    },
+    {
+      "districtId": "tg-mahabubabad",
+      "districtName": "Mahabubabad",
+      "headquarters": "Mahabubabad",
+      "spotCount": 54
+    },
+    {
+      "districtId": "tg-mahabubnagar",
+      "districtName": "Mahabubnagar",
+      "headquarters": "Mahabubnagar",
+      "spotCount": 170
+    },
+    {
+      "districtId": "tg-mancherial",
+      "districtName": "Mancherial",
+      "headquarters": "Mancherial",
+      "spotCount": 96
+    },
+    {
+      "districtId": "tg-medak",
+      "districtName": "Medak",
+      "headquarters": "Medak",
+      "spotCount": 142
+    },
+    {
+      "districtId": "tg-medchal-malkajgiri",
+      "districtName": "Medchal-Malkajgiri",
+      "headquarters": "Shamirpet",
+      "spotCount": 216
+    },
+    {
+      "districtId": "tg-mulugu",
+      "districtName": "Mulugu",
+      "headquarters": "Mulugu",
+      "spotCount": 223
+    },
+    {
+      "districtId": "tg-nagarkurnool",
+      "districtName": "Nagarkurnool",
+      "headquarters": "Nagarkurnool",
+      "spotCount": 205
+    },
+    {
+      "districtId": "tg-nalgonda",
+      "districtName": "Nalgonda",
+      "headquarters": "Nalgonda",
+      "spotCount": 303
+    },
+    {
+      "districtId": "tg-narayanpet",
+      "districtName": "Narayanpet",
+      "headquarters": "Narayanpet",
+      "spotCount": 9
+    },
+    {
+      "districtId": "tg-nirmal",
+      "districtName": "Nirmal",
+      "headquarters": "Nirmal",
+      "spotCount": 75
+    },
+    {
+      "districtId": "tg-nizamabad",
+      "districtName": "Nizamabad",
+      "headquarters": "Nizamabad",
+      "spotCount": 279
+    },
+    {
+      "districtId": "tg-peddapalli",
+      "districtName": "Peddapalli",
+      "headquarters": "Peddapalli",
+      "spotCount": 107
+    },
+    {
+      "districtId": "tg-rajanna-sircilla",
+      "districtName": "Rajanna Sircilla",
+      "headquarters": "Sircilla",
+      "spotCount": 50
+    },
+    {
+      "districtId": "tg-ranga-reddy",
+      "districtName": "Ranga Reddy",
+      "headquarters": "Shamshabad",
+      "spotCount": 426
+    },
+    {
+      "districtId": "tg-sangareddy",
+      "districtName": "Sangareddy",
+      "headquarters": "Sangareddy",
+      "spotCount": 126
+    },
+    {
+      "districtId": "tg-siddipet",
+      "districtName": "Siddipet",
+      "headquarters": "Siddipet",
+      "spotCount": 107
+    },
+    {
+      "districtId": "tg-suryapet",
+      "districtName": "Suryapet",
+      "headquarters": "Suryapet",
+      "spotCount": 112
+    },
+    {
+      "districtId": "tg-vikarabad",
+      "districtName": "Vikarabad",
+      "headquarters": "Vikarabad",
+      "spotCount": 197
+    },
+    {
+      "districtId": "tg-wanaparthy",
+      "districtName": "Wanaparthy",
+      "headquarters": "Wanaparthy",
+      "spotCount": 31
+    },
+    {
+      "districtId": "tg-warangal",
+      "districtName": "Warangal",
+      "headquarters": "Warangal",
+      "spotCount": 103
+    },
+    {
+      "districtId": "tg-yadadri-bhuvanagiri",
+      "districtName": "Yadadri Bhuvanagiri",
+      "headquarters": "Bhuvanagiri",
+      "spotCount": 157
+    }
+  ]
+}
