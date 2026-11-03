@@ -411,6 +411,7 @@ const _ALL_RAW_SPOTS = [
   ...(typeof KERALA_SPOTS !== 'undefined' ? KERALA_SPOTS : (typeof window !== 'undefined' && window.KERALA_SPOTS ? window.KERALA_SPOTS : [])),
   ...(typeof MAHARASHTRA_SPOTS !== 'undefined' ? MAHARASHTRA_SPOTS : (typeof window !== 'undefined' && window.MAHARASHTRA_SPOTS ? window.MAHARASHTRA_SPOTS : [])),
   ...(typeof KARNATAKA_SPOTS !== 'undefined' ? KARNATAKA_SPOTS : (typeof window !== 'undefined' && window.KARNATAKA_SPOTS ? window.KARNATAKA_SPOTS : [])),
+  ...(typeof ANDHRA_SPOTS !== 'undefined' ? ANDHRA_SPOTS : (typeof window !== 'undefined' && window.ANDHRA_SPOTS ? window.ANDHRA_SPOTS : [])),
   ..._FILTERED_BEACHES,
   ...(typeof ALL_INDIA_SPOTS !== 'undefined' ? ALL_INDIA_SPOTS : (typeof window !== 'undefined' && window.ALL_INDIA_SPOTS ? window.ALL_INDIA_SPOTS : []))
 ];

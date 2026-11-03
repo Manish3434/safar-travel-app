@@ -1,0 +1,164 @@
+{
+  "state": "Andhra Pradesh",
+  "stateCode": "AP",
+  "totalSpots": 5233,
+  "districtsCount": 26,
+  "districts": [
+    {
+      "districtId": "ap-alluri-sitharama-raju",
+      "districtName": "Alluri Sitharama Raju",
+      "headquarters": "Paderu",
+      "spotCount": 153
+    },
+    {
+      "districtId": "ap-anakapalli",
+      "districtName": "Anakapalli",
+      "headquarters": "Anakapalli",
+      "spotCount": 109
+    },
+    {
+      "districtId": "ap-ananthapuramu",
+      "districtName": "Ananthapuramu",
+      "headquarters": "Anantapur",
+      "spotCount": 178
+    },
+    {
+      "districtId": "ap-annamayya",
+      "districtName": "Annamayya",
+      "headquarters": "Rayachoti",
+      "spotCount": 55
+    },
+    {
+      "districtId": "ap-bapatla",
+      "districtName": "Bapatla",
+      "headquarters": "Bapatla",
+      "spotCount": 364
+    },
+    {
+      "districtId": "ap-chittoor",
+      "districtName": "Chittoor",
+      "headquarters": "Chittoor",
+      "spotCount": 165
+    },
+    {
+      "districtId": "ap-dr-b-r-ambedkar-konaseema",
+      "districtName": "Dr. B.R. Ambedkar Konaseema",
+      "headquarters": "Amalapuram",
+      "spotCount": 75
+    },
+    {
+      "districtId": "ap-east-godavari",
+      "districtName": "East Godavari",
+      "headquarters": "Rajahmundry",
+      "spotCount": 113
+    },
+    {
+      "districtId": "ap-eluru",
+      "districtName": "Eluru",
+      "headquarters": "Eluru",
+      "spotCount": 153
+    },
+    {
+      "districtId": "ap-guntur",
+      "districtName": "Guntur",
+      "headquarters": "Guntur",
+      "spotCount": 245
+    },
+    {
+      "districtId": "ap-kakinada",
+      "districtName": "Kakinada",
+      "headquarters": "Kakinada",
+      "spotCount": 315
+    },
+    {
+      "districtId": "ap-krishna",
+      "districtName": "Krishna",
+      "headquarters": "Machilipatnam",
+      "spotCount": 231
+    },
+    {
+      "districtId": "ap-kurnool",
+      "districtName": "Kurnool",
+      "headquarters": "Kurnool",
+      "spotCount": 214
+    },
+    {
+      "districtId": "ap-ntr",
+      "districtName": "NTR",
+      "headquarters": "Vijayawada",
+      "spotCount": 134
+    },
+    {
+      "districtId": "ap-nandyal",
+      "districtName": "Nandyal",
+      "headquarters": "Nandyal",
+      "spotCount": 295
+    },
+    {
+      "districtId": "ap-palnadu",
+      "districtName": "Palnadu",
+      "headquarters": "Narasaraopet",
+      "spotCount": 191
+    },
+    {
+      "districtId": "ap-parvathipuram-manyam",
+      "districtName": "Parvathipuram Manyam",
+      "headquarters": "Parvathipuram",
+      "spotCount": 82
+    },
+    {
+      "districtId": "ap-prakasam",
+      "districtName": "Prakasam",
+      "headquarters": "Ongole",
+      "spotCount": 68
+    },
+    {
+      "districtId": "ap-sri-potti-sriramulu-nellore",
+      "districtName": "Sri Potti Sriramulu Nellore",
+      "headquarters": "Nellore",
+      "spotCount": 357
+    },
+    {
+      "districtId": "ap-sri-sathya-sai",
+      "districtName": "Sri Sathya Sai",
+      "headquarters": "Puttaparthi",
+      "spotCount": 152
+    },
+    {
+      "districtId": "ap-srikakulam",
+      "districtName": "Srikakulam",
+      "headquarters": "Srikakulam",
+      "spotCount": 163
+    },
+    {
+      "districtId": "ap-tirupati",
+      "districtName": "Tirupati",
+      "headquarters": "Tirupati",
+      "spotCount": 265
+    },
+    {
+      "districtId": "ap-visakhapatnam",
+      "districtName": "Visakhapatnam",
+      "headquarters": "Visakhapatnam",
+      "spotCount": 636
+    },
+    {
+      "districtId": "ap-vizianagaram",
+      "districtName": "Vizianagaram",
+      "headquarters": "Vizianagaram",
+      "spotCount": 138
+    },
+    {
+      "districtId": "ap-west-godavari",
+      "districtName": "West Godavari",
+      "headquarters": "Bhimavaram",
+      "spotCount": 125
+    },
+    {
+      "districtId": "ap-ysr-kadapa",
+      "districtName": "YSR Kadapa",
+      "headquarters": "Kadapa",
+      "spotCount": 257
+    }
+  ]
+}
