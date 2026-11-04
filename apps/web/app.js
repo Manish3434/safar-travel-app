@@ -2656,6 +2656,11 @@ function findSpotById(spotId) {
     const found = TELANGANA_SPOTS.find(s => s.id === cleanId || s.name === cleanId || (s.name && s.name.toLowerCase() === lowerId));
     if (found) { cacheSpotObject(found); return found; }
   }
+  // 6d. Check ODISHA_SPOTS
+  if (typeof ODISHA_SPOTS !== 'undefined' && Array.isArray(ODISHA_SPOTS)) {
+    const found = ODISHA_SPOTS.find(s => s.id === cleanId || s.name === cleanId || (s.name && s.name.toLowerCase() === lowerId));
+    if (found) { cacheSpotObject(found); return found; }
+  }
   // 7. Check ALL_INDIA_BEACHES
   if (typeof ALL_INDIA_BEACHES !== 'undefined' && Array.isArray(ALL_INDIA_BEACHES)) {
     const found = ALL_INDIA_BEACHES.find(s => s.id === cleanId || s.name === cleanId || (s.name && s.name.toLowerCase() === lowerId));
@@ -2738,6 +2743,12 @@ function getAllMasterSpots() {
     ? TELANGANA_SPOTS
     : (window.TELANGANA_SPOTS || []);
   tgPool.forEach(addSpot);
+
+  // 5d. Odisha Spots (verified district spots)
+  const odPool = (typeof ODISHA_SPOTS !== 'undefined' && Array.isArray(ODISHA_SPOTS))
+    ? ODISHA_SPOTS
+    : (window.ODISHA_SPOTS || []);
+  odPool.forEach(addSpot);
 
   // 6. All-India Spots (authentic district spots across all 36 States/UTs)
   const allIndiaPool = (typeof ALL_INDIA_SPOTS !== 'undefined' && Array.isArray(ALL_INDIA_SPOTS))

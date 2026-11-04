@@ -137,7 +137,7 @@ const List<IndianState> DEFAULT_STATES = [
     nameHi: 'ओडिशा',
     imageUrl: 'https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=800&q=80',
     districtCount: 30,
-    spotCount: 2,
+    spotCount: 5400,
   ),
   IndianState(
     code: 'AS',
