@@ -4043,7 +4043,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTe": "అనుగుల్",
         "nameKn": "ಅನುಗುಲ್",
         "headquarters": "Angul",
-        "spotCount": 114
+        "spotCount": 116
       },
       {
         "id": "od-balangir",
@@ -4055,7 +4055,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTe": "బలంగీర్",
         "nameKn": "ಬಲಾಂಗಿರ್",
         "headquarters": "Balangir",
-        "spotCount": 107
+        "spotCount": 108
       },
       {
         "id": "od-balasore",
@@ -4067,7 +4067,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTe": "బాలేశ్వర్",
         "nameKn": "ಬಾಲೇಶ್ವರ",
         "headquarters": "Balasore",
-        "spotCount": 236
+        "spotCount": 241
       },
       {
         "id": "od-bargarh",
@@ -4091,7 +4091,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTe": "భద్రక్",
         "nameKn": "ಭದ್ರಕ್",
         "headquarters": "Bhadrak",
-        "spotCount": 181
+        "spotCount": 183
       },
       {
         "id": "od-boudh",
@@ -4115,7 +4115,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTe": "కటక్",
         "nameKn": "ಕಟಕ್",
         "headquarters": "Cuttack",
-        "spotCount": 260
+        "spotCount": 263
       },
       {
         "id": "od-deogarh",
@@ -4127,7 +4127,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTe": "దేవగఢ్",
         "nameKn": "ದೇವಗಢ್",
         "headquarters": "Deogarh",
-        "spotCount": 205
+        "spotCount": 206
       },
       {
         "id": "od-dhenkanal",
@@ -4139,7 +4139,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTe": "ధేంకెనాల్",
         "nameKn": "ಧೇಂಕನಾಲ್",
         "headquarters": "Dhenkanal",
-        "spotCount": 163
+        "spotCount": 164
       },
       {
         "id": "od-gajapati",
@@ -4163,7 +4163,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTe": "గంజాం",
         "nameKn": "ಗಂಜಾಂ",
         "headquarters": "Chhatrapur",
-        "spotCount": 246
+        "spotCount": 252
       },
       {
         "id": "od-jagatsinghpur",
@@ -4199,7 +4199,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTe": "ఝార్సుగూడ",
         "nameKn": "ಝಾರ್ಸುಗುಡ",
         "headquarters": "Jharsuguda",
-        "spotCount": 120
+        "spotCount": 121
       },
       {
         "id": "od-kalahandi",
@@ -4211,7 +4211,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTe": "కలహండి",
         "nameKn": "ಕಾಲಹಂಡಿ",
         "headquarters": "Bhawanipatna",
-        "spotCount": 122
+        "spotCount": 125
       },
       {
         "id": "od-kandhamal",
@@ -4223,7 +4223,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTe": "కంధమాల్",
         "nameKn": "ಕಂಧಮಾಲ್",
         "headquarters": "Phulbani",
-        "spotCount": 291
+        "spotCount": 292
       },
       {
         "id": "od-kendrapara",
@@ -4235,7 +4235,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTe": "కేంద్రపారా",
         "nameKn": "ಕೇಂದ್ರಪಾರ",
         "headquarters": "Kendrapara",
-        "spotCount": 179
+        "spotCount": 184
       },
       {
         "id": "od-kendujhar",
@@ -4259,7 +4259,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTe": "ఖోర్దా",
         "nameKn": "ಖೋರ್ಧಾ",
         "headquarters": "Bhubaneswar",
-        "spotCount": 330
+        "spotCount": 345
       },
       {
         "id": "od-koraput",
@@ -4271,7 +4271,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTe": "కొరాపుట్",
         "nameKn": "ಕೋರಾಪುಟ್",
         "headquarters": "Koraput",
-        "spotCount": 249
+        "spotCount": 250
       },
       {
         "id": "od-malkangiri",
@@ -4283,7 +4283,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTe": "మల్కనగిరి",
         "nameKn": "ಮಲ್ಕಾನಗಿರಿ",
         "headquarters": "Malkangiri",
-        "spotCount": 195
+        "spotCount": 196
       },
       {
         "id": "od-mayurbhanj",
@@ -4295,7 +4295,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTe": "మయూర్‌భంజ్",
         "nameKn": "ಮಯೂರಭಂಜ",
         "headquarters": "Baripada",
-        "spotCount": 232
+        "spotCount": 235
       },
       {
         "id": "od-nabarangpur",
@@ -4331,7 +4331,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTe": "నువాపడా",
         "nameKn": "ನುವಾಪಡಾ",
         "headquarters": "Nuapada",
-        "spotCount": 133
+        "spotCount": 135
       },
       {
         "id": "od-puri",
@@ -4343,7 +4343,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTe": "పూరీ",
         "nameKn": "ಪುರಿ",
         "headquarters": "Puri",
-        "spotCount": 233
+        "spotCount": 241
       },
       {
         "id": "od-rayagada",
@@ -4367,7 +4367,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTe": "సంబల్పూర్",
         "nameKn": "ಸಂಬಲ್ಪುರ",
         "headquarters": "Sambalpur",
-        "spotCount": 203
+        "spotCount": 204
       },
       {
         "id": "od-subarnapur",
@@ -4379,7 +4379,7 @@ const ALL_CANONICAL_DISTRICTS = {
         "nameTe": "సువర్ణపూర్",
         "nameKn": "ಸುವರ್ಣಪುರ",
         "headquarters": "Sonepur",
-        "spotCount": 47
+        "spotCount": 50
       },
       {
         "id": "od-sundargarh",
