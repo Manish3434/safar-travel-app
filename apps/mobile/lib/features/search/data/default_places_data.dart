@@ -200,7 +200,7 @@ const List<IndianState> DEFAULT_STATES = [
     nameHi: 'छत्तीसगढ़',
     imageUrl: 'https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&w=800&q=80',
     districtCount: 33,
-    spotCount: 1,
+    spotCount: 5400,
   ),
   IndianState(
     code: 'ML',
